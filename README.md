@@ -6,16 +6,16 @@
     <a href="https://github.com/oracle/graalvm-ce-java23"><img src="https://img.shields.io/badge/Java-23-007396.svg"></a>
     <a href="https://www.python.org/downloads/release/python-3130/"><img src="https://img.shields.io/badge/Python-3.13-FFD43B.svg"></a>
     <a href="https://golang.org/dl/go1.21.5.linux-amd64.tar.gz"><img src="https://img.shields.io/badge/Go-1.21-blue.svg"></a>
-    <a href="https://github.com/MeiSiristhebest/graphs/contributors"><img src="https://img.shields.io/github/contributors/MeiSiristhebest?color=blue"></a>
+<!--     <a href="https://github.com/MeiSiristhebest/graphs/contributors"><img src="https://img.shields.io/github/contributors/MeiSiristhebest?color=blue"></a> -->
     <a href="https://github.com/MeiSiristhebest/stargazers"><img src="https://img.shields.io/github/stars/MeiSiristhebest.svg?logo=github"></a>
-    <a href="https://github.com/MeiSiristhebest/network/members"><img src="https://img.shields.io/github/forks/MeiSiristhebest.svg?color=blue&logo=github"></a>
+<!--     <a href="https://github.com/MeiSiristhebest/network/members"><img src="https://img.shields.io/github/forks/MeiSiristhebest.svg?color=blue&logo=github"></a> -->
     <img src="https://visitor-badge.laobi.icu/badge?page_id=MeiSiristhebest.MeiSiristhebest" alt="visitors"/>   
 </p>
 
 <!--   my-header-img -->
 <img src="./src/header_.png" alt="Header Image" style="display:block; margin-left:auto; margin-right:auto;">
 
-<a href="https://www.java.com/en/download/manual.jsp"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/JAVA_Logo.svg" align="right" height="48" width="48" ></a>
+<a href="https://www.oracle.com/java/technologies/javase-jdk23-downloads.html"><img src="https://dev.java/assets/images/java-logo-vector.png" align="right" height="48" width="80" ></a>
 <a href="https://www.python.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" align="right" height="48" width="48" ></a>
 <a href="https://golang.org/"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg" align="right" height="48" width="48" ></a>
 
@@ -37,22 +37,24 @@
 <!--   GitHub stats graph -->
 
 ### 📈 GitHub Activity Graph:
-[[MeiSiristhebest's github activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=MeiSiristhebest&theme=github-compact)](https://github.com/BEPb/github-readme-activity-graph)
+<!-- ![MeiSiristhebest's github activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=MeiSiristhebest&theme=github-compact)-->
 
 | .                                                            | .                                                            |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [MeiSiristhebest's github stats](https://github-readme-stats.vercel.app/api?username=MeiSiristhebest&show_icons=true&theme=radical&include_all_commits=true) | [Quiec's github stats](https://github-readme-stats.vercel.app/api/top-langs/?username=MeiSiristhebest&theme=radical&layout=compact) |
+| ![MeiSiristhebest's github stats](https://github-readme-stats.vercel.app/api?username=MeiSiristhebest&show_icons=true&theme=radical&include_all_commits=true) | ![Quiec's github stats](https://github-readme-stats.vercel.app/api/top-langs/?username=MeiSiristhebest&theme=radical&layout=compact) |
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=MeiSiristhebest"></img>
 
 <!--   profile-green-animate -->
-[](./profile-3d-contrib/profile-green-animate.svg)
+![](./profile-3d-contrib/profile-green-animate.svg)
 
 <!--   grid-snake -->
-[](https://github.com/MeiSiristhebest/MeiSiristhebest/blob/output/github-contribution-grid-snake.svg)
+![](https://github.com/MeiSiristhebest/MeiSiristhebest/blob/output/github-contribution-grid-snake.svg)
 
 <!--  2d history skills -->
-<img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=MeiSiristhebest" width="auto"></img>
+<!-- <img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=MeiSiristhebest" width="auto"></img> -->
+<img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=BEPb" width="auto"></img>
+
 
 **📫 How to Reach me:**
 <p align="left">
