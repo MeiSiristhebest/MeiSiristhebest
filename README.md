@@ -38,6 +38,8 @@
 
 ### 📈 GitHub Activity Graph:
 <!-- ![MeiSiristhebest's github activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=MeiSiristhebest&theme=github-compact)-->
+<!--   green snake -->
+![MeiSiristhebest's github activity graph](https://raw.githubusercontent.com/BEPb/BEPb/output/github-contribution-grid-snake.svg)
 
 | .                                                            | .                                                            |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -50,6 +52,8 @@
 
 <!--   grid-snake -->
 ![](https://github.com/MeiSiristhebest/MeiSiristhebest/blob/output/github-contribution-grid-snake.svg)
+<!-- dark snake -->
+![MeiSiristhebest's github activity graph](https://raw.githubusercontent.com/BEPb/BEPb/output/github-contribution-grid-snake-dark.svg)
 
 <!--  2d history skills -->
 <!-- <img src="https://cr-skills-chart-widget.azurewebsites.net/api/api?username=MeiSiristhebest" width="auto"></img> -->
@@ -58,8 +62,8 @@
 
 **📫 How to Reach me:**
 <p align="left">
-<a href="tencent://message/?uin=1534572236" target="blank"><img align="center" src="https://raw.githubusercontent.com/MeiSiristhebest/MeiSiristhebest/master/assets/qq.svg" alt="QQ" height="30" width="30" /></a>
-<a href="https://wechat.com/ReadLine" target="blank"><img align="center" src="https://raw.githubusercontent.com/MeiSiristhebest/MeiSiristhebest/master/assets/wechat.svg" alt="WeChat" height="30" width="30" /></a>
+<a href="tencent://message/?uin=1534572236" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/zh/9/99/Tencent_QQ.svg" alt="QQ" height="30" width="30" /></a>
+<a href="https://wechat.com/ReadLine" target="blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/zh/a/af/WeChat_logo.svg" alt="WeChat" height="30" width="100" /></a>
 <a href="mailto:1534572236@qq.com" target="blank"><img align="center" src="https://raw.githubusercontent.com/MeiSiristhebest/MeiSiristhebest/master/assets/gmail.svg" alt="Gmail" height="30" width="30" /></a>
 </p>
 
