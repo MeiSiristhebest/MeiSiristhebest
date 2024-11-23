@@ -146,10 +146,10 @@ width="30%">
 
 
 <p align="center"> 
-
-<img src="./src/credly0.png" alt="ibm" width="100%">
-<img src="./src/credly1.png" alt="ibm" width="100%">
-<img src="./src/credly2.png" alt="ibm" width="100%">
+![badges_37-46.png](src%2Fbadges_37-46.png)
+![badges_25-36.png](src%2Fbadges_25-36.png)
+![badges_13-24.png](src%2Fbadges_13-24.png)
+![badges_1-12.png](src%2Fbadges_1-12.png)
 </p>
 
 
