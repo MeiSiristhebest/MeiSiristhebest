@@ -60,11 +60,9 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ### 📊 Digital Footprint
 
-<!-- 💡 游戏化极客大奖杯系统，由 Vercel 实时渲染，100% 稳定防崩溃 -->
+<!-- 💡 游戏化极客大奖杯系统，由 Action 每日物理下载并保存至本地，100% 极速加载防崩溃 -->
 <div align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight&margin-w=15&margin-h=15" alt="GitHub Trophy" />
-  </a>
+  <img src="./github-profile-trophy.svg" alt="GitHub Trophy" />
 </div>
 
 <br/>
@@ -75,7 +73,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 由 yoshi389111 生成的 3D 立体水晶城堡贡献日历 -->
+<!-- 💡 由 yoshi389111 生成的 3D 立体水晶城堡贡献图 -->
 <div align="center">
   <h4>🏰 3D Crystal Calendar</h4>
   <img src="./profile-3d-contrib/profile-green-animate.svg" alt="3D Contribution Calendar" width="100%" />
