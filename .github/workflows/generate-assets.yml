@@ -24,18 +24,18 @@ jobs:
             github-contribution-grid-snake-dark.svg?palette=github-dark
             github-contribution-grid-snake.svg
 
-      # 2. 调用 lowlighter/metrics 生成全景统计看板
+      # 2. 调用 lowlighter/metrics 生成全景统计看板（使用其内置自动 commit 逻辑推送回远程，解决 output_action 隔离问题）
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}  # 💡 使用包含 repo 与 user 读取权限的 Personal Access Token 获取数据
+          token: ${{ secrets.METRICS_TOKEN }}  # 💡 必须使用包含 repo 与 user 读取权限的 Personal Access Token
           user: MeiSiristhebest
           template: classic
           base: header, activity, community, repositories, metadata
           filename: github-metrics.svg
-          output_action: none  # 💡 关键参数：禁止 Metrics 自动提交并清除图片，保留给后续步骤手动统一 commit & push
+          committer_token: ${{ secrets.METRICS_TOKEN }}  # 💡 让 metrics 插件使用你配置的 METRICS_TOKEN 自动推送大图，100% 写入成功！
           repositories_forks: yes  # 💡 允许统计你 Fork 出来的仓库数据
-          commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com  # 💡 核心配置：将你本地常用的 Git 提交署名“Mei”与邮箱全部关联，认领你在其他仓库里的历史代码提交！
+          commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com  # 💡 核心配置：认领你本地常用的 Git 提交署名
 
           # 💡 [增量配置 1] 编程语言分析
           plugin_languages: yes
@@ -52,11 +52,11 @@ jobs:
           plugin_achievements_display: detailed
           plugin_achievements_threshold: B  # 只显示 B 级以上的高含金量成就
 
-      # 3. 自动将生成的贪吃蛇与全景看板一同提交回仓库
-      - name: Commit and Push Assets
+      # 3. 自动将生成的“贪吃蛇图片”提交回仓库（与 metrics 自动提交分工合作，完美避免容器内目录无法读取的问题）
+      - name: Commit and Push Snake Assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add github-contribution-grid-snake-dark.svg github-contribution-grid-snake.svg github-metrics.svg
-          git commit -m "chore: update profile metrics and snake assets [skip ci]" || exit 0
+          git add github-contribution-grid-snake-dark.svg github-contribution-grid-snake.svg
+          git commit -m "chore: update snake contribution assets [skip ci]" || exit 0
           git push
