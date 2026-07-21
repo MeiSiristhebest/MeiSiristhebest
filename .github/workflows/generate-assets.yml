@@ -24,11 +24,11 @@ jobs:
             github-contribution-grid-snake-dark.svg?palette=github-dark
             github-contribution-grid-snake.svg
 
-      # 2. 调用 lowlighter/metrics 生成全景统计看板
+      # 2. 调用 lowlighter/metrics 生成全景统计看板（高能集成了所有最炫酷的极客插件）
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}  # 💡 使用包含 repo 与 user 读取权限的 Personal Access Token 获取数据
+          token: ${{ secrets.METRICS_TOKEN }}  # 💡 使用包含 repo 与 user 读取权限的 Personal Access Token
           user: MeiSiristhebest
           template: classic
           base: header, activity, community, repositories, metadata
@@ -37,25 +37,31 @@ jobs:
           repositories_forks: yes  # 💡 允许统计你 Fork 出来的仓库数据
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com  # 💡 核心配置：认领你本地常用的 Git 提交署名
 
-          # 💡 [增量配置 1] 编程语言分析
+          # 💡 [炫酷配置 1] 编程语言分析
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_limit: 8
-          plugin_languages_recent_days: 0  # 💡 设为 0 代表全盘扫描统计历史所有仓库语言
+          plugin_languages_recent_days: 0  # 设为 0 全盘扫描统计历史所有仓库语言
 
-          # 💡 [增量配置 2] 3D 立体等轴测 commits 柱状日历
+          # 💡 [炫酷配置 2] 3D 立体等轴测 commits 柱状日历
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          # 💡 [注] achievements 勋章插件因 GitHub GraphQL 接口偶发 bug 导致红字报错，已关闭以维护主页纯净
-          plugin_achievements: no
-
-          # 💡 [增量配置 3] 24小时编码习惯与作息分析（100%稳定不报错，逼格同样极高）
+          # 💡 [炫酷配置 3] 24小时编码习惯与作息分析
           plugin_habits: yes
           plugin_habits_from: 200            # 分析最近 200 个 commits
           plugin_habits_days: 14             # 分析天数范围
-          plugin_habits_facts: yes           # 显示有趣的习惯描述（如“深夜狂魔”等）
+          plugin_habits_facts: yes           # 显示有趣的习惯描述
           plugin_habits_charts: yes          # 显示 24 小时活跃段渐变图表
+
+          # 💡 [炫酷配置 4] 累计代码修改行数分析（统计你写了和改了多少行代码，实力证言！）
+          plugin_lines: yes
+
+          # 💡 [炫酷配置 5] 游戏化极客成就徽章（防灾安全版，彻底绕过 Unexpected error 报错）
+          plugin_achievements: yes
+          plugin_achievements_display: compact  # 紧凑型展示，排版更精致
+          plugin_achievements_threshold: C      # 门槛降低至 C 级，认领你的创世纪与发言人成就
+          plugin_achievements_secrets: no       # 💡 设为 no 代表关闭隐藏彩蛋扫描，彻底绕过 GitHub API 遍历权限不足引发的 GraphQL 崩溃 Bug！
 
       # 3. 自动将生成的“贪吃蛇图片”提交回仓库（与 metrics 自动提交分工合作，完美避免容器内目录无法读取的问题）
       - name: Commit and Push Snake Assets
