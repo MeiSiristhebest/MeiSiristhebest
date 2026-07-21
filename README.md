@@ -1,26 +1,29 @@
 <!-- Header Wave Banner -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=260&section=header&text=Nefelibata&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Building%20systems%20that%20listen%2C%20think%2C%20and%20remember.&descSize=15&descAlignY=58" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=260&section=header&text=Nefelibata&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=A%20cloud%20walker%20translating%20daydreams%20into%20code.&descSize=15&descAlignY=58" width="100%" />
 
   <br/>
 
   <!-- Dynamic Typing Title -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&color=70A5FD&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Crafting+software+as+digital+art;Always+coding%2C+always+exploring" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&color=70A5FD&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Lost+in+the+terminal%2C+searching+for+digital+poetry;Always+coding%2C+always+exploring" alt="Typing SVG" />
   </a>
 </div>
 
 ---
 
-### 💡 About Nefelibata
+### 🪐 About Nefelibata
 
-*“An absurd idea is often the seed of hope.”*
+> **Nefelibata** *(n.)* 
+> *A cloud walker; one who does not obey the conventions of society, literature, or art, but follows their own path.*
 
-I am an independent developer exploring the boundaries of distributed networks, interactive media, and intelligent agents. I view coding not just as engineering, but as a medium for crafting digital ecosystems.
+I write code to document thoughts, capture time, and build tiny virtual spaces that feel alive. I don't fit into a single box. Today I might be designing a minimalist user experience; tomorrow I could be deep in a network protocol trace or exploring the latent space of generative models. 
 
-- 🛠️ **Craftsmanship**: I build across the entire stack. From low-level system design and database engines to intuitive user interfaces and model routing.
-- 🎨 **Philosophy**: Passionate about architectural minimalist aesthetics, local-first data preservation, and digital archaeology.
-- 🌌 **Interests**: Beyond terminal screens, I spend time exploring digital memory logs, photography, game mechanics, and complex systems.
+To me, software engineering is not just about solving tickets — it is a form of craftsmanship, a canvas where logic meets intuition.
+
+*   🌌 **Aesthetic Order**: I enjoy finding simplicity within high-entropy systems and designing architectures that feel natural.
+*   🌿 **Local-First & Ephemeral**: Believer in decentralized computing, data sovereignty, and digital archaeology.
+*   ☕ **Beyond the Console**: Lost in street photography, game mechanics, philosophy, and urban exploration.
 
 ---
 
@@ -32,15 +35,15 @@ I am an independent developer exploring the boundaries of distributed networks, 
 
 ---
 
-### 🚀 Projects
+### 🚀 Creative Sandboxes
 
 #### 🎙️ [TimeLog](https://github.com/MeiSiristhebest/TimeLog)
-> **A voice-driven assistant dedicated to capturing life memories.**
-*   Explores continuous streaming interactions, real-time voice activity detection, and sub-millisecond local indexing.
+> **A temporal container dedicated to preserving human memories.**
+*   A local-first experiment designed to listen, transcribe, and index personal logs, keeping digital sovereignty entirely in the user's hands.
 
 #### 🛍️ [Ningxiangshop](https://github.com/MeiSiristhebest/ningxiangshop)
-> **An experimental e-commerce engine testing high-concurrency microservices.**
-*   Explores distributed consensus, data synchronization safety under high-entropy spikes, and transaction guarantees.
+> **A sandbox exploring system scale, concurrency, and chaos.**
+*   An experimental engine written to study how distributed nodes behave under high-entropy spikes, seeking graceful state transitions in a chaotic environment.
 
 ---
 
