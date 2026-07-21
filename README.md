@@ -48,13 +48,13 @@ To me, software engineering is not just about solving tickets — it is a form o
 > **A cross-platform meal planning and sharing assistant built in a high-performance monorepo.**
 *   Features a unified Turborepo workspace, real-time recipe discovery, cross-platform client logic, and type-safe schema synchronization.
 
-#### 🏆 Olympic Report System
-> **An analytics and reporting platform designed for multi-dimensional sports event data.**
-*   Features structured relational schema optimization, multi-role access control pipelines, and real-time medal count aggregation statistics.
+#### 💬 [youju](https://github.com/MeiSiristhebest/youju)
+> **An AI-powered risk analysis assistant that detects loopholes in contracts and chat transcripts.**
+*   Features a React-Vite front-end, Express-TypeScript backend, web scraping handlers, and Gemini/OpenAI API integrations to draft confirmation scripts.
 
-#### 🔨 Distributed Auction System
-> **A high-concurrency real-time bidding platform built on a decoupled architecture.**
-*   Features event-driven bid status updates, pessimistic locking mechanics to prevent race conditions, and automatic auction closure scheduler.
+#### 🔮 [mystic](https://github.com/MeiSiristhebest/mystic)
+> **A Gemini-powered agent application designed and deployed on Google AI Studio.**
+*   Features local prompt context constraints, structured stream API integrations, and AI Studio application ecosystem deployment.
 
 ---
 
