@@ -1,28 +1,35 @@
-name: Generate Snake Contribution Graph
+name: Generate Profile Assets
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 18 * * *" # 每天自动更新
   workflow_dispatch:
 
+# 💡 增加全局环境变量，允许且抑制旧版 Node 废弃所引起的警告
+env:
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      # 💡 升级为 @v4 的最新版，支持更现代的 Node 运行库
+      - name: Checkout
+        uses: actions/checkout@v4.2.2 
 
-      - uses: Platane/snk/svg-only@v3
+      # 1. 自动生成专属暗黑贪吃蛇 SVG
+      - name: Generate Snake Game SVG
+        uses: Platane/snk@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: MeiSiristhebest
           outputs: |
-            github-contribution-grid-snake.svg
             github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - run: |
+      # 2. 自动提交回仓库
+      - name: Commit and Push
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
+          git add github-contribution-grid-snake-dark.svg
           git commit -m "chore: update snake contribution graph [skip ci]" || exit 0
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
