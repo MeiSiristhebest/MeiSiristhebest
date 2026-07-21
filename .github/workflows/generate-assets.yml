@@ -1,0 +1,49 @@
+name: Generate Profile Assets
+
+on:
+  schedule:
+    - cron: "0 18 * * *" # 每天自动更新
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true       # 🚀 强制在 Node 24 运行，消灭 Node 20 警告
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true  # 备用允许
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2 
+
+      # 1. 自动生成专属暗黑贪吃蛇 SVG
+      - name: Generate Snake Game SVG
+        uses: Platane/snk@v3
+        with:
+          github_user_name: MeiSiristhebest
+          outputs: |
+            github-contribution-grid-snake-dark.svg?palette=github-dark
+            github-contribution-grid-snake.svg
+
+      # 2. 调用 lowlighter/metrics 生成全景看板，并设置 output_action 为 none（手动统一推送）
+      - name: Generate GitHub Metrics Infographics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: MeiSiristhebest
+          template: classic
+          base: header, activity, community, repositories, metadata
+          plugin_languages: yes
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          filename: github-metrics.svg
+          output_action: none  # 💡 关键参数：禁止 Metrics 自动提交并清除图片，保留给后续步骤手动统一 commit & push
+
+      # 3. 自动将生成的贪吃蛇与全景看板一同提交回仓库
+      - name: Commit and Push Assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add github-contribution-grid-snake-dark.svg github-contribution-grid-snake.svg github-metrics.svg
+          git commit -m "chore: update profile metrics and snake assets [skip ci]" || exit 0
+          git push
