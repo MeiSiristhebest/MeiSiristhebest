@@ -1,12 +1,12 @@
 <!-- Capsule Render Dynamic Wave Banner -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=220&section=header&text=Nefelibata&fontSize=64&fontColor=ffffff&legend=Backend%20Developer%20%7C%20AI%20Enthusiast&legendStartPx=30&fontAlignY=40&desc=Exploring%20Distributed%20Systems%20%26%20Agentic%20Workflows&descSize=16&descAlignY=62&descColor=7aa2f7" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:1a1b26,100:70a5fd&amp;height=220&amp;section=header&amp;text=Nefelibata&amp;fontSize=64&amp;fontColor=ffffff&amp;legend=Backend%20Developer%20%7C%20AI%20Enthusiast&amp;legendStartPx=30&amp;fontAlignY=40&amp;desc=Exploring%20Distributed%20Systems%20%26%20Agentic%20Workflows&amp;descSize=16&amp;descAlignY=62&amp;descColor=7aa2f7" width="100%" />
 
   <br/>
 
   <!-- One-Line Pitch -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&color=70A5FD&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Focusing+on+High-Concurrency+Backend+Systems;Building+Agentic+Workflows+%26+MCP+Servers;Always+learning%2C+always+coding" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&amp;size=20&amp;duration=3000&amp;color=70A5FD&amp;center=true&amp;vCenter=true&amp;width=700&amp;lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Focusing+on+High-Concurrency+Backend+Systems;Building+Agentic+Workflows+%26+MCP+Servers;Always+learning%2C+always+coding" alt="Typing SVG" />
   </a>
 </div>
 
@@ -26,22 +26,22 @@
 
 <div align="left">
 
-#### 🚀 Core Languages & Backend
+#### 🚀 Core Languages &amp; Backend
 <p>
-  <img src="https://skillicons.dev/icons?i=java,go,python,spring,docker,maven,linux,git&perline=8&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=java,go,python,spring,docker,maven,linux,git&amp;perline=8&amp;theme=dark" />
 </p>
 
-#### 🗄️ Storage, Cache & Infrastructure
+#### 🗄️ Storage, Cache &amp; Infrastructure
 <p>
-  <img src="https://skillicons.dev/icons?i=mysql,postgres,redis,supabase&perline=8&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=mysql,postgres,redis,supabase&amp;perline=8&amp;theme=dark" />
 </p>
 
-#### 🤖 AI Native & Developer Scaffolding
+#### 🤖 AI Native &amp; Developer Scaffolding
 <p>
-  <img src="https://img.shields.io/badge/MCP%20Server-Dev-70a5fd?style=for-the-badge&logo=anthropic&logoColor=white" />
-  <img src="https://img.shields.io/badge/Agentic-Workflows-ff9e64?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vibe%20Coding-SDD%20Paradigm-9ecd6f?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tools-Claude%20Code%20%7C%20Cursor%20%7C%20Trae-bb9af7?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/MCP%20Server-Dev-70a5fd?style=for-the-badge&amp;logo=anthropic&amp;logoColor=white" />
+  <img src="https://img.shields.io/badge/Agentic-Workflows-ff9e64?style=for-the-badge&amp;logo=openai&amp;logoColor=white" />
+  <img src="https://img.shields.io/badge/Vibe%20Coding-SDD%20Paradigm-9ecd6f?style=for-the-badge&amp;logo=visualstudiocode&amp;logoColor=white" />
+  <img src="https://img.shields.io/badge/Tools-Claude%20Code%20%7C%20Cursor%20%7C%20Trae-bb9af7?style=for-the-badge&amp;logo=github&amp;logoColor=white" />
 </p>
 
 </div>
@@ -86,17 +86,17 @@
 
   <!-- GitHub Trophy -->
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight&margin-w=15&column=7" alt="github trophies" width="100%" />
+    <img src="https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&amp;theme=tokyonight&amp;margin-w=15&amp;column=7" alt="github trophies" width="100%" />
   </a>
 
   <br/><br/>
 
-  <!-- Stats & Languages -->
+  <!-- Stats &amp; Languages -->
   <a href="https://github.com/MeiSiristhebest">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=MeiSiristhebest&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="MeiSiristhebest's GitHub Stats" />
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=MeiSiristhebest&amp;show_icons=true&amp;theme=tokyonight&amp;include_all_commits=true&amp;count_private=true&amp;hide_border=true" alt="MeiSiristhebest's GitHub Stats" />
   </a>
   <a href="https://github.com/MeiSiristhebest">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MeiSiristhebest&theme=tokyonight&layout=compact&hide=html,css&hide_border=true" alt="MeiSiristhebest's Top Languages" />
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MeiSiristhebest&amp;theme=tokyonight&amp;layout=compact&amp;hide=html,css&amp;hide_border=true" alt="MeiSiristhebest's Top Languages" />
   </a>
 
 </div>
@@ -106,7 +106,7 @@
 <!-- Activity Graph -->
 <div align="center">
   <a href="https://github.com/MeiSiristhebest">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&bg_color=1a1b26&color=70a5fd&line=70a5fd&point=ff9e64&area=true&hide_border=true" width="100%" alt="Activity Graph" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&amp;bg_color=1a1b26&amp;color=70a5fd&amp;line=70a5fd&amp;point=ff9e64&amp;area=true&amp;hide_border=true" width="100%" alt="Activity Graph" />
   </a>
 </div>
 
