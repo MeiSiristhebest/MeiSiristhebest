@@ -44,6 +44,10 @@ To me, software engineering is not just about solving tickets — it is a form o
 > **A distributed e-commerce system built to explore high-concurrency microservices.**
 *   Features microservice governance, distributed transaction consistency under high pressure, and zero-overselling lock patterns.
 
+#### 🥗 [Recipe Planner App](https://github.com/MeiSiristhebest/recipe-planner-app)
+> **A cross-platform meal planning and sharing assistant built in a high-performance monorepo.**
+*   Features a unified Turborepo workspace, real-time recipe discovery, cross-platform client logic, and type-safe schema synchronization.
+
 ---
 
 ### 📊 Digital Footprint
