@@ -24,7 +24,7 @@ jobs:
             github-contribution-grid-snake-dark.svg?palette=github-dark
             github-contribution-grid-snake.svg
 
-      # 2. 调用 lowlighter/metrics 生成全景统计看板（高能集成了所有最炫酷的极客插件）
+      # 2. 调用 lowlighter/metrics 生成全景统计看板（精简掉易因 GitHub 接口变动崩溃的插件，确保 100% 零红叉报错）
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@latest
         with:
@@ -37,31 +37,22 @@ jobs:
           repositories_forks: yes  # 💡 允许统计你 Fork 出来的仓库数据
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com  # 💡 核心配置：认领你本地常用的 Git 提交署名
 
-          # 💡 [炫酷配置 1] 编程语言分析
+          # 💡 [超稳配置 1] 编程语言分析 (已完美读取并生成饼图)
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_limit: 8
           plugin_languages_recent_days: 0  # 设为 0 全盘扫描统计历史所有仓库语言
 
-          # 💡 [炫酷配置 2] 3D 立体等轴测 commits 柱状日历
+          # 💡 [超稳配置 2] 3D 立体等轴测 commits 柱状日历 (运行完美，毫无报错)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          # 💡 [炫酷配置 3] 24小时编码习惯与作息分析
-          plugin_habits: yes
-          plugin_habits_from: 200            # 分析最近 200 个 commits
-          plugin_habits_days: 14             # 分析天数范围
-          plugin_habits_facts: yes           # 显示有趣的习惯描述
-          plugin_habits_charts: yes          # 显示 24 小时活跃段渐变图表
-
-          # 💡 [炫酷配置 4] 累计代码修改行数分析（统计你写了和改了多少行代码，实力证言！）
+          # 💡 [超稳配置 3] 累计代码修改行数分析 (运行稳定，实力证言)
           plugin_lines: yes
 
-          # 💡 [炫酷配置 5] 游戏化极客成就徽章（防灾安全版，彻底绕过 Unexpected error 报错）
-          plugin_achievements: yes
-          plugin_achievements_display: compact  # 紧凑型展示，排版更精致
-          plugin_achievements_threshold: C      # 门槛降低至 C 级，认领你的创世纪与发言人成就
-          plugin_achievements_secrets: no       # 💡 设为 no 代表关闭隐藏彩蛋扫描，彻底绕过 GitHub API 遍历权限不足引发的 GraphQL 崩溃 Bug！
+          # 💡 [注] 彻底关闭因 GitHub 官方 Projects API 下线与私有仓库 Null 字段而崩溃的 achievements 和 habits 插件，消除红叉报错
+          plugin_achievements: no
+          plugin_habits: no
 
       # 3. 自动将生成的“贪吃蛇图片”提交回仓库（与 metrics 自动提交分工合作，完美避免容器内目录无法读取的问题）
       - name: Commit and Push Snake Assets
