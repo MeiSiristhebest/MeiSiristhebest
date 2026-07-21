@@ -12,7 +12,7 @@
 
 ---
 
-### 🪐 About Nefelibata
+### 💡 About Nefelibata
 
 > **Nefelibata** *(n.)* 
 > *A cloud walker; one who does not obey the conventions of society, literature, or art, but follows their own path.*
@@ -21,9 +21,8 @@ I write code to document thoughts, capture time, and build tiny virtual spaces t
 
 To me, software engineering is not just about solving tickets — it is a form of craftsmanship, a canvas where logic meets intuition.
 
-*   🌌 **Aesthetic Order**: I enjoy finding simplicity within high-entropy systems and designing architectures that feel natural.
-*   🌿 **Local-First & Ephemeral**: Believer in decentralized computing, data sovereignty, and digital archaeology.
-*   ☕ **Beyond the Console**: Lost in street photography, game mechanics, philosophy, and urban exploration.
+*   🌌 **Aesthetic & Order**: Passionate about minimalist design, architectural neatness, and finding order within high-entropy systems.
+*   ☕ **Beyond the Console**: I spend my free time exploring street photography, game mechanics, philosophy, and urban history.
 
 ---
 
@@ -35,15 +34,15 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ---
 
-### 🚀 Creative Sandboxes
+### 🚀 Projects
 
 #### 🎙️ [TimeLog](https://github.com/MeiSiristhebest/TimeLog)
-> **A temporal container dedicated to preserving human memories.**
-*   A local-first experiment designed to listen, transcribe, and index personal logs, keeping digital sovereignty entirely in the user's hands.
+> **A local-first voice diary that transcribes and indexes your thoughts.**
+*   Features continuous streaming voice interactions, real-time voice activity detection, and sub-millisecond local caching.
 
 #### 🛍️ [Ningxiangshop](https://github.com/MeiSiristhebest/ningxiangshop)
-> **A sandbox exploring system scale, concurrency, and chaos.**
-*   An experimental engine written to study how distributed nodes behave under high-entropy spikes, seeking graceful state transitions in a chaotic environment.
+> **A distributed e-commerce system built to explore high-concurrency microservices.**
+*   Features microservice governance, distributed transaction consistency under high pressure, and zero-overselling lock patterns.
 
 ---
 
