@@ -6,7 +6,7 @@
 
   <!-- Dynamic Typing Title -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&color=70A5FD&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Crafting+backend+systems+as+digital+art;Exploring+the+frontiers+of+AI+Agents+%26+MCP+Servers;Always+coding%2C+always+exploring" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&color=70A5FD&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Crafting+software+as+digital+art;Always+coding%2C+always+exploring" alt="Typing SVG" />
   </a>
 </div>
 
@@ -14,36 +14,33 @@
 
 ### 💡 About Nefelibata
 
-*“An absurd idea is often the seed of hope.”* 
+*“An absurd idea is often the seed of hope.”*
 
-I am a developer who views code as a tool to bridge the physical world with digital memory. I spend my time exploring distributed architectures, low-latency audio pipelines, and agentic workflows. 
+I am an independent developer exploring the boundaries of distributed networks, interactive media, and intelligent agents. I view coding not just as engineering, but as a medium for crafting digital ecosystems.
 
-- 💻 **Distributed Backend**: Fascinated by high-concurrency aesthetics, transactional consistency, and key-value state machines.
-- 🎙️ **Voice & Memory**: Building tools to preserve human logs using voice activity detection (VAD) and local-first memory structures.
-- 🤖 **Agentic Systems**: Developing Model Context Protocol (MCP) servers and runtime scaffolding to empower autonomous agents.
-- 🎨 **Interests**: Apart from hacking code, I am deeply into **digital archaeology** (preserving temporal life logs), **minimalist design**, and finding order within high-entropy systems.
+- 🛠️ **Craftsmanship**: I build across the entire stack. From low-level system design and database engines to intuitive user interfaces and model routing.
+- 🎨 **Philosophy**: Passionate about architectural minimalist aesthetics, local-first data preservation, and digital archaeology.
+- 🌌 **Interests**: Beyond terminal screens, I spend time exploring digital memory logs, photography, game mechanics, and complex systems.
 
 ---
 
-### 💻 Tech Matrix
+### 💻 Technical Palette
 
 <div align="left">
-  <img src="https://skillicons.dev/icons?i=java,go,python,spring,docker,mysql,postgres,redis&perline=8&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=java,go,python,spring,docker,mysql,postgres,redis,react,threejs,html,css&perline=8&theme=dark" />
 </div>
 
 ---
 
-### 🚀 Creative Projects
+### 🚀 Projects
 
 #### 🎙️ [TimeLog](https://github.com/MeiSiristhebest/TimeLog)
 > **A voice-driven assistant dedicated to capturing life memories.**
-*   Built with React Native, Silero VAD, and Deepgram.
-*   Enables continuous 30-minute voice interaction stream with local-first sub-millisecond MMKV indexing.
+*   Explores continuous streaming interactions, real-time voice activity detection, and sub-millisecond local indexing.
 
 #### 🛍️ [Ningxiangshop](https://github.com/MeiSiristhebest/ningxiangshop)
 > **An experimental e-commerce engine testing high-concurrency microservices.**
-*   Built with Spring Cloud, Nacos, Seata, and Redisson.
-*   Achieved QPS 5000+ transactional throughput with zero-overselling safety patterns.
+*   Explores distributed consensus, data synchronization safety under high-entropy spikes, and transaction guarantees.
 
 ---
 
