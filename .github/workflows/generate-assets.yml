@@ -2,7 +2,7 @@ name: Generate Profile Assets
 
 on:
   schedule:
-    - cron: "0 2,14 * * *"  # 💡 自动跑：每天在北京时间上午 10:00 和 晚上 22:00 定时自动运行，全自动更新
+    - cron: "0 2,14 * * *"  # 💡 自动跑：每天在北京时间上午 10:00 和 晚上 22:00 定时自动运行
   push:
     branches:
       - main
@@ -45,6 +45,8 @@ jobs:
           curl -sLo github-profile-trophy.svg "https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight"
 
       # 4. 调用 lowlighter/metrics 生成全景语言与行数统计看板
+      # 💡 核心设计：因为 metrics 插件在配置 committer_token 后，会把工作区之前生成的所有修改（蛇、3D城堡、本地大奖杯）
+      #    全量自动 commit 并 push 回远程，因此不需要任何额外的 commit 步骤，完美避开 Git 冲突！
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@master
         with:
@@ -53,7 +55,7 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           filename: github-metrics.svg
-          committer_token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_TOKEN }}  # 让 metrics 自动全量推送所有工作区修改的静态资产
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
 
@@ -67,13 +69,3 @@ jobs:
           plugin_achievements: no
           plugin_habits: no
           plugin_isocalendar: no
-
-      # 5. 自动将“贪吃蛇图片”、“3D日历”以及“本地大奖杯”一同拉取变基提交回仓库
-      - name: Commit and Push Assets
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add github-contribution-grid-snake-dark.svg github-contribution-grid-snake.svg profile-3d-contrib/ github-profile-trophy.svg
-          git commit -m "chore: update snake, 3d calendar and trophy assets [skip ci]" || exit 0
-          git pull --rebase origin main
-          git push origin main
