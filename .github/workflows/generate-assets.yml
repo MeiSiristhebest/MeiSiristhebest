@@ -24,9 +24,9 @@ jobs:
             github-contribution-grid-snake-dark.svg?palette=github-dark
             github-contribution-grid-snake.svg
 
-      # 2. 调用 lowlighter/metrics 生成全景统计看板（精简掉易因 GitHub 接口变动崩溃的插件，确保 100% 零红叉报错）
+      # 2. 调用 lowlighter/metrics 生成全景统计看板（升级到 @master 开发分支，彻底避开官方已弃用的 Projects GraphQL API 崩溃 Bug）
       - name: Generate GitHub Metrics Infographics
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@master  # 💡 黄金修改：换用 @master 活跃开发分支，直接继承官方社区已合入的 API 兼容性 Bug-Fix 修复！
         with:
           token: ${{ secrets.METRICS_TOKEN }}  # 💡 使用包含 repo 与 user 读取权限的 Personal Access Token
           user: MeiSiristhebest
@@ -37,22 +37,31 @@ jobs:
           repositories_forks: yes  # 💡 允许统计你 Fork 出来的仓库数据
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com  # 💡 核心配置：认领你本地常用的 Git 提交署名
 
-          # 💡 [超稳配置 1] 编程语言分析 (已完美读取并生成饼图)
+          # 💡 [极客配置 1] 编程语言分析
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_limit: 8
           plugin_languages_recent_days: 0  # 设为 0 全盘扫描统计历史所有仓库语言
 
-          # 💡 [超稳配置 2] 3D 立体等轴测 commits 柱状日历 (运行完美，毫无报错)
+          # 💡 [极客配置 2] 3D 立体等轴测 commits 柱状日历
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          # 💡 [超稳配置 3] 累计代码修改行数分析 (运行稳定，实力证言)
+          # 💡 [极客配置 3] 累计代码修改行数分析
           plugin_lines: yes
 
-          # 💡 [注] 彻底关闭因 GitHub 官方 Projects API 下线与私有仓库 Null 字段而崩溃的 achievements 和 habits 插件，消除红叉报错
-          plugin_achievements: no
-          plugin_habits: no
+          # 💡 [极客配置 4] 游戏化极客成就徽章（@master 下已完美修复，大摇大摆拿回来！）
+          plugin_achievements: yes
+          plugin_achievements_display: detailed  # 详细展开，让创世纪和发言人勋章以最精美方式亮出！
+          plugin_achievements_threshold: C      # C 级大众普适起步，不遗漏任何成果
+          plugin_achievements_secrets: yes       # 开启隐藏彩蛋勋章，@master 分支已支持安全抓取
+
+          # 💡 [极客配置 5] 24小时编码习惯与作息分析（@master 下已修复私有仓 null 报错）
+          plugin_habits: yes
+          plugin_habits_from: 200            # 分析最近 200 个 commits
+          plugin_habits_days: 14             # 分析天数范围
+          plugin_habits_facts: yes           # 显示有趣的习惯描述
+          plugin_habits_charts: yes          # 显示 24 小时活跃段渐变图表
 
       # 3. 自动将生成的“贪吃蛇图片”提交回仓库（与 metrics 自动提交分工合作，完美避免容器内目录无法读取的问题）
       - name: Commit and Push Snake Assets
