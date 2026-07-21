@@ -48,6 +48,14 @@ To me, software engineering is not just about solving tickets — it is a form o
 > **A cross-platform meal planning and sharing assistant built in a high-performance monorepo.**
 *   Features a unified Turborepo workspace, real-time recipe discovery, cross-platform client logic, and type-safe schema synchronization.
 
+#### 🏆 Olympic Report System
+> **An analytics and reporting platform designed for multi-dimensional sports event data.**
+*   Features structured relational schema optimization, multi-role access control pipelines, and real-time medal count aggregation statistics.
+
+#### 🔨 Distributed Auction System
+> **A high-concurrency real-time bidding platform built on a decoupled architecture.**
+*   Features event-driven bid status updates, pessimistic locking mechanics to prevent race conditions, and automatic auction closure scheduler.
+
 ---
 
 ### 📊 Digital Footprint
