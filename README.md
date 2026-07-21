@@ -1,108 +1,65 @@
-<!-- Header Hero Banner (极度优雅版：高度拉伸、主标题字号精简、垂直间距强力拉开) -->
+<!-- Header Wave Banner -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=260&section=header&text=Nefelibata&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Exploring%20Distributed%20Systems%20and%20Agentic%20Workflows&descSize=15&descAlignY=58" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=260&section=header&text=Nefelibata&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Building%20systems%20that%20listen%2C%20think%2C%20and%20remember.&descSize=15&descAlignY=58" width="100%" />
 
   <br/>
 
-  <!-- One-Line Pitch -->
+  <!-- Dynamic Typing Title -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&color=70A5FD&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Focusing+on+High-Concurrency+Backend+Systems;Building+Agentic+Workflows+%26+MCP+Servers;Always+learning%2C+always+coding" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&color=70A5FD&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Crafting+backend+systems+as+digital+art;Exploring+the+frontiers+of+AI+Agents+%26+MCP+Servers;Always+coding%2C+always+exploring" alt="Typing SVG" />
   </a>
 </div>
 
 ---
 
-### 💡 About Me
+### 💡 About Nefelibata
 
-- 🪐 **A Developer**: 喜欢折腾高性能后端架构与 AI 原生应用，探索大模型编排。
-- ⚡ **Backend Core**: 熟练掌握微服务治理（Nacos / Seata / Sentinel）与高并发锁/缓存实践（Redisson Watchdog / SETNX / Lua 脚本）。
-- 🤖 **AI Exploration**: 具备 AI Agent 架构研发实践，熟练掌握 MCP Server 开发、Context 管道控制与 Harness/Loop Engineering 范式。
-- 🛠️ **AI Collaboration**: 深度应用 Claude Code、Cursor 与 Trae，全流程实践 SDD（规范驱动开发）与 Vibe Coding 模式。
-- 🎯 **Motto**: *"If at first the idea is not absurd, then there will be no hope for it."*
+*“An absurd idea is often the seed of hope.”* 
+
+I am a developer who views code as a tool to bridge the physical world with digital memory. I spend my time exploring distributed architectures, low-latency audio pipelines, and agentic workflows. 
+
+- 💻 **Distributed Backend**: Fascinated by high-concurrency aesthetics, transactional consistency, and key-value state machines.
+- 🎙️ **Voice & Memory**: Building tools to preserve human logs using voice activity detection (VAD) and local-first memory structures.
+- 🤖 **Agentic Systems**: Developing Model Context Protocol (MCP) servers and runtime scaffolding to empower autonomous agents.
+- 🎨 **Interests**: Apart from hacking code, I am deeply into **digital archaeology** (preserving temporal life logs), **minimalist design**, and finding order within high-entropy systems.
 
 ---
 
-### 💻 Technical Arsenal (技术栈矩阵)
+### 💻 Tech Matrix
 
 <div align="left">
-
-#### 🚀 Core Languages & Backend
-<p>
-  <img src="https://skillicons.dev/icons?i=java,go,python,spring,docker,maven,linux,git&perline=8&theme=dark" />
-</p>
-
-#### 🗄️ Storage, Cache & Infrastructure
-<p>
-  <img src="https://skillicons.dev/icons?i=mysql,postgres,redis,supabase&perline=8&theme=dark" />
-</p>
-
-#### 🤖 AI Native & Developer Scaffolding
-<p>
-  <img src="https://img.shields.io/badge/MCP%20Server-Dev-70a5fd?style=for-the-badge&logo=anthropic&logoColor=white" />
-  <img src="https://img.shields.io/badge/Agentic-Workflows-ff9e64?style=for-the-badge&logo=openai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vibe%20Coding-SDD%20Paradigm-9ecd6f?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tools-Claude%20Code%20%7C%20Cursor%20%7C%20Trae-bb9af7?style=for-the-badge&logo=github&logoColor=white" />
-</p>
-
+  <img src="https://skillicons.dev/icons?i=java,go,python,spring,docker,mysql,postgres,redis&perline=8&theme=dark" />
 </div>
 
 ---
 
-### 🚀 Featured Projects
+### 🚀 Creative Projects
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">🎙️ TimeLog</h3>
-      <p align="center"><b>语音驱动生命故事记录系统</b></p>
-      <ul>
-        <li><b>Architecture</b>: React Native + Silero VAD + Deepgram STT/TTS + MMKV + Agentic Scaffolding.</li>
-        <li><b>Key Metrics</b>: 支持连续 <b>30 分钟</b>无缝语音流交互与断线恢复；本地实现 <b>100+</b> 故事日志毫秒级搜索与检索。</li>
-      </ul>
-      <p align="center">
-        <a href="https://github.com/MeiSiristhebest/TimeLog"><b>🔗 View Repository</b></a>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center">🛍️ Ningxiangshop</h3>
-      <p align="center"><b>高并发微服务分布式商城系统</b></p>
-      <ul>
-        <li><b>Architecture</b>: Spring Cloud + Nacos + Seata + Sentinel + Redisson + MySQL/Redis.</li>
-        <li><b>Key Metrics</b>: 压测 QPS 达 <b>5000+</b>；分布式锁保持高一致性。</li>
-        <li><b>Highlights</b>: 基于 Redisson Watchdog 与 Lua 脚本实现零超卖；基于 Seata AT 模式完成分布式事务最终一致性。</li>
-      </ul>
-      <p align="center">
-        <a href="https://github.com/MeiSiristhebest/ningxiangshop"><b>🔗 View Repository</b></a>
-      </p>
-    </td>
-  </tr>
-</table>
+#### 🎙️ [TimeLog](https://github.com/MeiSiristhebest/TimeLog)
+> **A voice-driven assistant dedicated to capturing life memories.**
+*   Built with React Native, Silero VAD, and Deepgram.
+*   Enables continuous 30-minute voice interaction stream with local-first sub-millisecond MMKV indexing.
+
+#### 🛍️ [Ningxiangshop](https://github.com/MeiSiristhebest/ningxiangshop)
+> **An experimental e-commerce engine testing high-concurrency microservices.**
+*   Built with Spring Cloud, Nacos, Seata, and Redisson.
+*   Achieved QPS 5000+ transactional throughput with zero-overselling safety patterns.
 
 ---
 
-### 📊 Verified Real-time Infographics (全景数据看板 - 由 Action 自动生成)
+### 📊 Digital Footprint
 
 <div align="center">
-
-  <!-- 💡 静态生成的 metrics 图片 -->
   <img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
-
 </div>
 
 <br/>
 
-<!-- Real Snake Game Grid (Generated via GitHub Actions) -->
 <div align="center">
-  <h4>🐍 Real-time Commit Snake Graph</h4>
+  <h4>🐍 Code Journey (Contribution Snake)</h4>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./github-contribution-grid-snake.svg" />
     <img alt="github-snake" src="./github-contribution-grid-snake.svg" width="100%" />
   </picture>
-</div>
-
----
-
-<div align="center">
-  <p><i>"If at first the idea is not absurd, then there will be no hope for it." — Albert Einstein</i></p>
 </div>
