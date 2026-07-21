@@ -1,6 +1,6 @@
-<!-- Header Hero Banner -->
+<!-- Header Hero Banner (优化高度与字体比例，增加透气呼吸感，消除重叠) -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=220&section=header&text=Nefelibata&fontSize=64&fontColor=ffffff&desc=Exploring%20Distributed%20Systems%20and%20Agentic%20Workflows&descSize=16&descAlignY=62" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=240&section=header&text=Nefelibata&fontSize=52&fontColor=ffffff&desc=Exploring%20Distributed%20Systems%20and%20Agentic%20Workflows&descSize=16&descAlignY=62" width="100%" />
 
   <br/>
 
@@ -80,34 +80,13 @@
 
 ---
 
-### 📈 Verified Real-time Analytics (全真实时数据看板)
+### 📊 Verified Real-time Infographics (全景数据看板 - 由 Action 自动生成)
 
 <div align="center">
 
-  <!-- GitHub Trophy -->
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight&margin-w=15&column=7" alt="github trophies" width="100%" />
-  </a>
+  <!-- 💡 摒弃极易 502 裂开的外部 Vercel API，采用低门槛、更炫酷且 100% 稳定的 Github Metrics 大图 -->
+  <img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
 
-  <br/><br/>
-
-  <!-- Stats & Languages -->
-  <a href="https://github.com/MeiSiristhebest">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=MeiSiristhebest&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="MeiSiristhebest's GitHub Stats" />
-  </a>
-  <a href="https://github.com/MeiSiristhebest">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MeiSiristhebest&theme=tokyonight&layout=compact&hide=html,css&hide_border=true" alt="MeiSiristhebest's Top Languages" />
-  </a>
-
-</div>
-
-<br/>
-
-<!-- Activity Graph -->
-<div align="center">
-  <a href="https://github.com/MeiSiristhebest">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&bg_color=1a1b26&color=70a5fd&line=70a5fd&point=ff9e64&area=true&hide_border=true" width="100%" alt="Activity Graph" />
-  </a>
 </div>
 
 <br/>
