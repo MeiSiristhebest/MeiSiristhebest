@@ -2,8 +2,16 @@ name: Generate Profile Assets
 
 on:
   schedule:
-    - cron: "0 18 * * *" # 每天自动更新
-  workflow_dispatch:
+    - cron: "0 2,14 * * *"  # 💡 自动跑：每天在北京时间上午 10:00 和 晚上 22:00 定时自动运行，全自动更新
+  push:
+    branches:
+      - main
+    paths-ignore:           # 💡 避开死循环：忽略工作流自身 push 回仓库的静态图片，防止无限循环触发！
+      - "github-contribution-grid-snake*"
+      - "profile-3d-contrib/**"
+      - "github-profile-trophy.svg"
+      - "github-metrics.svg"
+  workflow_dispatch:        # 💡 保留手动按钮
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true       # 🚀 强制在 Node 24 运行，消灭 Node 20 警告
