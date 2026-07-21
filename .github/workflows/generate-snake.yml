@@ -5,15 +5,16 @@ on:
     - cron: "0 18 * * *" # 每天自动更新
   workflow_dispatch:
 
-# 💡 增加全局环境变量，允许且抑制旧版 Node 废弃所引起的警告
+# 💡 全局环境变量配置
 env:
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true       # 🚀 强制让 JavaScript Actions 在 Node 24 运行，消灭 Node 20 弃用警告！
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true  # 备用宽松安全校验
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 💡 升级为 @v4 的最新版，支持更现代的 Node 运行库
+      # 💡 升级为最新的 checkout action
       - name: Checkout
         uses: actions/checkout@v4.2.2 
 
@@ -24,12 +25,13 @@ jobs:
           github_user_name: MeiSiristhebest
           outputs: |
             github-contribution-grid-snake-dark.svg?palette=github-dark
+            github-contribution-grid-snake.svg
 
       # 2. 自动提交回仓库
       - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add github-contribution-grid-snake-dark.svg
+          git add github-contribution-grid-snake-dark.svg github-contribution-grid-snake.svg
           git commit -m "chore: update snake contribution graph [skip ci]" || exit 0
           git push
