@@ -24,46 +24,48 @@ jobs:
             github-contribution-grid-snake-dark.svg?palette=github-dark
             github-contribution-grid-snake.svg
 
-      # 2. [高阶替代路线] 自动生成炫酷无比的 3D 动态立体水晶城堡贡献图（100%稳定零报错，视觉效果秒杀 metrics 默认版）
+      # 2. [高阶替代路线 B] 自动生成 3D 动态立体水晶城堡贡献图
       - name: Generate 3D Contribution Calendar
         uses: yoshi389111/github-profile-3d-contrib@0.7.2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 使用默认 token 即可生成
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: MeiSiristhebest
 
-      # 3. 调用 lowlighter/metrics 生成全景语言与行数统计看板（移除了由于 GitHub API 废弃和空 commits 报错的 achievements 与 habits 插件）
+      # 3. [高阶替代路线 A] 物理拉取极客大奖杯并保存到本地（彻底解决 Vercel 静态代理超时 Camo 缓存 502 裂图的世界性 Bug）
+      - name: Fetch and Save GitHub Profile Trophy
+        run: |
+          curl -sLo github-profile-trophy.svg "https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight"
+
+      # 4. 调用 lowlighter/metrics 生成全景语言与行数统计看板
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@master
         with:
-          token: ${{ secrets.METRICS_TOKEN }}  # 使用包含 repo 与 user 读取权限 of Personal Access Token
+          token: ${{ secrets.METRICS_TOKEN }}
           user: MeiSiristhebest
           template: classic
           base: header, activity, community, repositories, metadata
           filename: github-metrics.svg
-          committer_token: ${{ secrets.METRICS_TOKEN }}  # 让 metrics 自动推送大图
-          repositories_forks: yes  # 允许统计你 Fork 出来的仓库数据
-          commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com  # 核心配置：认领你本地常用的 Git 提交署名
+          committer_token: ${{ secrets.METRICS_TOKEN }}
+          repositories_forks: yes
+          commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
 
-          # 💡 [极客配置 1] 编程语言分析 (已完美运行，认领 32 个仓库所有语言)
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_limit: 8
-          plugin_languages_recent_days: 0  # 设为 0 全盘扫描统计历史所有仓库语言
+          plugin_languages_recent_days: 0
 
-          # 💡 [极客配置 2] 累计代码修改行数 analysis
           plugin_lines: yes
 
-          # 💡 彻底关闭由于 GitHub Projects 废弃 API 和私有仓 commits 为空报错的 achievements 与 habits 插件
           plugin_achievements: no
           plugin_habits: no
-          plugin_isocalendar: no  # 3D 立体图改由上面更专业的 3D 水晶日历插件生成并保存在 profile-3d-contrib/ 中
+          plugin_isocalendar: no
 
-      # 4. 自动将生成的“贪吃蛇图片”与“3D立体水晶日历”拉取合并并提交回仓库
-      - name: Commit and Push Snake and 3D Assets
+      # 5. 自动将“贪吃蛇图片”、“3D日历”以及“本地大奖杯”一同拉取变基提交回仓库
+      - name: Commit and Push Assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add github-contribution-grid-snake-dark.svg github-contribution-grid-snake.svg profile-3d-contrib/
-          git commit -m "chore: update snake and 3d calendar assets [skip ci]" || exit 0
-          git pull --rebase origin main  # 💡 核心修复：在 push 之前先拉取并变基远程（metrics 刚才自动提交的那次修改），完美防冲突！
+          git add github-contribution-grid-snake-dark.svg github-contribution-grid-snake.svg profile-3d-contrib/ github-profile-trophy.svg
+          git commit -m "chore: update snake, 3d calendar and trophy assets [skip ci]" || exit 0
+          git pull --rebase origin main
           git push origin main
