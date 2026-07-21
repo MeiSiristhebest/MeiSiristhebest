@@ -73,10 +73,10 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 由 yoshi389111 生成的 3D 立体水晶城堡贡献图 -->
+<!-- 💡 [高能调优] 换用无冗余饼图与雷达图遮挡、专为暗黑模式定制且永不溢出截断的 3D 水晶立体城堡夜间视角图 -->
 <div align="center">
   <h4>🏰 3D Crystal Calendar</h4>
-  <img src="./profile-3d-contrib/profile-green-animate.svg" alt="3D Contribution Calendar" width="100%" />
+  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Calendar" width="100%" />
 </div>
 
 <br/>
