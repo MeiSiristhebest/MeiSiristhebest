@@ -1,6 +1,6 @@
-<!-- Header Hero Banner (优化高度与字体比例，增加透气呼吸感，消除重叠) -->
+<!-- Header Hero Banner (极度优雅版：高度拉伸、主标题字号精简、垂直间距强力拉开) -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=240&section=header&text=Nefelibata&fontSize=52&fontColor=ffffff&desc=Exploring%20Distributed%20Systems%20and%20Agentic%20Workflows&descSize=16&descAlignY=62" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=260&section=header&text=Nefelibata&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Exploring%20Distributed%20Systems%20and%20Agentic%20Workflows&descSize=15&descAlignY=58" width="100%" />
 
   <br/>
 
@@ -84,7 +84,7 @@
 
 <div align="center">
 
-  <!-- 💡 摒弃极易 502 裂开的外部 Vercel API，采用低门槛、更炫酷且 100% 稳定的 Github Metrics 大图 -->
+  <!-- 💡 静态生成的 metrics 图片 -->
   <img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
 
 </div>
