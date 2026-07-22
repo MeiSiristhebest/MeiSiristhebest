@@ -69,21 +69,33 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 全景统计看板（含累计 1900 万行代码修改量 & 近期活动动态时间线） -->
-<div align="center">
-  <img src="./github-metrics.svg" alt="GitHub Metrics and Activity Timeline" width="100%" />
-</div>
+---
 
-<br/><br/>
+<br/>
 
-<!-- 💡 3D 水晶日历城堡（夜间视角，零遮挡零截断） -->
+<!-- 💡 3D 水晶日历城堡（暗黑纯净模式，零遮挡零截断） -->
 <div align="center">
   <h4>🏰 3D Crystal Calendar</h4>
   <br/>
   <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Calendar" width="90%" />
 </div>
 
-<br/><br/>
+<br/>
+
+---
+
+<br/>
+
+<!-- 💡 全景统计看板（0 Error 模式，包含 1900 万行代码修改量 & 多语言饼图） -->
+<div align="center">
+  <img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
+</div>
+
+<br/>
+
+---
+
+<br/>
 
 <!-- 💡 贪吃蛇贡献图 -->
 <div align="center">
