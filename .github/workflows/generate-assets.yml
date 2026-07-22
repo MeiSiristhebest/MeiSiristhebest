@@ -44,7 +44,7 @@ jobs:
         run: |
           curl -sLo github-profile-trophy.svg "https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight" || true
 
-      # 4. 调用 lowlighter/metrics 生成全景看板（0 error 绝对纯净模式：保持语言占比与 1900 万行代码量）
+      # 4. 调用 lowlighter/metrics 生成全景看板（彻底根除 Puppeteer 动画计算高度截断 Bug）
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@master
         with:
@@ -57,16 +57,21 @@ jobs:
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
 
+          # 💡 [关键修复 1] 禁用无头浏览器动画裁切，确保 Lines (1900万行代码) 面板与基础数据 100% 完全展开，绝不截断！
+          config_animations: no
+          config_padding: 0, 12%
+          display: large
+
           # 💡 [超稳核心 1] 编程语言分析
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_limit: 8
           plugin_languages_recent_days: 0
 
-          # 💡 [超稳核心 2] 累计 1900 万行代码修改量分析 (已验证 100% 成功生成)
+          # 💡 [超稳核心 2] 累计 1900 万行代码修改量分析
           plugin_lines: yes
 
-          # 💡 彻底关闭会向图片写入红字 Unexpected error 的子插件，确保图片 100% 无错纯净
+          # 💡 彻底关闭子插件，保证 0 Error 无错生成
           plugin_activity: no
           plugin_achievements: no
           plugin_habits: no
