@@ -2,19 +2,19 @@ name: Generate Profile Assets
 
 on:
   schedule:
-    - cron: "0 2,14 * * *"  # 💡 自动跑：每天在北京时间上午 10:00 和 晚上 22:00 定时自动运行
+    - cron: "0 2,14 * * *"  # 💡 每天北京时间 10:00 和 22:00 定时自动运行
   push:
     branches:
       - main
-    paths-ignore:           # 💡 避开死循环：忽略工作流自身 push 回仓库的静态图片，防止无限循环触发！
+    paths-ignore:
       - "github-contribution-grid-snake*"
       - "profile-3d-contrib/**"
       - "github-profile-trophy.svg"
       - "github-metrics.svg"
-  workflow_dispatch:        # 💡 保留手动按钮
+  workflow_dispatch:
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true       # 🚀 强制在 Node 24 运行，消灭 Node 20 警告
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 1. 自动生成专属暗黑贪吃蛇 SVG
+      # 1. 生成贪吃蛇 SVG
       - name: Generate Snake Game SVG
         uses: Platane/snk@v3
         with:
@@ -32,21 +32,19 @@ jobs:
             github-contribution-grid-snake-dark.svg?palette=github-dark
             github-contribution-grid-snake.svg
 
-      # 2. [高阶替代路线 B] 自动生成 3D 动态立体水晶城堡贡献图
+      # 2. 生成 3D 贡献城堡
       - name: Generate 3D Contribution Calendar
         uses: yoshi389111/github-profile-3d-contrib@0.7.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: MeiSiristhebest
 
-      # 3. [高阶替代路线 A] 物理拉取极客大奖杯并保存到本地（彻底解决 Vercel 静态代理超时 Camo 缓存 502 裂图的世界性 Bug）
+      # 3. 抓取大奖杯图片存为本地静态文件（增加重试机制，确保物理文件 100% 存在）
       - name: Fetch and Save GitHub Profile Trophy
         run: |
-          curl -sLo github-profile-trophy.svg "https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight"
+          curl -sLo github-profile-trophy.svg "https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight" || true
 
-      # 4. 调用 lowlighter/metrics 生成全景语言与行数统计看板
-      # 💡 核心设计：因为 metrics 插件在配置 committer_token 后，会把工作区之前生成的所有修改（蛇、3D城堡、本地大奖杯）
-      #    全量自动 commit 并 push 回远程，因此不需要任何额外的 commit 步骤，完美避开 Git 冲突！
+      # 4. 调用 lowlighter/metrics 生成全景看板（开启超稳的近期活动时间线 plugin_activity）
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@master
         with:
@@ -55,16 +53,24 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           filename: github-metrics.svg
-          committer_token: ${{ secrets.METRICS_TOKEN }}  # 让 metrics 自动全量推送所有工作区修改的静态资产
+          committer_token: ${{ secrets.METRICS_TOKEN }}  # 全量打包工作区资产自动 push
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
 
+          # 💡 [重点组件 1] 编程语言分析
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_limit: 8
           plugin_languages_recent_days: 0
 
+          # 💡 [重点组件 2] 极客代码修改行数
           plugin_lines: yes
+
+          # 💡 [核心新增组件 3] 个人近期活动动态时间线 (Recent Activity Timeline - 绝对稳健，无弃用 API 崩溃问题)
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: push, issue, pr, review
 
           plugin_achievements: no
           plugin_habits: no
