@@ -44,7 +44,7 @@ jobs:
         run: |
           curl -sLo github-profile-trophy.svg -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight" || true
 
-      # 4. 调用 lowlighter/metrics 生成全景看板（放大底部 padding 至 16%，彻底根除 Diff history 45度倾斜日期月份文本遮挡）
+      # 4. 调用 lowlighter/metrics 生成全景看板（移除失衡且带字母裁切Bug的Diff history，保留最工整震撼的1900万行代码量与代表作排行榜）
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@master
         with:
@@ -57,10 +57,9 @@ jobs:
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
 
-          # 💡 [关键修复] 给 Diff History 倾斜日期月份预留充足的 16% 自适应底部 Padding，彻底绝灭遮挡
           config_metadata: no
           config_animations: no
-          config_padding: 0, 16%
+          config_padding: 0, 8%
 
           # 💡 [超稳核心 1] 编程语言分析
           plugin_languages: yes
@@ -68,9 +67,9 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_recent_days: 0
 
-          # 💡 [关键配置 2] 强制将累计 1900 万行代码修改量与旗舰项目贡献榜印在 SVG 面板上
+          # 💡 [关键优化] 移除失衡的 history 折线图，完美保留 1900 万行代码总量卡片与四大代表作贡献榜
           plugin_lines: yes
-          plugin_lines_sections: base, repositories, history
+          plugin_lines_sections: base, repositories
 
           # 💡 彻底关闭会报Unexpected error的子插件
           plugin_activity: no
