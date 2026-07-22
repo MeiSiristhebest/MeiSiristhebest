@@ -9,12 +9,10 @@
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&color=70A5FD&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Lost+in+the+terminal%2C+searching+for+digital+poetry;Always+coding%2C+always+exploring" alt="Typing SVG" />
   </a>
 
-  <br/>
+  <br/><br/>
 
-  <!-- 📬 1. 极客联系通道 (无蓝色下划线) -->
-  <img src="https://img.shields.io/badge/Email-mtx1534572236%40outlook.com-70a5fd?style=flat-square&logo=microsoftoutlook&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-Nefelibata-181717?style=flat-square&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/GPG_Key-Verified-00b4d8?style=flat-square&logo=gnupg&logoColor=white" />
+  <!-- 📬 1. 极客可点击 Channel 标签 (利用包含 style 防下划线 Bug) -->
+  <a href="mailto:mtx1534572236@outlook.com" style="text-decoration:none;"><img src="https://img.shields.io/badge/Email-mtx1534572236%40outlook.com-70a5fd?style=flat-square&logo=microsoftoutlook&logoColor=white" /></a>&nbsp;<a href="https://github.com/MeiSiristhebest" style="text-decoration:none;"><img src="https://img.shields.io/badge/GitHub-Nefelibata-181717?style=flat-square&logo=github&logoColor=white" /></a>&nbsp;<img src="https://img.shields.io/badge/GPG_Key-Verified-00b4d8?style=flat-square&logo=gnupg&logoColor=white" />
 </div>
 
 ---
@@ -33,40 +31,49 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ---
 
-### 💻 Technical Palette
+### 💻 Technical Spectrum
 
-<!-- 恢复高质感矢量 Skillicons 图标墙 -->
+<!-- 融合方案：使用直观的 Skillicons 图标墙，但按领域结构化多行呈现 -->
 <div align="left">
-  <img src="https://skillicons.dev/icons?i=java,go,python,spring,docker,mysql,postgres,redis,react,threejs,html,css&perline=8&theme=dark" />
+  <!-- Languages & Core Frameworks -->
+  <img src="https://skillicons.dev/icons?i=java,go,python,spring,react,vue,threejs,html,css&perline=9&theme=dark" />
+  <br/><br/>
+  <!-- Infra, Cloud & Developer Tooling -->
+  <img src="https://skillicons.dev/icons?i=docker,mysql,postgres,redis,linux,git,githubactions,powershell&perline=8&theme=dark" />
 </div>
 
 ---
 
-### 🚀 Projects
+### 🚀 Featured Projects
 
 #### 🎙️ [TimeLog](https://github.com/MeiSiristhebest/TimeLog)
 > **A local-first voice diary that transcribes and indexes your thoughts.**
-*   Features continuous streaming voice interactions, real-time voice activity detection, and sub-millisecond local caching.
+*   **Tech Stack**: `Python` · `Silero VAD` · `Deepgram STT/TTS` · `MMKV`
+*   **Key Highlights**: Continuous **30-min streaming voice interaction**, **100+ local story logs**, sub-millisecond local caching latency.
 
 #### 🛍️ [Ningxiangshop](https://github.com/MeiSiristhebest/ningxiangshop)
 > **A distributed e-commerce system built to explore high-concurrency microservices.**
-*   Features microservice governance, distributed transaction consistency under high pressure, and zero-overselling lock patterns.
+*   **Tech Stack**: `Java` · `Spring Cloud` · `Nacos` · `Seata` · `Sentinel` · `Redisson`
+*   **Key Highlights**: **QPS 5000+** stress-tested, **Zero-overselling** distributed lock patterns, 3-tier Sentinel fallback protection.
 
 #### 🥗 [Recipe Planner App](https://github.com/MeiSiristhebest/recipe-planner-app)
 > **A cross-platform meal planning and sharing assistant built in a high-performance monorepo.**
-*   Features a unified Turborepo workspace, real-time recipe discovery, cross-platform client logic, and type-safe schema synchronization.
+*   **Tech Stack**: `Turborepo` · `TypeScript` · `React Native / Expo` · `Node.js`
+*   **Key Highlights**: Monorepo architecture managing client/server packages with **17M+ lines of structured code**.
 
 #### 💬 [youju](https://github.com/MeiSiristhebest/youju)
 > **An AI-powered risk analysis assistant that detects loopholes in contracts and chat transcripts.**
-*   Features a React-Vite front-end, Express-TypeScript backend, web scraping handlers, and Gemini/OpenAI API integrations to draft confirmation scripts.
+*   **Tech Stack**: `React` · `Vite` · `Express` · `TypeScript` · `Gemini API`
+*   **Key Highlights**: Automated risk loophole scanner with structured draft confirmation script generation.
 
 #### 🔮 [mystic](https://github.com/MeiSiristhebest/mystic)
 > **A Gemini-powered agent application designed and deployed on Google AI Studio.**
-*   Features local prompt context constraints, structured stream API integrations, and AI Studio application ecosystem deployment.
+*   **Tech Stack**: `Google AI Studio` · `Gemini Stream API` · `Prompt Context Pipeline`
+*   **Key Highlights**: Local context constraint control with structured streaming response handling.
 
 ---
 
-### 📊 Digital Footprint
+### 📊 Digital Footprint & Streaks
 
 <!-- 💡 静态高质感极客勋章组 -->
 <div align="center">
@@ -85,6 +92,13 @@ To me, software engineering is not just about solving tickets — it is a form o
   <img src="https://img.shields.io/badge/Code_Pushed-19M%2B_Lines-00b4d8?style=for-the-badge&logo=gitkraken&logoColor=white" />
   <img src="https://img.shields.io/badge/Total_Commits-717%2B-7209b7?style=for-the-badge&logo=githubactions&logoColor=white" />
   <img src="https://img.shields.io/badge/Repositories-33_Repos-f72585?style=for-the-badge&logo=github&logoColor=white" />
+</div>
+
+<br/>
+
+<!-- 💡 免维护 Streak 连续贡献天数动态卡片 (100% 稳定) -->
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MeiSiristhebest&theme=tokyonight&hide_border=true" height="165" />
 </div>
 
 <br/>
