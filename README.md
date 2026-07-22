@@ -60,7 +60,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ### 📊 Digital Footprint
 
-<!-- 💡 [核心成就勋章] 纯静态 100% 极速加载防裂图的极客勋章卡片 -->
+<!-- 💡 静态高质感极客勋章组，100% 极速加载防裂图 -->
 <div align="center">
   <img src="https://img.shields.io/badge/Developer_Tier-S--Tier-70a5fd?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Architecture-Distributed_%26_AI-1a1b26?style=for-the-badge&logo=spring&logoColor=6DB33F" />
@@ -69,14 +69,14 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 [全景统计与活动动态时间线 (Recent Activity Timeline)] 包含个人真实提交/PR/Issue历史记录 -->
+<!-- 💡 全景统计看板（含累计 1900 万行代码修改量 & 近期活动动态时间线） -->
 <div align="center">
-  <img src="./github-metrics.svg" alt="GitHub Metrics and Timeline" width="100%" />
+  <img src="./github-metrics.svg" alt="GitHub Metrics and Activity Timeline" width="100%" />
 </div>
 
 <br/><br/>
 
-<!-- 💡 [3D 水晶日历城堡] 使用隔离的 clear spacing 解决与上方 metrics 文字的负 Margin 重叠遮挡问题 -->
+<!-- 💡 3D 水晶日历城堡（夜间视角，零遮挡零截断） -->
 <div align="center">
   <h4>🏰 3D Crystal Calendar</h4>
   <br/>
@@ -85,7 +85,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/><br/>
 
-<!-- 💡 [贪吃蛇贡献图] -->
+<!-- 💡 贪吃蛇贡献图 -->
 <div align="center">
   <h4>🐍 Code Journey (Contribution Snake)</h4>
   <br/>
