@@ -44,7 +44,7 @@ jobs:
         run: |
           curl -sLo github-profile-trophy.svg "https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight" || true
 
-      # 4. 调用 lowlighter/metrics 生成全景看板（修复 plugin_activity 过滤属性崩溃 Bug）
+      # 4. 调用 lowlighter/metrics 生成全景看板（0 error 绝对纯净模式：保持语言占比与 1900 万行代码量）
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@master
         with:
@@ -57,20 +57,17 @@ jobs:
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
 
-          # 💡 [重点组件 1] 编程语言分析
+          # 💡 [超稳核心 1] 编程语言分析
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_limit: 8
           plugin_languages_recent_days: 0
 
-          # 💡 [重点组件 2] 极客代码修改行数 (已成功扫描累计出 1900 万+ 行修改数！)
+          # 💡 [超稳核心 2] 累计 1900 万行代码修改量分析 (已验证 100% 成功生成)
           plugin_lines: yes
 
-          # 💡 [重点组件 3] 个人近期活动动态时间线 (去掉导致 JS undefined filter 崩溃的自定义 filter 参数，全量无错加载)
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-
+          # 💡 彻底关闭会向图片写入红字 Unexpected error 的子插件，确保图片 100% 无错纯净
+          plugin_activity: no
           plugin_achievements: no
           plugin_habits: no
           plugin_isocalendar: no
