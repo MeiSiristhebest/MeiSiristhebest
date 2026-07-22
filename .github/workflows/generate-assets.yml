@@ -44,7 +44,7 @@ jobs:
         run: |
           curl -sLo github-profile-trophy.svg -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight" || true
 
-      # 4. 调用 lowlighter/metrics 生成全景看板（隐藏底部灰色小字，强制印出 1900 万行 Lines 代码卡片）
+      # 4. 调用 lowlighter/metrics 生成全景看板（放大底部 padding 至 16%，彻底根除 Diff history 45度倾斜日期月份文本遮挡）
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@master
         with:
@@ -57,10 +57,10 @@ jobs:
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
 
-          # 💡 [关键配置 1] 隐藏 SVG 底部斜体小字，消除贴在横线上的错觉
+          # 💡 [关键修复] 给 Diff History 倾斜日期月份预留充足的 16% 自适应底部 Padding，彻底绝灭遮挡
           config_metadata: no
           config_animations: no
-          config_padding: 0, 10%
+          config_padding: 0, 16%
 
           # 💡 [超稳核心 1] 编程语言分析
           plugin_languages: yes
