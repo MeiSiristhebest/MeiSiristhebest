@@ -11,7 +11,7 @@
 
   <br/><br/>
 
-  <!-- 📬 1. 极客可点击 Channel 标签 (利用包含 style 防下划线 Bug) -->
+  <!-- 📬 1. 极客可点击 Channel 标签 -->
   <a href="mailto:mtx1534572236@outlook.com" style="text-decoration:none;"><img src="https://img.shields.io/badge/Email-mtx1534572236%40outlook.com-70a5fd?style=flat-square&logo=microsoftoutlook&logoColor=white" /></a>&nbsp;<a href="https://github.com/MeiSiristhebest" style="text-decoration:none;"><img src="https://img.shields.io/badge/GitHub-Nefelibata-181717?style=flat-square&logo=github&logoColor=white" /></a>&nbsp;<img src="https://img.shields.io/badge/GPG_Key-Verified-00b4d8?style=flat-square&logo=gnupg&logoColor=white" />
 </div>
 
@@ -28,12 +28,13 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 *   🌌 **Aesthetic & Order**: Passionate about minimalist design, architectural neatness, and finding order within high-entropy systems.
 *   ☕ **Beyond the Console**: I spend my free time exploring street photography, game mechanics, philosophy, and urban history.
+*   🎯 **Current Focus**: `LLM Agent Workflows (MCP / Harness Eng)` · `High-Concurrency Microservices`
 
 ---
 
 ### 💻 Technical Spectrum
 
-<!-- 融合方案：使用直观的 Skillicons 图标墙，但按领域结构化多行呈现 -->
+<!-- 分类矢量 Skillicons 图标墙 -->
 <div align="left">
   <!-- Languages & Core Frameworks -->
   <img src="https://skillicons.dev/icons?i=java,go,python,spring,react,vue,threejs,html,css&perline=9&theme=dark" />
@@ -96,9 +97,16 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 免维护 Streak 连续贡献天数动态卡片 (100% 稳定) -->
+<!-- 💡 免维护 Streak 连续贡献天数动态卡片 -->
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=MeiSiristhebest&theme=tokyonight&hide_border=true" height="165" />
+</div>
+
+<br/>
+
+<!-- 💡 新增：github-readme-activity-graph 极客活跃度曲线图 (Tokyonight 主题) -->
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&theme=tokyonight&hide_border=true" width="100%" />
 </div>
 
 <br/>
