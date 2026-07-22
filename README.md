@@ -60,11 +60,24 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ### 📊 Digital Footprint
 
-<!-- 💡 静态高质感极客勋章组，100% 极速加载防裂图 -->
+<!-- 💡 静态高质感极客勋章组 -->
 <div align="center">
   <img src="https://img.shields.io/badge/Developer_Tier-S--Tier-70a5fd?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Architecture-Distributed_%26_AI-1a1b26?style=for-the-badge&logo=spring&logoColor=6DB33F" />
   <img src="https://img.shields.io/badge/Stack-Fullstack_%26_Monorepo-70a5fd?style=for-the-badge&logo=react&logoColor=61DAFB" />
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+<!-- 💡 游戏化极客成就大奖杯卡片（包含 Genesis 创世纪等真实成就勋章） -->
+<div align="center">
+  <h4>🏆 Achievements & Trophies</h4>
+  <br/>
+  <img src="./github-profile-trophy.svg" alt="GitHub Achievements Trophies" />
 </div>
 
 <br/>
