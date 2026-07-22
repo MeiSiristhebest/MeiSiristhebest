@@ -60,29 +60,35 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ### 📊 Digital Footprint
 
-<!-- 💡 游戏化极客大奖杯系统，由 Action 每日物理下载并保存至本地，100% 极速加载防崩溃 -->
+<!-- 💡 [核心成就勋章] 纯静态 100% 极速加载防裂图的极客勋章卡片 -->
 <div align="center">
-  <img src="./github-profile-trophy.svg" alt="GitHub Trophy" />
+  <img src="https://img.shields.io/badge/Developer_Tier-S--Tier-70a5fd?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Architecture-Distributed_%26_AI-1a1b26?style=for-the-badge&logo=spring&logoColor=6DB33F" />
+  <img src="https://img.shields.io/badge/Stack-Fullstack_%26_Monorepo-70a5fd?style=for-the-badge&logo=react&logoColor=61DAFB" />
 </div>
 
 <br/>
 
+<!-- 💡 [全景统计与活动动态时间线 (Recent Activity Timeline)] 包含个人真实提交/PR/Issue历史记录 -->
 <div align="center">
-  <img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
+  <img src="./github-metrics.svg" alt="GitHub Metrics and Timeline" width="100%" />
 </div>
 
-<br/>
+<br/><br/>
 
-<!-- 💡 [高能调优] 换用无冗余饼图与雷达图遮挡、专为暗黑模式定制且永不溢出截断的 3D 水晶立体城堡夜间视角图 -->
+<!-- 💡 [3D 水晶日历城堡] 使用隔离的 clear spacing 解决与上方 metrics 文字的负 Margin 重叠遮挡问题 -->
 <div align="center">
   <h4>🏰 3D Crystal Calendar</h4>
-  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Calendar" width="100%" />
+  <br/>
+  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Calendar" width="90%" />
 </div>
 
-<br/>
+<br/><br/>
 
+<!-- 💡 [贪吃蛇贡献图] -->
 <div align="center">
   <h4>🐍 Code Journey (Contribution Snake)</h4>
+  <br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./github-contribution-grid-snake.svg" />
