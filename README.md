@@ -11,8 +11,8 @@
 
   <br/><br/>
 
-  <!-- 📬 1. 极客可点击 Channel 标签 -->
-  <a href="mailto:mtx1534572236@outlook.com" style="text-decoration:none;"><img src="https://img.shields.io/badge/Email-mtx1534572236%40outlook.com-70a5fd?style=flat-square&logo=microsoftoutlook&logoColor=white" /></a>&nbsp;<a href="https://github.com/MeiSiristhebest" style="text-decoration:none;"><img src="https://img.shields.io/badge/GitHub-Nefelibata-181717?style=flat-square&logo=github&logoColor=white" /></a>&nbsp;<img src="https://img.shields.io/badge/GPG_Key-Verified-00b4d8?style=flat-square&logo=gnupg&logoColor=white" />
+  <!-- 📬 1. 极客可点击 Channel 标签 (更新 Email) -->
+  <a href="mailto:maox_neta@foxmail.com" style="text-decoration:none;"><img src="https://img.shields.io/badge/Email-maox__neta%40foxmail.com-70a5fd?style=flat-square&logo=microsoftoutlook&logoColor=white" /></a>&nbsp;<a href="https://github.com/MeiSiristhebest" style="text-decoration:none;"><img src="https://img.shields.io/badge/GitHub-Nefelibata-181717?style=flat-square&logo=github&logoColor=white" /></a>&nbsp;<img src="https://img.shields.io/badge/GPG_Key-Verified-00b4d8?style=flat-square&logo=gnupg&logoColor=white" />
 </div>
 
 ---
@@ -104,9 +104,9 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 新增：github-readme-activity-graph 极客活跃度曲线图 (Tokyonight 主题) -->
+<!-- 💡 极客活跃度曲线图 (调优为 Tokyonight 暗黑蓝调主题，与页面完美融合) -->
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&theme=tokyonight&hide_border=true" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&theme=react-dark&bg_color=1a1b26&color=70a5fd&line=70a5fd&point=ffffff&hide_border=true" width="100%" />
 </div>
 
 <br/>
