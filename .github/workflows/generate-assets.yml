@@ -39,12 +39,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: MeiSiristhebest
 
-      # 3. [关键修复] 伪装真实 Chrome User-Agent 绕过 Vercel 防火墙，100% 抓取包含 Genesis 等真实成就的极客大奖杯 SVG
+      # 3. 抓取大奖杯图片存为本地静态文件
       - name: Fetch and Save GitHub Profile Trophy
         run: |
           curl -sLo github-profile-trophy.svg -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight" || true
 
-      # 4. 调用 lowlighter/metrics 生成全景看板（移除失衡且带字母裁切Bug的Diff history，保留最工整震撼的1900万行代码量与代表作排行榜）
+      # 4. 调用 lowlighter/metrics 生成全景看板（放大 padding 至 20%，彻底根除 Most used languages 底部文字裁切截断 Bug）
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@master
         with:
@@ -57,9 +57,10 @@ jobs:
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
 
+          # 💡 [关键修复] 增加足足 20% 的底部 padding 深度，确保 Most used languages 底部的 TypeScript, Java 等文字彻底完全展开，绝不截断
           config_metadata: no
           config_animations: no
-          config_padding: 0, 8%
+          config_padding: 0, 20%
 
           # 💡 [超稳核心 1] 编程语言分析
           plugin_languages: yes
@@ -67,7 +68,7 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_recent_days: 0
 
-          # 💡 [关键优化] 移除失衡的 history 折线图，完美保留 1900 万行代码总量卡片与四大代表作贡献榜
+          # 💡 [关键配置 2] 强制将累计 1900 万行代码修改量与旗舰项目贡献榜印在 SVG 面板上
           plugin_lines: yes
           plugin_lines_sections: base, repositories
 
