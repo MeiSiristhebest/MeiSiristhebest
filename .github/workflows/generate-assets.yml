@@ -9,7 +9,6 @@ on:
     paths-ignore:
       - "github-contribution-grid-snake*"
       - "profile-3d-contrib/**"
-      - "github-profile-trophy.svg"
       - "github-metrics.svg"
   workflow_dispatch:
 
@@ -39,12 +38,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: MeiSiristhebest
 
-      # 3. 抓取大奖杯图片存为本地静态文件
-      - name: Fetch and Save GitHub Profile Trophy
-        run: |
-          curl -sLo github-profile-trophy.svg -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight" || true
-
-      # 4. 调用 lowlighter/metrics 生成全景看板（放大 padding 至 20%，彻底根除 Most used languages 底部文字裁切截断 Bug）
+      # 3. 调用 lowlighter/metrics 生成全景看板（放大 padding 至 20%，彻底根除 Most used languages 底部文字裁切截断 Bug）
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@master
         with:
@@ -57,7 +51,7 @@ jobs:
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
 
-          # 💡 [关键修复] 增加足足 20% 的底部 padding 深度，确保 Most used languages 底部的 TypeScript, Java 等文字彻底完全展开，绝不截断
+          # 💡 [关键修复] 20% 底部 padding，确保 Most used languages 底部文字 100% 舒展不截断
           config_metadata: no
           config_animations: no
           config_padding: 0, 20%
