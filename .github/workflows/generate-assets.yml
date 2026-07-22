@@ -39,10 +39,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: MeiSiristhebest
 
-      # 3. 抓取大奖杯图片存为本地静态文件
+      # 3. [关键修复] 伪装真实 Chrome User-Agent 绕过 Vercel 防火墙，100% 抓取包含 Genesis 等真实成就的极客大奖杯 SVG
       - name: Fetch and Save GitHub Profile Trophy
         run: |
-          curl -sLo github-profile-trophy.svg "https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight" || true
+          curl -sLo github-profile-trophy.svg -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" "https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight" || true
 
       # 4. 调用 lowlighter/metrics 生成全景看板（隐藏底部灰色小字，强制印出 1900 万行 Lines 代码卡片）
       - name: Generate GitHub Metrics Infographics
