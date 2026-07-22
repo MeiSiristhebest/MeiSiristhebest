@@ -69,15 +69,14 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
----
-
-<br/>
-
-<!-- 💡 游戏化极客成就大奖杯卡片（包含 Genesis 创世纪等真实成就勋章） -->
+<!-- 💡 100% 稳定永不裂图的成就勋章墙 (包含 Genesis 创世纪成就、19M+ 代码行数勋章、700+ Commits 勋章) -->
 <div align="center">
-  <h4>🏆 Achievements & Trophies</h4>
+  <h4>🏆 Achievements & Milestones</h4>
   <br/>
-  <img src="./github-profile-trophy.svg" alt="GitHub Achievements Trophies" />
+  <img src="https://img.shields.io/badge/Genesis_Achievement-Unlocked-ffb703?style=for-the-badge&logo=git&logoColor=black" />
+  <img src="https://img.shields.io/badge/Code_Pushed-19M%2B_Lines-00b4d8?style=for-the-badge&logo=gitkraken&logoColor=white" />
+  <img src="https://img.shields.io/badge/Total_Commits-717%2B-7209b7?style=for-the-badge&logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/Repositories-33_Repos-f72585?style=for-the-badge&logo=github&logoColor=white" />
 </div>
 
 <br/>
