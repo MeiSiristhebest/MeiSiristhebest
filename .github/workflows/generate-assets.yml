@@ -44,23 +44,23 @@ jobs:
         run: |
           curl -sLo github-profile-trophy.svg "https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight" || true
 
-      # 4. 调用 lowlighter/metrics 生成全景看板（彻底根除 Puppeteer 动画计算高度截断 Bug）
+      # 4. 调用 lowlighter/metrics 生成全景看板（隐藏底部灰色小字，强制印出 1900 万行 Lines 代码卡片）
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: MeiSiristhebest
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: header, activity, community, repositories
           filename: github-metrics.svg
           committer_token: ${{ secrets.METRICS_TOKEN }}  # 全量打包工作区资产自动 push
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
 
-          # 💡 [关键修复 1] 禁用无头浏览器动画裁切，确保 Lines (1900万行代码) 面板与基础数据 100% 完全展开，绝不截断！
+          # 💡 [关键配置 1] 隐藏 SVG 底部斜体小字，消除贴在横线上的错觉
+          config_metadata: no
           config_animations: no
-          config_padding: 0, 12%
-          display: large
+          config_padding: 0, 10%
 
           # 💡 [超稳核心 1] 编程语言分析
           plugin_languages: yes
@@ -68,10 +68,11 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_recent_days: 0
 
-          # 💡 [超稳核心 2] 累计 1900 万行代码修改量分析
+          # 💡 [关键配置 2] 强制将累计 1900 万行代码修改量与旗舰项目贡献榜印在 SVG 面板上
           plugin_lines: yes
+          plugin_lines_sections: base, repositories, history
 
-          # 💡 彻底关闭子插件，保证 0 Error 无错生成
+          # 💡 彻底关闭会报Unexpected error的子插件
           plugin_activity: no
           plugin_achievements: no
           plugin_habits: no
