@@ -62,9 +62,8 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_recent_days: 0
 
-          # 💡 [关键配置 2] 强制将累计 1900 万行代码修改量与旗舰项目贡献榜印在 SVG 面板上
-          plugin_lines: yes
-          plugin_lines_sections: base, repositories
+          # 💡 关闭会报 Unexpected error 的代码行数统计插件
+          plugin_lines: no
 
           # 💡 彻底关闭会报Unexpected error的子插件
           plugin_activity: no
