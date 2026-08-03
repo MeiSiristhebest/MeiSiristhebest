@@ -10,6 +10,7 @@ on:
       - "github-contribution-grid-snake*"
       - "profile-3d-contrib/**"
       - "github-metrics.svg"
+      - "github-activity-graph.svg"
   workflow_dispatch:
 
 env:
@@ -38,7 +39,21 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: MeiSiristhebest
 
-      # 3. 调用 lowlighter/metrics 生成全景看板（放大 padding 至 20%，彻底根除 Most used languages 底部文字裁切截断 Bug）
+      # 3. 生成极客活跃度曲线图静态 SVG (100% 零裂图)
+      - name: Generate Activity Graph SVG
+        uses: ashutosh00710/github-readme-activity-graph@v1.2.9
+        with:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: MeiSiristhebest
+          THEME: react-dark
+          BG_COLOR: 1a1b26
+          COLOR: 70a5fd
+          LINE: 70a5fd
+          POINT: ffffff
+          HIDE_BORDER: "true"
+          FILENAME: github-activity-graph.svg
+
+      # 4. 调用 lowlighter/metrics 生成全景看板（放大 padding 至 20%，彻底根除 Most used languages 底部文字裁切截断 Bug）
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@master
         with:

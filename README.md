@@ -104,9 +104,9 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 极客活跃度曲线图 (调优为 Tokyonight 暗黑蓝调主题，与页面完美融合) -->
+<!-- 💡 极客活跃度曲线图 (GitHub Action 自动生成，100% 零裂图) -->
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&theme=react-dark&bg_color=1a1b26&color=70a5fd&line=70a5fd&point=ffffff&hide_border=true" width="100%" />
+  <img src="./github-activity-graph.svg" alt="Activity Graph" width="100%" />
 </div>
 
 <br/>
