@@ -1,6 +1,6 @@
 <!-- Header Wave Banner -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=260&section=header&text=Nefelibata&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=A%20cloud%20walker%20translating%20daydreams%20into%20code.&descSize=15&descAlignY=58" width="100%" />
+  <img src="./header-wave.svg" width="100%" />
 
   <br/>
 
@@ -97,9 +97,9 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 免维护 Streak 连续贡献天数动态卡片 -->
+<!-- 💡 免维护 Streak 连续贡献天数动态卡片 (本地静态化) -->
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MeiSiristhebest&theme=tokyonight&hide_border=true" height="165" />
+  <img src="./streak-stats.svg" height="165" />
 </div>
 
 <br/>
