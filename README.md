@@ -6,7 +6,7 @@
 
   <!-- Dynamic Typing Title -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&color=70A5FD&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Lost+in+the+terminal%2C+searching+for+digital+poetry;Always+coding%2C+always+exploring" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&color=70A5FD&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Lost+in+the+terminal%2C+searching+for+digital+poetry;Always+coding%2C+always+exploring" alt="Typing SVG" />
   </a>
 
   <br/><br/>
