@@ -92,6 +92,13 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
+<!-- 💡 🏆 3D 游戏风动态成就奖杯墙 (100% 本地 Actions 编译零裂图) -->
+<div align="center">
+  <img src="./github-profile-trophy.svg" alt="Developer Trophies" />
+</div>
+
+<br/>
+
 <!-- 💡 100% 稳定永不裂图的成就勋章墙 (包含 Genesis 创世纪成就、19M+ 代码行数勋章、700+ Commits 勋章) -->
 <div align="center">
   <h4>🏆 Achievements & Milestones</h4>
