@@ -1,23 +1,23 @@
 
       <svg
         width="854"
-        height="260"
+        height="220"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         style="z-index:1;position:relative"
-        viewBox="0 0 854 260"
+        viewBox="0 0 854 220"
       >
         <style>
-      .text {   font-size: 48px;   font-weight: 700;   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;  } .desc {   font-size: 15px;   font-weight: 500;   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;  } 
+      .text {   font-size: 42px;   font-weight: 700;   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;  } .desc {   font-size: 15px;   font-weight: 500;   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;  } 
       .text, .desc {   animation: fadeIn 1.2s ease-in-out forwards;  } @keyframes fadeIn {   from {     opacity: 0;   }   to {     opacity: 1;   }  } 
     </style>
         <defs>
               <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#1a1b26"/><stop offset="100%" stop-color="#70a5fd"/>
+                <stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#8b5cf6"/>
               </linearGradient>
             </defs>
         
-      <g transform="translate(427, 130) scale(1, 1) translate(-427, -130)">
+      <g transform="translate(427, 110) scale(1, 1) translate(-427, -110)">
         <path d="" fill="url(#linear)" opacity="0.4" >
           <animate
               attributeName="d"
@@ -27,7 +27,7 @@
               calcmod="spline"
               keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
               begin="0s"
-              values="M0 0L 0 180Q 213.5 220 427 190T 854 215L 854 0 Z;M0 0L 0 205Q 213.5 220 427 200T 854 190L 854 0 Z;M0 0L 0 225Q 213.5 195 427 225T 854 190L 854 0 Z;M0 0L 0 180Q 213.5 220 427 190T 854 215L 854 0 Z">
+              values="M0 0L 0 140Q 213.5 180 427 150T 854 175L 854 0 Z;M0 0L 0 165Q 213.5 180 427 160T 854 150L 854 0 Z;M0 0L 0 185Q 213.5 155 427 185T 854 150L 854 0 Z;M0 0L 0 140Q 213.5 180 427 150T 854 175L 854 0 Z">
           </animate>
         </path>
         <path d="" fill="url(#linear)" opacity="0.4" >
@@ -39,7 +39,7 @@
             calcmod="spline"
             keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
             begin="-10s"
-            values="M0 0L 0 195Q 213.5 240 427 210T 854 220L 854 0 Z;M0 0L 0 210Q 213.5 180 427 180T 854 200L 854 0 Z;M0 0L 0 205Q 213.5 185 427 210T 854 225L 854 0 Z;M0 0L 0 195Q 213.5 240 427 210T 854 220L 854 0 Z">
+            values="M0 0L 0 155Q 213.5 200 427 170T 854 180L 854 0 Z;M0 0L 0 170Q 213.5 140 427 140T 854 160L 854 0 Z;M0 0L 0 165Q 213.5 145 427 170T 854 185L 854 0 Z;M0 0L 0 155Q 213.5 200 427 170T 854 180L 854 0 Z">
           </animate>
         </path>
       </g>
