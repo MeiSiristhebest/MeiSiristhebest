@@ -51,17 +51,32 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Step 3: 奖杯墙（纯文件名，不带 ./ — 修复 Deno mkdir 权限 bug）
+      # Step 3: 奖杯墙
+      # 修复：先创建子目录 trophy_out/，让 Deno 写入子目录再复制
+      # 原因： render_svg.ts 的正则 /\/[^/]+$/ 在无斜杠路径时不匹配，
+      # 导致 dir = 文件名本身，进而 Deno.mkdir("文件名") 失败
+      - name: Create trophy output directory
+        run: mkdir -p trophy_out
+
       - name: Generate Trophy SVG
         uses: ryo-ma/github-profile-trophy@master
         continue-on-error: true
         with:
           username: MeiSiristhebest
-          output_path: github-profile-trophy.svg
+          output_path: trophy_out/github-profile-trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           theme: tokyonight
 
-      # Step 4: 3D 贡献城堡（官方 latest + 自带 git push）
+      - name: Copy Trophy SVG to repo root
+        run: |
+          if [ -f trophy_out/github-profile-trophy.svg ]; then
+            cp trophy_out/github-profile-trophy.svg github-profile-trophy.svg
+            echo "Trophy SVG copied successfully"
+          else
+            echo "Warning: trophy SVG not generated"
+          fi
+
+      # Step 4: 3D 贡献城堡（官方 latest + 自带 push）
       - name: Generate 3D Contribution Calendar
         uses: yoshi389111/github-profile-3d-contrib@latest
         continue-on-error: true
@@ -75,7 +90,11 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A profile-3d-contrib/
-          if git commit -m "chore: update 3D contribution calendar [skip ci]"; then
+          if git diff --staged --quiet; then
+            echo "No 3D calendar changes to commit"
+          else
+            git commit -m "chore: update 3D contribution calendar [skip ci]"
+            git pull --rebase origin main
             git push
           fi
 
@@ -141,7 +160,6 @@ jobs:
           committer_token: ${{ secrets.METRICS_TOKEN }}
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
-          config_metadata: no
           config_animations: no
           config_padding: 0, 20%
           plugin_languages: yes
@@ -156,8 +174,10 @@ jobs:
           plugin_isocalendar: no
 
       # Step 7: 统一 Push snake、trophy、静态卡片、金句
+      # before_push_hook: 解决 metrics 已先 push 导致的 non-fast-forward 冲突
       - name: Commit and Push All Other Generated Assets
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto-update generated SVG assets [skip ci]"
-          file_pattern: "*.svg"
+          file_pattern: "github-contribution-grid-snake-dark.svg github-contribution-grid-snake.svg github-profile-trophy.svg geek-quote.svg header-wave.svg streak-stats.svg github-activity-graph.svg"
+          before_push_hook: "git pull --rebase origin main"
