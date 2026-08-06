@@ -30,6 +30,13 @@ To me, software engineering is not just about solving tickets — it is a form o
 *   ☕ **Beyond the Console**: I spend my free time exploring street photography, game mechanics, philosophy, and urban history.
 *   🎯 **Current Focus**: `LLM Agent Workflows (MCP / Harness Eng)` · `High-Concurrency Microservices`
 
+<br/>
+
+<!-- 💡 5. 每日极客金句 & 程序员哲学卡片 (匹配 tokyonight 暗黑调色) -->
+<div align="center">
+  <img src="https://quotes-readme-by-sk.vercel.app/api?theme=tokyonight" alt="Daily Geek Quote" />
+</div>
+
 ---
 
 ### 💻 Technical Spectrum
@@ -85,6 +92,15 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
+<!-- 💡 1. 🏆 3D 游戏风动态成就奖杯墙 (匹配 tokyonight 配色) -->
+<div align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight&row=1&column=6&no-frame=true&margin-w=15" alt="Developer Trophies" />
+  </a>
+</div>
+
+<br/>
+
 <!-- 💡 100% 稳定永不裂图的成就勋章墙 (包含 Genesis 创世纪成就、19M+ 代码行数勋章、700+ Commits 勋章) -->
 <div align="center">
   <h4>🏆 Achievements & Milestones</h4>
@@ -111,6 +127,17 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
+<!-- 💡 2. 🎵 实时听歌播放器 & 4. ⏱️ WakaTime 编程时长 -->
+<div align="center">
+  <a href="https://spotify-github-profile.vercel.app/api/spotify">
+    <img src="https://spotify-github-profile.vercel.app/api/spotify?background_color=1a1b26&border_color=30363d" alt="Spotify Currently Playing" />
+  </a>
+  <br/><br/>
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=MeiSiristhebest&theme=tokyonight&layout=compact" alt="WakaTime Coding Stats" />
+</div>
+
+<br/>
+
 ---
 
 <br/>
@@ -131,6 +158,19 @@ To me, software engineering is not just about solving tickets — it is a form o
 <!-- 💡 全景统计看板（0 Error 模式，包含 1900 万行代码修改量 & 多语言饼图） -->
 <div align="center">
   <img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+<!-- 💡 3. 🕹️ 吃豆人 Arcade 像素格子图 -->
+<div align="center">
+  <h4>🕹️ Arcade Journey (Pac-Man Eat-Grid)</h4>
+  <br/>
+  <img src="https://raw.githubusercontent.com/marcelscruz/marcelscruz/main/pacman.svg" width="100%" alt="Pacman Contribution Game" />
 </div>
 
 <br/>
