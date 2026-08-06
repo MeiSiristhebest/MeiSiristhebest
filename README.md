@@ -30,13 +30,6 @@ To me, software engineering is not just about solving tickets — it is a form o
 *   ☕ **Beyond the Console**: I spend my free time exploring street photography, game mechanics, philosophy, and urban history.
 *   🎯 **Current Focus**: `LLM Agent Workflows (MCP / Harness Eng)` · `High-Concurrency Microservices`
 
-<br/>
-
-<!-- 💡 每日极客金句 & 程序员哲学卡片 (100% 本地静态化零裂图) -->
-<div align="center">
-  <img src="./geek-quote.svg" alt="Daily Geek Quote" />
-</div>
-
 ---
 
 ### 💻 Technical Spectrum
@@ -92,9 +85,9 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 🏆 3D 游戏风动态成就奖杯墙 (100% 本地静态化零裂图) -->
+<!-- 💡 🏆 3D 游戏风动态成就奖杯墙 (使用仓库本地 github-profile-trophy.svg 零裂图) -->
 <div align="center">
-  <img src="./trophies.svg" alt="Developer Trophies" />
+  <img src="./github-profile-trophy.svg" alt="Developer Trophies" />
 </div>
 
 <br/>
@@ -145,19 +138,6 @@ To me, software engineering is not just about solving tickets — it is a form o
 <!-- 💡 全景统计看板（0 Error 模式，包含 1900 万行代码修改量 & 多语言饼图） -->
 <div align="center">
   <img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
-</div>
-
-<br/>
-
----
-
-<br/>
-
-<!-- 💡 🕹️ 吃豆人 Arcade 像素动态图 (本地 Action 自动生成) -->
-<div align="center">
-  <h4>🕹️ Arcade Journey (Pac-Man Eat-Grid)</h4>
-  <br/>
-  <img src="./pacman.svg" width="100%" alt="Pacman Contribution Game" />
 </div>
 
 <br/>
