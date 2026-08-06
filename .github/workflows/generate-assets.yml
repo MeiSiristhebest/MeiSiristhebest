@@ -142,16 +142,14 @@ jobs:
           template: classic
           base: header, activity, community, repositories
           filename: github-metrics.svg
-          committer_token: ${{ secrets.METRICS_TOKEN }}  # 全量打包工作区资产自动 push
+          committer_token: ${{ secrets.METRICS_TOKEN }}
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
 
-          # 💡 20% 底部 padding，确保 Most used languages 底部文字 100% 舒展不截断
           config_metadata: no
           config_animations: no
           config_padding: 0, 20%
 
-          # 💡 编程语言分析
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_limit: 8
@@ -163,3 +161,11 @@ jobs:
           plugin_achievements: no
           plugin_habits: no
           plugin_isocalendar: no
+
+      # 5. 💡 [核心修复] 将 GitHub Actions 虚拟机中编译好的真实 SVG 资产一键自动 Push 提交回仓库 main 分支
+      - name: Auto Commit and Push All Generated SVGs to Main Branch
+        uses: stefanzweifel/git-auto-commit-action@v5
+        continue-on-error: true
+        with:
+          commit_message: "chore: update real generated profile SVG assets [skip ci]"
+          file_pattern: "*.svg profile-3d-contrib/* dist/*"
