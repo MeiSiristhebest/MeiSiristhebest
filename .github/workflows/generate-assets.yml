@@ -23,17 +23,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Step 1: 霓虹冰蓝贪吃蛇（svg-only 更快）
+      # Step 1: 贪吃蛇（GitHub Light / 白底适配）
       - name: Generate Snake SVG
         uses: Platane/snk/svg-only@v3
         continue-on-error: true
         with:
           github_user_name: MeiSiristhebest
           outputs: |
-            github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#70a5fd&color_dots=#1a1b26,#1f2335,#292e42,#70a5fd,#bb9af7
-            github-contribution-grid-snake.svg
+            github-contribution-grid-snake.svg?palette=github-light
+            github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # Step 2: 吃豆人（生成到 dist/ → 推到 output 独立分支，不影响 main 分支）
+      # Step 2: 吃豆人（生成到 dist/ → 推到 output 独立分支，Light/Dark 双版本）
       - name: Generate Pacman SVG
         uses: abozanona/pacman-contribution-graph@main
         continue-on-error: true
@@ -51,7 +51,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Step 3: 奖杯墙（先创建子目录，避开 Deno.mkdir 根目录匹配 bug）
+      # Step 3: 奖杯墙（Flat 浅色主题，清爽白底适配）
       - name: Create trophy output directory
         run: mkdir -p trophy_out
 
@@ -62,7 +62,7 @@ jobs:
           username: MeiSiristhebest
           output_path: trophy_out/github-profile-trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
-          theme: tokyonight
+          theme: flat
 
       - name: Copy Trophy SVG to repo root
         run: |
@@ -81,22 +81,22 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: MeiSiristhebest
 
-      # Step 5: 静态资源抓取 + 每日金句生成
-      - name: Fetch SVG Assets and Generate Quote
+      # Step 5: 静态资源抓取（全面切换为 GitHub Light 浅色透明原生风格）
+      - name: Fetch SVG Assets
         continue-on-error: true
         run: |
           python3 - <<'PYEOF'
-          import urllib.request, json, html
+          import urllib.request
 
           targets = [
               ('header-wave.svg',
-               'https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=260&section=header&text=Nefelibata&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=A%20cloud%20walker%20translating%20daydreams%20into%20code.&descSize=15&descAlignY=58',
+               'https://capsule-render.vercel.app/api?type=waving&color=0:3b82f6,100:8b5cf6&height=220&section=header&text=Nefelibata&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=A%20cloud%20walker%20translating%20daydreams%20into%20code.&descSize=15&descAlignY=58',
                '<svg'),
               ('streak-stats.svg',
-               'https://streak-stats.demolab.com/?user=MeiSiristhebest&theme=tokyonight&hide_border=true',
+               'https://streak-stats.demolab.com/?user=MeiSiristhebest&theme=default&hide_border=true',
                '<svg'),
               ('github-activity-graph.svg',
-               'https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&theme=react-dark&bg_color=1a1b26&color=70a5fd&line=70a5fd&point=ffffff&hide_border=true',
+               'https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&theme=github-light&hide_border=true',
                'svg'),
           ]
           for fname, url, check in targets:
@@ -110,27 +110,9 @@ jobs:
                       print(f'Fetched {fname}')
               except Exception as e:
                   print(f'Warning: {fname}: {e}')
-
-          qt = 'Simplicity is precondition for reliability.'
-          au = 'Edsger W. Dijkstra'
-          try:
-              req = urllib.request.Request('https://dummyjson.com/quotes/random', headers={'User-Agent': 'Mozilla/5.0'})
-              with urllib.request.urlopen(req, timeout=8) as r:
-                  d = json.loads(r.read().decode('utf-8'))
-                  qt, au = d.get('quote', qt), d.get('author', au)
-          except Exception:
-              pass
-          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="700" height="100" viewBox="0 0 700 100">
-            <rect width="700" height="100" rx="10" fill="#1a1b26" stroke="#30363d" stroke-width="1"/>
-            <text x="25" y="42" fill="#70a5fd" font-family="'Fira Code',monospace" font-size="14" font-weight="bold">&#x1F4AC; &quot;{html.escape(qt)}&quot;</text>
-            <text x="675" y="75" fill="#bb9af7" font-family="'Fira Code',monospace" font-size="12" text-anchor="end">&#x2014; {html.escape(au)}</text>
-          </svg>'''
-          with open('geek-quote.svg', 'w', encoding='utf-8') as f:
-              f.write(svg)
-          print('Generated geek-quote.svg')
           PYEOF
 
-      # Step 6: GitHub Metrics 看板生成（仅生成本地文件，不单独 push）
+      # Step 6: GitHub Metrics 看板生成（Light 主题 + 开启 indepth 修复 Most used languages 空白 bug）
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@master
         continue-on-error: true
@@ -148,14 +130,15 @@ jobs:
           plugin_languages_colors: github
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
-          plugin_languages_details: bytes-size, percentage
+          plugin_languages_details: percentage, bytes-size
+          plugin_languages_indepth: yes
           plugin_lines: no
           plugin_activity: no
           plugin_achievements: no
           plugin_habits: no
           plugin_isocalendar: no
 
-      # Step 7: 统一提交并推送所有生成的 SVG 资源 (原子提交，彻底消除 git push 冲突)
+      # Step 7: 统一提交并推送所有生成的 SVG 资源
       - name: Commit and Push All Generated Assets
         continue-on-error: true
         run: |
@@ -165,7 +148,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: auto-update generated SVG assets [skip ci]"
+            git commit -m "chore: auto-update generated SVG assets (light mode) [skip ci]"
             git fetch origin main
             git rebase origin/main || git rebase --skip
             git push origin main
