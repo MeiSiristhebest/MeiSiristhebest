@@ -38,7 +38,7 @@ jobs:
             github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#70a5fd&color_dots=#1a1b26,#1f2335,#292e42,#70a5fd,#bb9af7
             github-contribution-grid-snake.svg
 
-      # 1.5 极客吃豆人 Arcade 动态图 (开启 aggressive 追击怪兽 AI 策略)
+      # 1.5 极客吃豆人 Arcade 动态图 (生成至 dist/ 目录)
       - name: Generate Pacman Contribution SVG
         uses: MeiSiristhebest/pacman-contribution-graph@main
         continue-on-error: true
@@ -47,13 +47,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           player_style: aggressive
 
-      # 1.8 3D 游戏风成就奖杯墙 (原生 GitHub Action 编译，无需任何 Vercel 依赖)
+      # 1.8 3D 游戏风成就奖杯墙 (带 ./ 路径修复 Deno 目录创建权限问题)
       - name: Generate GitHub Profile Trophy SVG
         uses: ryo-ma/github-profile-trophy@master
         continue-on-error: true
         with:
           username: MeiSiristhebest
-          output_path: github-profile-trophy.svg
+          output_path: ./github-profile-trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           theme: tokyonight
 
@@ -65,7 +65,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: MeiSiristhebest
 
-      # 3. 本地原生 Python 极速抓取与零报错卡片生成 (完全脱离 Vercel 依赖)
+      # 3. 本地原生 Python 极速抓取与零报错卡片生成 (并同步 Pacman 导出路径)
       - name: Fetch and Generate Pure Local SVG Assets
         continue-on-error: true
         run: |
@@ -73,8 +73,18 @@ jobs:
           import urllib.request
           import json
           import html
+          import os
+          import shutil
 
-          # 1. 静态资源抓取
+          # 1. 同步吃豆人生成的 SVG 至根目录
+          if os.path.exists('dist/pacman-contribution-graph-dark.svg'):
+              shutil.copy('dist/pacman-contribution-graph-dark.svg', 'pacman.svg')
+              print('Successfully copied pacman SVG to pacman.svg')
+          elif os.path.exists('dist/pacman-contribution-graph.svg'):
+              shutil.copy('dist/pacman-contribution-graph.svg', 'pacman.svg')
+              print('Successfully copied pacman SVG to pacman.svg')
+
+          # 2. 静态资源抓取
           targets = [
               ('header-wave.svg', 'https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=260&section=header&text=Nefelibata&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=A%20cloud%20walker%20translating%20daydreams%20into%20code.&descSize=15&descAlignY=58', '<svg'),
               ('streak-stats.svg', 'https://streak-stats.demolab.com/?user=MeiSiristhebest&theme=tokyonight&hide_border=true', '<svg'),
@@ -93,7 +103,7 @@ jobs:
               except Exception as e:
                   print(f'Warning: Fetch failed for {filename} ({e})')
 
-          # 2. 原生生成 100% 稳定的极客金句 SVG (零依赖 Vercel)
+          # 3. 原生生成 100% 稳定的极客金句 SVG (零依赖 Vercel)
           try:
               quote_text = 'Simplicity is precondition for reliability.'
               author_text = 'Edsger W. Dijkstra'
