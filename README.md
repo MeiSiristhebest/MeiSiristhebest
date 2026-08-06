@@ -30,6 +30,13 @@ To me, software engineering is not just about solving tickets — it is a form o
 *   ☕ **Beyond the Console**: I spend my free time exploring street photography, game mechanics, philosophy, and urban history.
 *   🎯 **Current Focus**: `LLM Agent Workflows (MCP / Harness Eng)` · `High-Concurrency Microservices`
 
+<br/>
+
+<!-- 💡 每日极客金句 & 程序员哲学卡片 (100% 本地静态化零裂图) -->
+<div align="center">
+  <img src="./geek-quote.svg" alt="Daily Geek Quote" />
+</div>
+
 ---
 
 ### 💻 Technical Spectrum
@@ -81,6 +88,13 @@ To me, software engineering is not just about solving tickets — it is a form o
   <img src="https://img.shields.io/badge/Developer_Tier-S--Tier-70a5fd?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Architecture-Distributed_%26_AI-1a1b26?style=for-the-badge&logo=spring&logoColor=6DB33F" />
   <img src="https://img.shields.io/badge/Stack-Fullstack_%26_Monorepo-70a5fd?style=for-the-badge&logo=react&logoColor=61DAFB" />
+</div>
+
+<br/>
+
+<!-- 💡 🏆 3D 游戏风动态成就奖杯墙 (100% 本地静态化零裂图) -->
+<div align="center">
+  <img src="./trophies.svg" alt="Developer Trophies" />
 </div>
 
 <br/>
