@@ -153,6 +153,19 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
+<!-- 💡 🕹️ 吃豆人 Arcade 像素动态图 (本地 Action 自动生成) -->
+<div align="center">
+  <h4>🕹️ Arcade Journey (Pac-Man Eat-Grid)</h4>
+  <br/>
+  <img src="./pacman.svg" width="100%" alt="Pacman Contribution Game" />
+</div>
+
+<br/>
+
+---
+
+<br/>
+
 <!-- 💡 贪吃蛇贡献图 -->
 <div align="center">
   <h4>🐍 Code Journey (Contribution Snake)</h4>
