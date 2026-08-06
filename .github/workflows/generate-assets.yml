@@ -14,7 +14,7 @@ on:
       - "header-wave.svg"
       - "streak-stats.svg"
       - "geek-quote.svg"
-      - "trophies.svg"
+      - "github-profile-trophy.svg"
       - "pacman.svg"
   workflow_dispatch:
 
@@ -37,9 +37,9 @@ jobs:
             github-contribution-grid-snake-dark.svg?palette=github-dark
             github-contribution-grid-snake.svg
 
-      # 1.5 生成 Pacman 吃豆人 Arcade 游戏 SVG
+      # 1.5 生成 Pacman 吃豆人 Arcade 游戏 SVG (使用 MeiSiristhebest 专属 Fork 节点)
       - name: Generate Pacman Contribution SVG
-        uses: abozanona/pacman-contribution-graph@main
+        uses: MeiSiristhebest/pacman-contribution-graph@main
         with:
           github_user_name: MeiSiristhebest
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -51,7 +51,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: MeiSiristhebest
 
-      # 3. 抓取并保存静态 SVG 资产 (含波浪 Banner、Streak 天数、活跃度曲线图、极客金句、3D 游戏奖杯)
+      # 3. 抓取并保存静态 SVG 资产
       - name: Fetch and Save External SVG Assets
         run: |
           python3 -c "
@@ -60,9 +60,7 @@ jobs:
           targets = [
               ('header-wave.svg', 'https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=260&section=header&text=Nefelibata&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=A%20cloud%20walker%20translating%20daydreams%20into%20code.&descSize=15&descAlignY=58', '<svg'),
               ('streak-stats.svg', 'https://streak-stats.demolab.com/?user=MeiSiristhebest&theme=tokyonight&hide_border=true', '<svg'),
-              ('github-activity-graph.svg', 'https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&theme=react-dark&bg_color=1a1b26&color=70a5fd&line=70a5fd&point=ffffff&hide_border=true', 'Contribution Graph'),
-              ('geek-quote.svg', 'https://quotes-readme-by-sk.vercel.app/api?theme=tokyonight', '<svg'),
-              ('trophies.svg', 'https://github-profile-trophy.vercel.app/?username=MeiSiristhebest&theme=tokyonight&row=1&column=6&no-frame=true&margin-w=15', '<svg')
+              ('github-activity-graph.svg', 'https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&theme=react-dark&bg_color=1a1b26&color=70a5fd&line=70a5fd&point=ffffff&hide_border=true', 'Contribution Graph')
           ]
 
           for filename, url, check_str in targets:
