@@ -30,6 +30,13 @@ To me, software engineering is not just about solving tickets — it is a form o
 *   ☕ **Beyond the Console**: I spend my free time exploring street photography, game mechanics, philosophy, and urban history.
 *   🎯 **Current Focus**: `LLM Agent Workflows (MCP / Harness Eng)` · `High-Concurrency Microservices`
 
+<br/>
+
+<!-- 💡 每日极客金句 & 程序员哲学卡片 (100% 本地 Actions 编译，零 Vercel 依赖) -->
+<div align="center">
+  <img src="./geek-quote.svg" alt="Daily Geek Quote" />
+</div>
+
 ---
 
 ### 💻 Technical Spectrum
@@ -81,13 +88,6 @@ To me, software engineering is not just about solving tickets — it is a form o
   <img src="https://img.shields.io/badge/Developer_Tier-S--Tier-70a5fd?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Architecture-Distributed_%26_AI-1a1b26?style=for-the-badge&logo=spring&logoColor=6DB33F" />
   <img src="https://img.shields.io/badge/Stack-Fullstack_%26_Monorepo-70a5fd?style=for-the-badge&logo=react&logoColor=61DAFB" />
-</div>
-
-<br/>
-
-<!-- 💡 🏆 3D 游戏风动态成就奖杯墙 (使用仓库本地 github-profile-trophy.svg 零裂图) -->
-<div align="center">
-  <img src="./github-profile-trophy.svg" alt="Developer Trophies" />
 </div>
 
 <br/>
@@ -146,13 +146,26 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 贪吃蛇贡献图 -->
+<!-- 💡 🕹️ 吃豆人 Arcade 动态图 (Aggressive 追击怪兽 AI 策略，100% 本地编译) -->
 <div align="center">
-  <h4>🐍 Code Journey (Contribution Snake)</h4>
+  <h4>🕹️ Arcade Journey (Pac-Man Eat-Grid)</h4>
+  <br/>
+  <img src="./pacman.svg" width="100%" alt="Pacman Contribution Game" />
+</div>
+
+<br/>
+
+---
+
+<br/>
+
+<!-- 💡 霓虹冰蓝贪吃蛇贡献图 (Tokyonight 主题定制) -->
+<div align="center">
+  <h4>🐍 Code Journey (Tokyonight Snake)</h4>
   <br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="./github-contribution-grid-snake.svg" width="100%" />
+    <img alt="github-snake" src="./github-contribution-grid-snake-dark.svg" width="100%" />
   </picture>
 </div>
