@@ -153,11 +153,15 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 🕹️ 吃豆人 Arcade 动态图 (Aggressive 追击怪兽 AI 策略，100% 本地编译) -->
+<!-- 💡 🕹️ 吃豆人 Arcade 动态图 (Aggressive 追击怪兽 AI 策略，官方 output 分支托管) -->
 <div align="center">
   <h4>🕹️ Arcade Journey (Pac-Man Eat-Grid)</h4>
   <br/>
-  <img src="./pacman.svg" width="100%" alt="Pacman Contribution Game" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MeiSiristhebest/MeiSiristhebest/output/pacman-contribution-graph-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MeiSiristhebest/MeiSiristhebest/output/pacman-contribution-graph.svg" />
+    <img alt="Pacman Contribution Game" src="https://raw.githubusercontent.com/MeiSiristhebest/MeiSiristhebest/output/pacman-contribution-graph-dark.svg" width="100%" />
+  </picture>
 </div>
 
 <br/>
