@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="100" viewBox="0 0 700 100" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="100" viewBox="0 0 700 100">
   <rect width="700" height="100" rx="10" fill="#1a1b26" stroke="#30363d" stroke-width="1"/>
-  <text x="25" y="42" fill="#70a5fd" font-family="'Fira Code', 'Courier New', monospace" font-size="14" font-weight="bold">💬 "Simplicity is precondition for reliability."</text>
-  <text x="675" y="75" fill="#bb9af7" font-family="'Fira Code', 'Courier New', monospace" font-size="12" text-anchor="end">— Edsger W. Dijkstra</text>
+  <text x="25" y="42" fill="#70a5fd" font-family="'Fira Code',monospace" font-size="14" font-weight="bold">&#x1F4AC; &quot;We can&#x27;t be brave without fear.&quot;</text>
+  <text x="675" y="75" fill="#bb9af7" font-family="'Fira Code',monospace" font-size="12" text-anchor="end">&#x2014; Muhammad Ali</text>
 </svg>
