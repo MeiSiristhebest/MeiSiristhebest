@@ -2,21 +2,16 @@ name: Generate Profile Assets
 
 on:
   schedule:
-    - cron: "0 2,14 * * *"  # 💡 每天北京时间 10:00 和 22:00 定时自动运行
+    - cron: "0 2,14 * * *"   # 北京时间 10:00 和 22:00
   push:
-    branches:
-      - main
-    paths-ignore:
-      - "github-contribution-grid-snake*"
-      - "profile-3d-contrib/**"
-      - "github-metrics.svg"
-      - "github-activity-graph.svg"
-      - "header-wave.svg"
-      - "streak-stats.svg"
-      - "geek-quote.svg"
-      - "github-profile-trophy.svg"
-      - "pacman.svg"
+    branches: [main]
+    paths:
+      - "**.md"
+      - ".github/workflows/**"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -28,9 +23,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 1. 霓虹冰蓝贪吃蛇 SVG (S 级 Tokyonight 色彩调和)
-      - name: Generate Snake Game SVG
-        uses: Platane/snk@v3
+      # Step 1: 霓虹冰蓝贪吃蛇（svg-only 更快）
+      - name: Generate Snake SVG
+        uses: Platane/snk/svg-only@v3
         continue-on-error: true
         with:
           github_user_name: MeiSiristhebest
@@ -38,102 +33,103 @@ jobs:
             github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#70a5fd&color_dots=#1a1b26,#1f2335,#292e42,#70a5fd,#bb9af7
             github-contribution-grid-snake.svg
 
-      # 1.5 极客吃豆人 Arcade 动态图 (生成至 dist/ 目录)
-      - name: Generate Pacman Contribution SVG
-        uses: MeiSiristhebest/pacman-contribution-graph@main
+      # Step 2: 吃豆人（官方方式：生成到 dist/ → 推到 output 分支）
+      - name: Generate Pacman SVG
+        uses: abozanona/pacman-contribution-graph@main
         continue-on-error: true
         with:
           github_user_name: MeiSiristhebest
           github_token: ${{ secrets.GITHUB_TOKEN }}
           player_style: aggressive
 
-      # 1.8 3D 游戏风成就奖杯墙 (带 ./ 路径修复 Deno 目录创建权限问题)
-      - name: Generate GitHub Profile Trophy SVG
+      - name: Push Pacman SVG to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        continue-on-error: true
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 3: 奖杯墙（纯文件名，不带 ./ — 修复 Deno mkdir 权限 bug）
+      - name: Generate Trophy SVG
         uses: ryo-ma/github-profile-trophy@master
         continue-on-error: true
         with:
           username: MeiSiristhebest
-          output_path: ./github-profile-trophy.svg
+          output_path: github-profile-trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           theme: tokyonight
 
-      # 2. 生成 3D 贡献城堡
+      # Step 4: 3D 贡献城堡（官方 latest + 自带 git push）
       - name: Generate 3D Contribution Calendar
-        uses: yoshi389111/github-profile-3d-contrib@0.7.2
+        uses: yoshi389111/github-profile-3d-contrib@latest
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: MeiSiristhebest
 
-      # 3. 本地原生 Python 极速抓取与零报错卡片生成 (并同步 Pacman 导出路径)
-      - name: Fetch and Generate Pure Local SVG Assets
+      - name: Commit and Push 3D Calendar
         continue-on-error: true
         run: |
-          python3 -c "
-          import urllib.request
-          import json
-          import html
-          import os
-          import shutil
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A profile-3d-contrib/
+          if git commit -m "chore: update 3D contribution calendar [skip ci]"; then
+            git push
+          fi
 
-          # 1. 同步吃豆人生成的 SVG 至根目录
-          if os.path.exists('dist/pacman-contribution-graph-dark.svg'):
-              shutil.copy('dist/pacman-contribution-graph-dark.svg', 'pacman.svg')
-              print('Successfully copied pacman SVG to pacman.svg')
-          elif os.path.exists('dist/pacman-contribution-graph.svg'):
-              shutil.copy('dist/pacman-contribution-graph.svg', 'pacman.svg')
-              print('Successfully copied pacman SVG to pacman.svg')
+      # Step 5: 静态资源抓取 + 每日金句生成
+      - name: Fetch SVG Assets and Generate Quote
+        continue-on-error: true
+        run: |
+          python3 - <<'PYEOF'
+          import urllib.request, json, html
 
-          # 2. 静态资源抓取
           targets = [
-              ('header-wave.svg', 'https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=260&section=header&text=Nefelibata&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=A%20cloud%20walker%20translating%20daydreams%20into%20code.&descSize=15&descAlignY=58', '<svg'),
-              ('streak-stats.svg', 'https://streak-stats.demolab.com/?user=MeiSiristhebest&theme=tokyonight&hide_border=true', '<svg'),
-              ('github-activity-graph.svg', 'https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&theme=react-dark&bg_color=1a1b26&color=70a5fd&line=70a5fd&point=ffffff&hide_border=true', 'Contribution Graph')
+              ('header-wave.svg',
+               'https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=260&section=header&text=Nefelibata&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=A%20cloud%20walker%20translating%20daydreams%20into%20code.&descSize=15&descAlignY=58',
+               '<svg'),
+              ('streak-stats.svg',
+               'https://streak-stats.demolab.com/?user=MeiSiristhebest&theme=tokyonight&hide_border=true',
+               '<svg'),
+              ('github-activity-graph.svg',
+               'https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&theme=react-dark&bg_color=1a1b26&color=70a5fd&line=70a5fd&point=ffffff&hide_border=true',
+               'svg'),
           ]
-
-          for filename, url, check_str in targets:
+          for fname, url, check in targets:
               try:
-                  req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
-                  with urllib.request.urlopen(req, timeout=15) as resp:
-                      data = resp.read().decode('utf-8')
-                      if 'Can\\'t fetch' not in data and check_str in data:
-                          with open(filename, 'w', encoding='utf-8') as f:
-                              f.write(data)
-                          print(f'Successfully updated {filename}')
+                  req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+                  with urllib.request.urlopen(req, timeout=20) as r:
+                      data = r.read().decode('utf-8')
+                  if check in data:
+                      with open(fname, 'w', encoding='utf-8') as f:
+                          f.write(data)
+                      print(f'Fetched {fname}')
               except Exception as e:
-                  print(f'Warning: Fetch failed for {filename} ({e})')
+                  print(f'Warning: {fname}: {e}')
 
-          # 3. 原生生成 100% 稳定的极客金句 SVG (零依赖 Vercel)
+          qt = 'Simplicity is precondition for reliability.'
+          au = 'Edsger W. Dijkstra'
           try:
-              quote_text = 'Simplicity is precondition for reliability.'
-              author_text = 'Edsger W. Dijkstra'
-              try:
-                  req = urllib.request.Request('https://dummyjson.com/quotes/random', headers={'User-Agent': 'Mozilla/5.0'})
-                  with urllib.request.urlopen(req, timeout=5) as resp:
-                      qdata = json.loads(resp.read().decode('utf-8'))
-                      quote_text = qdata.get('quote', quote_text)
-                      author_text = qdata.get('author', author_text)
-              except Exception:
-                  pass
-
-              quote_esc = html.escape(quote_text)
-              author_esc = html.escape(author_text)
-
-              svg_content = f'''<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"700\" height=\"100\" viewBox=\"0 0 700 100\" fill=\"none\">
-            <rect width=\"700\" height=\"100\" rx=\"10\" fill=\"#1a1b26\" stroke=\"#30363d\" stroke-width=\"1\"/>
-            <text x=\"25\" y=\"42\" fill=\"#70a5fd\" font-family=\"'Fira Code', 'Courier New', monospace\" font-size=\"14\" font-weight=\"bold\">💬 \"{quote_esc}\"</text>
-            <text x=\"675\" y=\"75\" fill=\"#bb9af7\" font-family=\"'Fira Code', 'Courier New', monospace\" font-size=\"12\" text-anchor=\"end\">— {author_esc}</text>
+              req = urllib.request.Request('https://dummyjson.com/quotes/random', headers={'User-Agent': 'Mozilla/5.0'})
+              with urllib.request.urlopen(req, timeout=8) as r:
+                  d = json.loads(r.read().decode('utf-8'))
+                  qt, au = d.get('quote', qt), d.get('author', au)
+          except Exception:
+              pass
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="700" height="100" viewBox="0 0 700 100">
+            <rect width="700" height="100" rx="10" fill="#1a1b26" stroke="#30363d" stroke-width="1"/>
+            <text x="25" y="42" fill="#70a5fd" font-family="'Fira Code',monospace" font-size="14" font-weight="bold">&#x1F4AC; &quot;{html.escape(qt)}&quot;</text>
+            <text x="675" y="75" fill="#bb9af7" font-family="'Fira Code',monospace" font-size="12" text-anchor="end">&#x2014; {html.escape(au)}</text>
           </svg>'''
+          with open('geek-quote.svg', 'w', encoding='utf-8') as f:
+              f.write(svg)
+          print('Generated geek-quote.svg')
+          PYEOF
 
-              with open('geek-quote.svg', 'w', encoding='utf-8') as f:
-                  f.write(svg_content)
-              print('Successfully generated local geek-quote.svg')
-          except Exception as e:
-              print(f'Failed to generate quote SVG: {e}')
-          "
-
-      # 4. 调用 lowlighter/metrics 生成全景看板
-      - name: Generate GitHub Metrics Infographics
+      # Step 6: Metrics（用 METRICS_TOKEN，内部自带 commit+push）
+      - name: Generate GitHub Metrics
         uses: lowlighter/metrics@master
         continue-on-error: true
         with:
@@ -145,27 +141,23 @@ jobs:
           committer_token: ${{ secrets.METRICS_TOKEN }}
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
-
           config_metadata: no
           config_animations: no
           config_padding: 0, 20%
-
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
           plugin_languages_details: bytes-size, percentage
-
           plugin_lines: no
           plugin_activity: no
           plugin_achievements: no
           plugin_habits: no
           plugin_isocalendar: no
 
-      # 5. 💡 [核心修复] 将 GitHub Actions 虚拟机中编译好的真实 SVG 资产一键自动 Push 提交回仓库 main 分支
-      - name: Auto Commit and Push All Generated SVGs to Main Branch
+      # Step 7: 统一 Push snake、trophy、静态卡片、金句
+      - name: Commit and Push All Other Generated Assets
         uses: stefanzweifel/git-auto-commit-action@v5
-        continue-on-error: true
         with:
-          commit_message: "chore: update real generated profile SVG assets [skip ci]"
-          file_pattern: "*.svg profile-3d-contrib/* dist/*"
+          commit_message: "chore: auto-update generated SVG assets [skip ci]"
+          file_pattern: "*.svg"
