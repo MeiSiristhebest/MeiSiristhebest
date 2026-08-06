@@ -28,35 +28,43 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 1. 生成贪吃蛇 SVG
+      # 1. 霓虹冰蓝贪吃蛇 SVG (S 级 Tokyonight 色彩调和)
       - name: Generate Snake Game SVG
         uses: Platane/snk@v3
+        continue-on-error: true
         with:
           github_user_name: MeiSiristhebest
           outputs: |
-            github-contribution-grid-snake-dark.svg?palette=github-dark
+            github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#70a5fd&color_dots=#1a1b26,#1f2335,#292e42,#70a5fd,#bb9af7
             github-contribution-grid-snake.svg
 
-      # 1.5 生成 Pacman 吃豆人 Arcade 游戏 SVG (使用 MeiSiristhebest 专属 Fork 节点)
+      # 1.5 极客吃豆人 Arcade 动态图 (开启 aggressive 追击怪兽 AI 策略)
       - name: Generate Pacman Contribution SVG
         uses: MeiSiristhebest/pacman-contribution-graph@main
+        continue-on-error: true
         with:
           github_user_name: MeiSiristhebest
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          player_style: aggressive
 
       # 2. 生成 3D 贡献城堡
       - name: Generate 3D Contribution Calendar
         uses: yoshi389111/github-profile-3d-contrib@0.7.2
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: MeiSiristhebest
 
-      # 3. 抓取并保存静态 SVG 资产
-      - name: Fetch and Save External SVG Assets
+      # 3. 本地原生 Python 极速抓取与零报错卡片生成 (完全脱离 Vercel 依赖)
+      - name: Fetch and Generate Pure Local SVG Assets
+        continue-on-error: true
         run: |
           python3 -c "
           import urllib.request
+          import json
+          import html
 
+          # 1. 静态资源抓取
           targets = [
               ('header-wave.svg', 'https://capsule-render.vercel.app/api?type=waving&color=0:1a1b26,100:70a5fd&height=260&section=header&text=Nefelibata&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=A%20cloud%20walker%20translating%20daydreams%20into%20code.&descSize=15&descAlignY=58', '<svg'),
               ('streak-stats.svg', 'https://streak-stats.demolab.com/?user=MeiSiristhebest&theme=tokyonight&hide_border=true', '<svg'),
@@ -72,15 +80,42 @@ jobs:
                           with open(filename, 'w', encoding='utf-8') as f:
                               f.write(data)
                           print(f'Successfully updated {filename}')
-                      else:
-                          print(f'Warning: API error for {filename}, preserving existing SVG')
               except Exception as e:
-                  print(f'Warning: Fetch failed for {filename} ({e}), preserving existing SVG')
+                  print(f'Warning: Fetch failed for {filename} ({e})')
+
+          # 2. 原生生成 100% 稳定的极客金句 SVG (零依赖 Vercel)
+          try:
+              quote_text = 'Simplicity is precondition for reliability.'
+              author_text = 'Edsger W. Dijkstra'
+              try:
+                  req = urllib.request.Request('https://dummyjson.com/quotes/random', headers={'User-Agent': 'Mozilla/5.0'})
+                  with urllib.request.urlopen(req, timeout=5) as resp:
+                      qdata = json.loads(resp.read().decode('utf-8'))
+                      quote_text = qdata.get('quote', quote_text)
+                      author_text = qdata.get('author', author_text)
+              except Exception:
+                  pass
+
+              quote_esc = html.escape(quote_text)
+              author_esc = html.escape(author_text)
+
+              svg_content = f'''<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"700\" height=\"100\" viewBox=\"0 0 700 100\" fill=\"none\">
+            <rect width=\"700\" height=\"100\" rx=\"10\" fill=\"#1a1b26\" stroke=\"#30363d\" stroke-width=\"1\"/>
+            <text x=\"25\" y=\"42\" fill=\"#70a5fd\" font-family=\"'Fira Code', 'Courier New', monospace\" font-size=\"14\" font-weight=\"bold\">💬 \"{quote_esc}\"</text>
+            <text x=\"675\" y=\"75\" fill=\"#bb9af7\" font-family=\"'Fira Code', 'Courier New', monospace\" font-size=\"12\" text-anchor=\"end\">— {author_esc}</text>
+          </svg>'''
+
+              with open('geek-quote.svg', 'w', encoding='utf-8') as f:
+                  f.write(svg_content)
+              print('Successfully generated local geek-quote.svg')
+          except Exception as e:
+              print(f'Failed to generate quote SVG: {e}')
           "
 
       # 4. 调用 lowlighter/metrics 生成全景看板
       - name: Generate GitHub Metrics Infographics
         uses: lowlighter/metrics@master
+        continue-on-error: true
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: MeiSiristhebest
@@ -91,22 +126,19 @@ jobs:
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
 
-          # 💡 [关键修复] 20% 底部 padding，确保 Most used languages 底部文字 100% 舒展不截断
+          # 💡 20% 底部 padding，确保 Most used languages 底部文字 100% 舒展不截断
           config_metadata: no
           config_animations: no
           config_padding: 0, 20%
 
-          # 💡 [超稳核心 1] 编程语言分析
+          # 💡 编程语言分析
           plugin_languages: yes
           plugin_languages_colors: github
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
           plugin_languages_details: bytes-size, percentage
 
-          # 💡 关闭会报 Unexpected error 的代码行数统计插件
           plugin_lines: no
-
-          # 💡 彻底关闭会报Unexpected error的子插件
           plugin_activity: no
           plugin_achievements: no
           plugin_habits: no
