@@ -30,6 +30,13 @@ To me, software engineering is not just about solving tickets — it is a form o
 *   ☕ **Beyond the Console**: I spend my free time exploring street photography, game mechanics, philosophy, and urban history.
 *   🎯 **Current Focus**: `LLM Agent Workflows (MCP / Harness Eng)` · `High-Concurrency Microservices`
 
+<br/>
+
+<!-- 💡 高颜值浅色极客一言金句卡片 (全新设计的微渐变玻璃质感卡片) -->
+<div align="center">
+  <img src="./geek-quote.svg" alt="Daily Geek Quote" />
+</div>
+
 ---
 
 ### 💻 Technical Spectrum
