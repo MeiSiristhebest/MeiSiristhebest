@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="110" viewBox="0 0 700 110" fill="none">
+  <rect width="700" height="110" rx="10" fill="#1a1b26" stroke="#30363d" stroke-width="1"/>
+  <text x="350" y="42" fill="#70a5fd" font-family="'Fira Code', monospace" font-size="16" font-weight="bold" text-anchor="middle">🕹️ Arcade Pac-Man Contribution Grid</text>
+  <text x="350" y="72" fill="#bb9af7" font-family="'Fira Code', monospace" font-size="13" text-anchor="middle">Pac-Man eats dots across your contribution history! (Action-Driven)</text>
+</svg>
