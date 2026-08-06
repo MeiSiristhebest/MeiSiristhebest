@@ -47,6 +47,16 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           player_style: aggressive
 
+      # 1.8 3D 游戏风成就奖杯墙 (原生 GitHub Action 编译，无需任何 Vercel 依赖)
+      - name: Generate GitHub Profile Trophy SVG
+        uses: ryo-ma/github-profile-trophy@master
+        continue-on-error: true
+        with:
+          username: MeiSiristhebest
+          output_path: github-profile-trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          theme: tokyonight
+
       # 2. 生成 3D 贡献城堡
       - name: Generate 3D Contribution Calendar
         uses: yoshi389111/github-profile-3d-contrib@0.7.2
