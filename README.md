@@ -6,13 +6,13 @@
 
   <!-- Dynamic Typing Title -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&color=3B82F6&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Lost+in+the+terminal%2C+searching+for+digital+poetry;Always+coding%2C+always+exploring" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&color=8839EF&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Lost+in+the+terminal%2C+searching+for+digital+poetry;Always+coding%2C+always+exploring" alt="Typing SVG" />
   </a>
 
   <br/><br/>
 
-  <!-- 📬 极客 Contact 标签 -->
-  <a href="mailto:maox_neta@foxmail.com" style="text-decoration:none;"><img src="https://img.shields.io/badge/Email-maox__neta%40foxmail.com-3b82f6?style=flat-square&logo=microsoftoutlook&logoColor=white" /></a>&nbsp;<a href="https://github.com/MeiSiristhebest" style="text-decoration:none;"><img src="https://img.shields.io/badge/GitHub-Nefelibata-181717?style=flat-square&logo=github&logoColor=white" /></a>&nbsp;<img src="https://img.shields.io/badge/GPG_Key-Verified-00b4d8?style=flat-square&logo=gnupg&logoColor=white" />
+  <!-- 📬 极客 Contact 标签 (Catppuccin Pastel Palette) -->
+  <a href="mailto:maox_neta@foxmail.com" style="text-decoration:none;"><img src="https://img.shields.io/badge/Email-maox__neta%40foxmail.com-8839ef?style=flat-square&logo=microsoftoutlook&logoColor=white" /></a>&nbsp;<a href="https://github.com/MeiSiristhebest" style="text-decoration:none;"><img src="https://img.shields.io/badge/GitHub-Nefelibata-7287fd?style=flat-square&logo=github&logoColor=white" /></a>&nbsp;<img src="https://img.shields.io/badge/GPG_Key-Verified-209fb5?style=flat-square&logo=gnupg&logoColor=white" />
 </div>
 
 ---
@@ -32,7 +32,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 高颜值浅色极客一言金句卡片 (全新设计的微渐变玻璃质感卡片) -->
+<!-- 💡 高颜值 Catppuccin Latte 柔美调色盘一言卡片 -->
 <div align="center">
   <img src="./geek-quote.svg" alt="Daily Geek Quote" />
 </div>
@@ -83,16 +83,16 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ### 📊 Digital Footprint & Streaks
 
-<!-- 💡 静态高质感极客勋章组 -->
+<!-- 💡 Catppuccin Latte 极客勋章组 -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Developer_Tier-S--Tier-3b82f6?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Architecture-Distributed_%26_AI-ffffff?style=for-the-badge&logo=spring&logoColor=6DB33F" />
-  <img src="https://img.shields.io/badge/Stack-Fullstack_%26_Monorepo-3b82f6?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Developer_Tier-S--Tier-8839ef?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Architecture-Distributed_%26_AI-7287fd?style=for-the-badge&logo=spring&logoColor=white" />
+  <img src="https://img.shields.io/badge/Stack-Fullstack_%26_Monorepo-ea76cb?style=for-the-badge&logo=react&logoColor=white" />
 </div>
 
 <br/>
 
-<!-- 💡 🏆 动态成就奖杯墙 (GitHub Light 浅色原景) -->
+<!-- 💡 🏆 动态成就奖杯墙 (Flat 柔色原景) -->
 <div align="center">
   <img src="./github-profile-trophy.svg" alt="Developer Trophies" />
 </div>
@@ -103,22 +103,22 @@ To me, software engineering is not just about solving tickets — it is a form o
 <div align="center">
   <h4>🏆 Achievements & Milestones</h4>
   <br/>
-  <img src="https://img.shields.io/badge/Genesis_Achievement-Unlocked-ffb703?style=for-the-badge&logo=git&logoColor=black" />
-  <img src="https://img.shields.io/badge/Code_Pushed-19M%2B_Lines-00b4d8?style=for-the-badge&logo=gitkraken&logoColor=white" />
-  <img src="https://img.shields.io/badge/Total_Commits-717%2B-7209b7?style=for-the-badge&logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/Repositories-33_Repos-f72585?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Genesis_Achievement-Unlocked-fe640b?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/Code_Pushed-19M%2B_Lines-04a5e5?style=for-the-badge&logo=gitkraken&logoColor=white" />
+  <img src="https://img.shields.io/badge/Total_Commits-717%2B-8839ef?style=for-the-badge&logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/Repositories-33_Repos-ea76cb?style=for-the-badge&logo=github&logoColor=white" />
 </div>
 
 <br/>
 
-<!-- 💡 Streak 连续贡献天数卡片 (GitHub Light 浅色风格) -->
+<!-- 💡 Catppuccin Latte 柔光 Streak 连续贡献天数卡片 -->
 <div align="center">
   <img src="./streak-stats.svg" height="165" />
 </div>
 
 <br/>
 
-<!-- 💡 极客活跃度曲线图 (GitHub Light 浅色风格) -->
+<!-- 💡 Catppuccin Latte 薰衣草-玫瑰紫活跃度图 -->
 <div align="center">
   <img src="./github-activity-graph.svg" alt="Activity Graph" width="100%" />
 </div>
@@ -129,7 +129,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 3D 贡献水晶城堡 (GitHub Light 绿色经典原景) -->
+<!-- 💡 3D 贡献水晶城堡 -->
 <div align="center">
   <h4>🏰 3D Contribution Calendar</h4>
   <br/>
@@ -142,7 +142,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 全景统计看板 (GitHub Light 浅色极客风) -->
+<!-- 💡 全景统计看板 -->
 <div align="center">
   <img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
 </div>
@@ -153,7 +153,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 🕹️ 吃豆人 Arcade 动态图 (GitHub Light 白底) -->
+<!-- 💡 🕹️ 吃豆人 Arcade 动态图 -->
 <div align="center">
   <h4>🕹️ Arcade Journey (Pac-Man Eat-Grid)</h4>
   <br/>
@@ -170,9 +170,9 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 贪吃蛇贡献图 (GitHub Light 白底) -->
+<!-- 💡 Catppuccin Latte 薰衣草柔光贪吃蛇图 -->
 <div align="center">
-  <h4>🐍 Code Journey (Snake Grid)</h4>
+  <h4>🐍 Code Journey (Catppuccin Snake Grid)</h4>
   <br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./github-contribution-grid-snake-dark.svg" />
