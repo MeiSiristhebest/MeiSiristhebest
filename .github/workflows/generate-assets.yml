@@ -180,7 +180,7 @@ jobs:
           plugin_habits: no
           plugin_isocalendar: no
 
-      # Step 6.5: Summary Cards (Commit 语言占比 & 24小时作息图)
+      # Step 6.5: Summary Cards (Catppuccin Latte 调色盘重绘)
       - name: Generate Summary Cards
         uses: vn7n24fzkq/github-profile-summary-cards@v0.6.0
         continue-on-error: true
@@ -188,16 +188,32 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: MeiSiristhebest
-          THEME: tokyonight
+          THEME: transparent
 
-      - name: Copy Summary Cards to root
+      - name: Recolor Summary Cards to Catppuccin Latte
         continue-on-error: true
         run: |
-          if [ -f profile-summary-card-output/tokyonight/2-most-commit-language.svg ]; then
-            cp profile-summary-card-output/tokyonight/2-most-commit-language.svg assets/2-most-commit-language.svg
-            cp profile-summary-card-output/tokyonight/4-productive-time.svg assets/4-productive-time.svg
-            echo "Summary cards copied to root successfully"
-          fi
+          python3 - <<'PYEOF'
+          import re, os
+
+          def customize_svg(filepath, outpath):
+              if not os.path.exists(filepath):
+                  return
+              with open(filepath, 'r', encoding='utf-8') as f:
+                  data = f.read()
+              data = re.sub(r'<rect[^>]*fill="#00000000"[^>]*></rect>', '<rect x="2" y="2" width="336" height="196" rx="12" fill="#eff1f5" stroke="#7287fd" stroke-width="1.5" stroke-opacity="0.4"></rect>', data)
+              data = re.sub(r'fill:\s*#006AFF', 'fill: #8839ef; font-weight: 600', data)
+              data = re.sub(r'color="#006AFF"', 'color="#8839ef"', data)
+              data = re.sub(r'fill="#006AFF"', 'fill="#8839ef"', data)
+              data = re.sub(r'fill:\s*#417E87', 'fill: #4c4f69', data)
+              data = re.sub(r'color="#417E87"', 'color="#7287fd"', data)
+              with open(outpath, 'w', encoding='utf-8') as f:
+                  f.write(data)
+              print(f"Recolored {outpath}")
+
+          customize_svg('profile-summary-card-output/transparent/2-most-commit-language.svg', 'assets/2-most-commit-language.svg')
+          customize_svg('profile-summary-card-output/transparent/4-productive-time.svg', 'assets/4-productive-time.svg')
+          PYEOF
 
       # Step 7: 统一提交并推送所有生成的 SVG 资源
       - name: Commit and Push All Generated Assets
