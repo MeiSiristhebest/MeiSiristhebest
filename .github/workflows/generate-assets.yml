@@ -30,8 +30,8 @@ jobs:
         with:
           github_user_name: MeiSiristhebest
           outputs: |
-            github-contribution-grid-snake.svg?color_snake=#8839ef&color_dots=#eff1f5,#ccd0da,#8c8fa1,#7287fd,#8839ef
-            github-contribution-grid-snake-dark.svg?palette=github-dark
+            assets/github-contribution-grid-snake.svg?color_snake=#8839ef&color_dots=#eff1f5,#ccd0da,#8c8fa1,#7287fd,#8839ef
+            assets/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       # Step 2: 吃豆人（生成到 dist/ → 推到 output 独立分支）
       - name: Generate Pacman SVG
@@ -53,7 +53,7 @@ jobs:
 
       # Step 3: 奖杯墙（Flat 柔和主题）
       - name: Create trophy output directory
-        run: mkdir -p trophy_out
+        run: mkdir -p assets trophy_out
 
       - name: Generate Trophy SVG
         uses: ryo-ma/github-profile-trophy@master
@@ -67,7 +67,7 @@ jobs:
       - name: Copy Trophy SVG to repo root
         run: |
           if [ -f trophy_out/github-profile-trophy.svg ]; then
-            cp trophy_out/github-profile-trophy.svg github-profile-trophy.svg
+            cp trophy_out/github-profile-trophy.svg assets/github-profile-trophy.svg
             echo "Trophy SVG copied successfully"
           else
             echo "Warning: trophy SVG not generated"
@@ -90,13 +90,13 @@ jobs:
 
           # 采用专业设计的主题：Catppuccin Latte / Soft Pastel 薰衣草-马卡龙柔光调色盘
           targets = [
-              ('header-wave.svg',
+              ('assets/header-wave.svg',
                'https://capsule-render.vercel.app/api?type=waving&color=0:8839ef,50:7287fd,100:ea76cb&height=220&section=header&text=Nefelibata&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=A%20cloud%20walker%20translating%20daydreams%20into%20code.&descSize=15&descAlignY=58',
                '<svg'),
-              ('streak-stats.svg',
+              ('assets/streak-stats.svg',
                'https://streak-stats.demolab.com/?user=MeiSiristhebest&theme=catppuccin_latte&hide_border=true',
                '<svg'),
-              ('github-activity-graph.svg',
+              ('assets/github-activity-graph.svg',
                'https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&bg_color=eff1f5&color=8839ef&line=7287fd&point=ea76cb&area=true&hide_border=true',
                'svg'),
           ]
@@ -151,7 +151,7 @@ jobs:
             <text x="56" y="52" fill="#4c4f69" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="500" font-style="italic">&quot;{qt_esc}&quot;</text>
             <text x="716" y="90" fill="#8839ef" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" text-anchor="end">— {au_esc}</text>
           </svg>'''
-          with open('geek-quote.svg', 'w', encoding='utf-8') as f:
+          with open('assets/geek-quote.svg', 'w', encoding='utf-8') as f:
               f.write(svg)
           print('Generated Catppuccin Latte geek-quote.svg')
           PYEOF
@@ -165,7 +165,7 @@ jobs:
           user: MeiSiristhebest
           template: classic
           base: header, activity, community, repositories
-          filename: github-metrics.svg
+          filename: assets/github-metrics.svg
           repositories_forks: yes
           commits_authoring: MeiSiristhebest, Mei, MTx1534572236@outlook.com
           config_animations: no
@@ -194,8 +194,8 @@ jobs:
         continue-on-error: true
         run: |
           if [ -f profile-summary-card-output/catppuccin_latte/2-most-commit-language.svg ]; then
-            cp profile-summary-card-output/catppuccin_latte/2-most-commit-language.svg 2-most-commit-language.svg
-            cp profile-summary-card-output/catppuccin_latte/4-productive-time.svg 4-productive-time.svg
+            cp profile-summary-card-output/catppuccin_latte/2-most-commit-language.svg assets/2-most-commit-language.svg
+            cp profile-summary-card-output/catppuccin_latte/4-productive-time.svg assets/4-productive-time.svg
             echo "Summary cards copied to root successfully"
           fi
 
@@ -205,7 +205,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add *.svg profile-3d-contrib/*.svg
+          git add assets/*.svg profile-3d-contrib/*.svg
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else

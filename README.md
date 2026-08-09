@@ -1,6 +1,6 @@
 <!-- Header Wave Banner -->
 <div align="center">
-  <img src="./header-wave.svg" width="100%" />
+  <img src="./assets/header-wave.svg" width="100%" />
 
   <br/>
 
@@ -34,7 +34,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <!-- 💡 高颜值 Catppuccin Latte 柔美调色盘一言卡片 -->
 <div align="center">
-  <img src="./geek-quote.svg" alt="Daily Geek Quote" />
+  <img src="./assets/geek-quote.svg" alt="Daily Geek Quote" />
 </div>
 
 ---
@@ -94,7 +94,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <!-- 💡 🏆 动态成就奖杯墙 (Flat 柔色原景) -->
 <div align="center">
-  <img src="./github-profile-trophy.svg" alt="Developer Trophies" />
+  <img src="./assets/github-profile-trophy.svg" alt="Developer Trophies" />
 </div>
 
 <br/>
@@ -113,14 +113,14 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <!-- 💡 Catppuccin Latte 柔光 Streak 连续贡献天数卡片 -->
 <div align="center">
-  <img src="./streak-stats.svg" height="165" />
+  <img src="./assets/streak-stats.svg" height="165" />
 </div>
 
 <br/>
 
 <!-- 💡 Catppuccin Latte 薰衣草-玫瑰紫活跃度图 -->
 <div align="center">
-  <img src="./github-activity-graph.svg" alt="Activity Graph" width="100%" />
+  <img src="./assets/github-activity-graph.svg" alt="Activity Graph" width="100%" />
 </div>
 
 <br/>
@@ -129,9 +129,9 @@ To me, software engineering is not just about solving tickets — it is a form o
 <div align="center">
   <h4>📊 Commit Languages & Productive Hours</h4>
   <br/>
-  <img src="./2-most-commit-language.svg" height="200" alt="Top Languages by Commit" />
+  <img src="./assets/2-most-commit-language.svg" height="200" alt="Top Languages by Commit" />
   &nbsp;&nbsp;
-  <img src="./4-productive-time.svg" height="200" alt="Productive Time" />
+  <img src="./assets/4-productive-time.svg" height="200" alt="Productive Time" />
 </div>
 
 <br/>
@@ -155,7 +155,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <!-- 💡 全景统计看板 -->
 <div align="center">
-  <img src="./github-metrics.svg" alt="GitHub Metrics" width="100%" />
+  <img src="./assets/github-metrics.svg" alt="GitHub Metrics" width="100%" />
 </div>
 
 <br/>
@@ -186,8 +186,8 @@ To me, software engineering is not just about solving tickets — it is a form o
   <h4>🐍 Code Journey (Catppuccin Snake Grid)</h4>
   <br/>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="./github-contribution-grid-snake.svg" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/github-contribution-grid-snake.svg" />
+    <img alt="github-snake" src="./assets/github-contribution-grid-snake.svg" width="100%" />
   </picture>
 </div>
