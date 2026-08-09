@@ -11,6 +11,11 @@
 
   <br/><br/>
 
+  <!-- ⚡ 御坂网络 (misaka-network) 动态萌系计数器 -->
+  <img src="./assets/misaka-counter.svg" height="85" alt="Misaka Network Counter" />
+
+  <br/><br/>
+
   <!-- 📬 Contact 标签 (Catppuccin Pastel Palette) -->
   <a href="mailto:maox_neta@foxmail.com" style="text-decoration:none;"><img src="https://img.shields.io/badge/Email-maox__neta%40foxmail.com-8839ef?style=flat-square&logo=microsoftoutlook&logoColor=white" /></a>&nbsp;<a href="https://github.com/MeiSiristhebest" style="text-decoration:none;"><img src="https://img.shields.io/badge/GitHub-Nefelibata-7287fd?style=flat-square&logo=github&logoColor=white" /></a>&nbsp;<img src="https://img.shields.io/badge/GPG_Key-Verified-209fb5?style=flat-square&logo=gnupg&logoColor=white" />
 </div>
