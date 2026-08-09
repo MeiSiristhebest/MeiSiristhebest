@@ -157,41 +157,6 @@ jobs:
           PYEOF
 
 
-      # Step 5.5: 组装御坂网络 (misaka-network) 动态计数器
-      - name: Assemble Misaka Network Counter
-        continue-on-error: true
-        run: |
-          python3 - <<'PYEOF'
-          import os, base64, subprocess
-
-          def get_total_commits():
-              try:
-                  res = subprocess.check_output(['git', 'rev-list', '--count', 'HEAD'])
-                  return int(res.decode('utf-8').strip())
-              except Exception:
-                  return 233
-
-          num_str = str(get_total_commits()).zfill(6)
-          theme_dir = 'assets/misaka-network'
-          char_w, char_h = 240, 320
-          total_w = char_w * len(num_str)
-          
-          svg_parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{total_w}" height="{char_h}" viewBox="0 0 {total_w} {char_h}">']
-          for idx, char_digit in enumerate(num_str):
-              webp_path = os.path.join(theme_dir, f"{char_digit}.webp")
-              if not os.path.exists(webp_path):
-                  webp_path = os.path.join(theme_dir, "0.webp")
-              with open(webp_path, 'rb') as f:
-                  b64_data = base64.b64encode(f.read()).decode('utf-8')
-              x_pos = idx * char_w
-              svg_parts.append(f'  <image href="data:image/webp;base64,{b64_data}" x="{x_pos}" y="0" width="{char_w}" height="{char_h}" />')
-          svg_parts.append('</svg>')
-          
-          with open('assets/misaka-counter.svg', 'w', encoding='utf-8') as f:
-              f.write('\n'.join(svg_parts))
-          print(f"CI Assembled Misaka Counter ({num_str})")
-          PYEOF
-
       # Step 6: GitHub Metrics 看板生成
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@master
