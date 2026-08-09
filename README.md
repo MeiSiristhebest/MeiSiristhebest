@@ -11,7 +11,7 @@
 
   <br/><br/>
 
-  <!-- 📬 极客 Contact 标签 (Catppuccin Pastel Palette) -->
+  <!-- 📬 Contact 标签 (Catppuccin Pastel Palette) -->
   <a href="mailto:maox_neta@foxmail.com" style="text-decoration:none;"><img src="https://img.shields.io/badge/Email-maox__neta%40foxmail.com-8839ef?style=flat-square&logo=microsoftoutlook&logoColor=white" /></a>&nbsp;<a href="https://github.com/MeiSiristhebest" style="text-decoration:none;"><img src="https://img.shields.io/badge/GitHub-Nefelibata-7287fd?style=flat-square&logo=github&logoColor=white" /></a>&nbsp;<img src="https://img.shields.io/badge/GPG_Key-Verified-209fb5?style=flat-square&logo=gnupg&logoColor=white" />
 </div>
 
@@ -32,7 +32,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 高颜值 Catppuccin Latte 柔美调色盘一言卡片 -->
+<!-- 💡 Catppuccin Latte 柔美调色盘一言卡片 -->
 <div align="center">
   <img src="./assets/geek-quote.svg" alt="Daily Geek Quote" />
 </div>
@@ -81,110 +81,21 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ---
 
-### 📊 Digital Footprint & Streaks
-
-<!-- 💡 Catppuccin Latte 极客勋章组 -->
-<div align="center">
-  <img src="https://img.shields.io/badge/Developer_Tier-S--Tier-8839ef?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Architecture-Distributed_%26_AI-7287fd?style=for-the-badge&logo=spring&logoColor=white" />
-  <img src="https://img.shields.io/badge/Stack-Fullstack_%26_Monorepo-ea76cb?style=for-the-badge&logo=react&logoColor=white" />
-</div>
+### 📊 Creative Pulse & Metrics
 
 <br/>
 
-<!-- 💡 🏆 动态成就奖杯墙 (Flat 柔色原景) -->
+<!-- 💡 Commit 语言占比饼图 + 24小时作息分布图 (居中并排对齐 - Catppuccin Latte 极简风) -->
 <div align="center">
-  <img src="./assets/github-profile-trophy.svg" alt="Developer Trophies" />
-</div>
-
-<br/>
-
-<!-- 💡 成就勋章墙 -->
-<div align="center">
-  <h4>🏆 Achievements & Milestones</h4>
-  <br/>
-  <img src="https://img.shields.io/badge/Genesis_Achievement-Unlocked-fe640b?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/Code_Pushed-19M%2B_Lines-04a5e5?style=for-the-badge&logo=gitkraken&logoColor=white" />
-  <img src="https://img.shields.io/badge/Total_Commits-717%2B-8839ef?style=for-the-badge&logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/Repositories-33_Repos-ea76cb?style=for-the-badge&logo=github&logoColor=white" />
-</div>
-
-<br/>
-
-<!-- 💡 Catppuccin Latte 柔光 Streak 连续贡献天数卡片 -->
-<div align="center">
-  <img src="./assets/streak-stats.svg" height="165" />
-</div>
-
-<br/>
-
-<!-- 💡 Catppuccin Latte 薰衣草-玫瑰紫活跃度图 -->
-<div align="center">
-  <img src="./assets/github-activity-graph.svg" alt="Activity Graph" width="100%" />
-</div>
-
-<br/>
-
-<!-- 💡 Commit 语言占比饼图 + 24小时作息分布图 (居中并排对齐 - 本地静态 SVG) -->
-<div align="center">
-  <h4>📊 Commit Languages & Productive Hours</h4>
-  <br/>
   <img src="./assets/2-most-commit-language.svg" height="200" alt="Top Languages by Commit" />
   &nbsp;&nbsp;
   <img src="./assets/4-productive-time.svg" height="200" alt="Productive Time" />
 </div>
 
-<br/>
+<br/><br/>
 
----
-
-<br/>
-
-<!-- 💡 3D 贡献水晶城堡 -->
+<!-- 💡 Catppuccin Latte 薰衣草柔光贪吃蛇图 (唯一的动感提交律动) -->
 <div align="center">
-  <h4>🏰 3D Contribution Calendar</h4>
-  <br/>
-  <img src="./profile-3d-contrib/profile-green-animate.svg" alt="3D Contribution Calendar" width="90%" />
-</div>
-
-<br/>
-
----
-
-<br/>
-
-<!-- 💡 全景统计看板 -->
-<div align="center">
-  <img src="./assets/github-metrics.svg" alt="GitHub Metrics" width="100%" />
-</div>
-
-<br/>
-
----
-
-<br/>
-
-<!-- 💡 🕹️ 吃豆人 Arcade 动态图 -->
-<div align="center">
-  <h4>🕹️ Arcade Journey (Pac-Man Eat-Grid)</h4>
-  <br/>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MeiSiristhebest/MeiSiristhebest/output/pacman-contribution-graph-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MeiSiristhebest/MeiSiristhebest/output/pacman-contribution-graph.svg" />
-    <img alt="Pacman Contribution Game" src="https://raw.githubusercontent.com/MeiSiristhebest/MeiSiristhebest/output/pacman-contribution-graph.svg" width="100%" />
-  </picture>
-</div>
-
-<br/>
-
----
-
-<br/>
-
-<!-- 💡 Catppuccin Latte 薰衣草柔光贪吃蛇图 -->
-<div align="center">
-  <h4>🐍 Code Journey (Catppuccin Snake Grid)</h4>
-  <br/>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./assets/github-contribution-grid-snake.svg" />
