@@ -188,14 +188,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: MeiSiristhebest
-          THEME: catppuccin_latte
+          THEME: tokyonight
 
       - name: Copy Summary Cards to root
         continue-on-error: true
         run: |
-          if [ -f profile-summary-card-output/catppuccin_latte/2-most-commit-language.svg ]; then
-            cp profile-summary-card-output/catppuccin_latte/2-most-commit-language.svg assets/2-most-commit-language.svg
-            cp profile-summary-card-output/catppuccin_latte/4-productive-time.svg assets/4-productive-time.svg
+          if [ -f profile-summary-card-output/tokyonight/2-most-commit-language.svg ]; then
+            cp profile-summary-card-output/tokyonight/2-most-commit-language.svg assets/2-most-commit-language.svg
+            cp profile-summary-card-output/tokyonight/4-productive-time.svg assets/4-productive-time.svg
             echo "Summary cards copied to root successfully"
           fi
 
