@@ -180,6 +180,25 @@ jobs:
           plugin_habits: no
           plugin_isocalendar: no
 
+      # Step 6.5: Summary Cards (Commit 语言占比 & 24小时作息图)
+      - name: Generate Summary Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@v0.6.0
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: MeiSiristhebest
+          THEME: catppuccin_latte
+
+      - name: Copy Summary Cards to root
+        continue-on-error: true
+        run: |
+          if [ -f profile-summary-card-output/catppuccin_latte/2-most-commit-language.svg ]; then
+            cp profile-summary-card-output/catppuccin_latte/2-most-commit-language.svg 2-most-commit-language.svg
+            cp profile-summary-card-output/catppuccin_latte/4-productive-time.svg 4-productive-time.svg
+            echo "Summary cards copied to root successfully"
+          fi
+
       # Step 7: 统一提交并推送所有生成的 SVG 资源
       - name: Commit and Push All Generated Assets
         continue-on-error: true
@@ -195,3 +214,4 @@ jobs:
             git rebase origin/main || git rebase --skip
             git push origin main
           fi
+

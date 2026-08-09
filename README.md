@@ -125,17 +125,13 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 💡 Commit 语言占比饼图 + 24小时作息分布图 (居中并排对齐) -->
+<!-- 💡 Commit 语言占比饼图 + 24小时作息分布图 (居中并排对齐 - 本地静态 SVG) -->
 <div align="center">
   <h4>📊 Commit Languages & Productive Hours</h4>
   <br/>
-  <a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
-    <img src="https://raw.githubusercontent.com/MeiSiristhebest/MeiSiristhebest/main/profile-summary-card-output/catppuccin_latte/2-most-commit-language.svg" height="200" alt="Top Languages by Commit" />
-  </a>
+  <img src="./2-most-commit-language.svg" height="200" alt="Top Languages by Commit" />
   &nbsp;&nbsp;
-  <a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
-    <img src="https://raw.githubusercontent.com/MeiSiristhebest/MeiSiristhebest/main/profile-summary-card-output/catppuccin_latte/4-productive-time.svg" height="200" alt="Productive Time" />
-  </a>
+  <img src="./4-productive-time.svg" height="200" alt="Productive Time" />
 </div>
 
 <br/>
