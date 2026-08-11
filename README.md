@@ -105,10 +105,8 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/><br/>
 
-<!-- Profile Visitor Counter -->
+<!-- 👥 Profile Views 访客计数器 -->
 <div align="center">
-  <sub>Profile Views</sub><br/>
-  <a href="https://github.com/MeiSiristhebest/demon-slayer-counter">
-    <img src="https://demon-slayer-counter-zpjq.vercel.app/api/counter?name=MeiSiristhebest&length=4" alt="Profile Views" />
-  </a>
+  <h3>👀 Profile Views</h3>
+  <img src="https://demon-slayer-counter-zpjq.vercel.app/api/counter?name=MeiSiristhebest&length=4" alt="Profile Views" />
 </div>
