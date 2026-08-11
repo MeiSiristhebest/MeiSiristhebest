@@ -85,6 +85,15 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
+<!-- 🔥 鬼灭之刃全明星二次元动态 View Counter -->
+<div align="center">
+  <a href="https://github.com/MeiSiristhebest/demon-slayer-counter">
+    <img src="https://demon-slayer-counter-zpjq.vercel.app/api/counter?name=MeiSiristhebest" alt="Demon Slayer Profile Counter" />
+  </a>
+</div>
+
+<br/><br/>
+
 <!-- 💡 Commit 语言占比饼图 + 24小时作息分布图 (居中并排对齐 - Catppuccin Latte 极简风) -->
 <div align="center">
   <img src="./assets/2-most-commit-language.svg" height="200" alt="Top Languages by Commit" />
