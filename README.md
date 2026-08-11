@@ -85,18 +85,6 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 👥 鬼灭之刃全明星 Profile 动态访客计数器 -->
-<div align="center">
-  <h4>👥 Profile Views (鬼灭之刃动态访客计数器)</h4>
-  <p><i>Real-time page views powered by Demon Slayer Chibi Counter</i></p>
-  <br/>
-  <a href="https://github.com/MeiSiristhebest/demon-slayer-counter">
-    <img src="https://demon-slayer-counter-zpjq.vercel.app/api/counter?name=MeiSiristhebest&length=4" alt="Demon Slayer Profile Visitor Counter" />
-  </a>
-</div>
-
-<br/><br/>
-
 <!-- 💡 Commit 语言占比饼图 + 24小时作息分布图 (居中并排对齐 - Catppuccin Latte 极简风) -->
 <div align="center">
   <img src="./assets/2-most-commit-language.svg" height="200" alt="Top Languages by Commit" />
@@ -113,4 +101,14 @@ To me, software engineering is not just about solving tickets — it is a form o
     <source media="(prefers-color-scheme: light)" srcset="./assets/github-contribution-grid-snake.svg" />
     <img alt="github-snake" src="./assets/github-contribution-grid-snake.svg" width="100%" />
   </picture>
+</div>
+
+<br/><br/>
+
+<!-- 访客计数器 -->
+<div align="center">
+  <sub>访客计数器</sub><br/>
+  <a href="https://github.com/MeiSiristhebest/demon-slayer-counter">
+    <img src="https://demon-slayer-counter-zpjq.vercel.app/api/counter?name=MeiSiristhebest&length=4" alt="访客计数器" />
+  </a>
 </div>
