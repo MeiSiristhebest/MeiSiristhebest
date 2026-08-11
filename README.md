@@ -85,10 +85,13 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 <br/>
 
-<!-- 🔥 鬼灭之刃全明星二次元动态 View Counter -->
+<!-- 👥 鬼灭之刃全明星 Profile 动态访客计数器 -->
 <div align="center">
+  <h4>👥 Profile Views (鬼灭之刃动态访客计数器)</h4>
+  <p><i>Real-time page views powered by Demon Slayer Chibi Counter</i></p>
+  <br/>
   <a href="https://github.com/MeiSiristhebest/demon-slayer-counter">
-    <img src="https://demon-slayer-counter-zpjq.vercel.app/api/counter?name=MeiSiristhebest" alt="Demon Slayer Profile Counter" />
+    <img src="https://demon-slayer-counter-zpjq.vercel.app/api/counter?name=MeiSiristhebest&length=4" alt="Demon Slayer Profile Visitor Counter" />
   </a>
 </div>
 
