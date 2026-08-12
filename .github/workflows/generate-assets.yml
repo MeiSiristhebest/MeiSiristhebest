@@ -81,7 +81,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: MeiSiristhebest
 
-      # Step 5: 静态资源抓取 + Catppuccin Latte 顶级柔美调色盘一言金句卡片 (带自动换行防溢出)
+      # Step 5: 静态资源抓取 + Catppuccin Latte 顶级柔美调色盘一言金句卡片 (优雅居中换行排版)
       - name: Fetch SVG Assets and Generate Quote Card
         continue-on-error: true
         run: |
@@ -112,7 +112,7 @@ jobs:
               except Exception as e:
                   print(f'Warning: {fname}: {e}')
 
-          # 生成设计感极强的 Catppuccin Latte 浅系柔色一言卡片 (带文本自动换行与行数限制)
+          # 生成设计感极强的 Catppuccin Latte 浅系柔色一言卡片 (优雅垂直居中 + 句首句尾包裹)
           qt = 'Simplicity is precondition for reliability.'
           au = 'Edsger W. Dijkstra'
           try:
@@ -123,19 +123,24 @@ jobs:
           except Exception:
               pass
 
-          lines = textwrap.wrap(qt, width=68)
+          # 自动修饰全词大写的硬棒格式为优雅自然句式
+          words = qt.split()
+          if len(words) > 3 and sum(1 for w in words if w.istitle()) > len(words) * 0.7:
+              qt = qt.capitalize()
+
+          lines = textwrap.wrap(qt, width=60)
           if len(lines) > 2:
               lines = lines[:2]
-              lines[1] = lines[1][:62].rstrip() + '...'
+              lines[1] = lines[1][:56].rstrip() + '...'
 
           qt_esc_lines = [html.escape(l) for l in lines]
           au_esc = html.escape(au)
 
           if len(qt_esc_lines) == 1:
-              quote_text_nodes = f'<text x="56" y="52" fill="#4c4f69" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, \'Helvetica Neue\', Arial, sans-serif" font-size="15" font-weight="500" font-style="italic">&quot;{qt_esc_lines[0]}&quot;</text>'
+              quote_text_nodes = f'<text x="56" y="54" fill="#4c4f69" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, \'Helvetica Neue\', Arial, sans-serif" font-size="14.5" font-weight="500" font-style="italic">“{qt_esc_lines[0]}”</text>'
           else:
               t1, t2 = qt_esc_lines[0], qt_esc_lines[1]
-              quote_text_nodes = f'<text x="56" y="40" fill="#4c4f69" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, \'Helvetica Neue\', Arial, sans-serif" font-size="13.5" font-weight="500" font-style="italic">&quot;{t1}</text>\n            <text x="56" y="62" fill="#4c4f69" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, \'Helvetica Neue\', Arial, sans-serif" font-size="13.5" font-weight="500" font-style="italic">{t2}&quot;</text>'
+              quote_text_nodes = f'<text x="56" y="44" fill="#4c4f69" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, \'Helvetica Neue\', Arial, sans-serif" font-size="14" font-weight="500" font-style="italic">“{t1}</text>\n  <text x="56" y="66" fill="#4c4f69" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, \'Helvetica Neue\', Arial, sans-serif" font-size="14" font-weight="500" font-style="italic">{t2}”</text>'
 
           svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="750" height="115" viewBox="0 0 750 115" fill="none">
             <defs>
@@ -158,13 +163,13 @@ jobs:
             </defs>
             <rect x="2" y="2" width="746" height="111" rx="16" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="1.5"/>
             <rect x="2" y="18" width="6" height="79" rx="3" fill="url(#accentGrad)"/>
-            <text x="24" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="72" font-weight="900" fill="url(#quoteMarkGrad)" opacity="0.18">“</text>
+            <text x="22" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="900" fill="url(#quoteMarkGrad)" opacity="0.15">“</text>
             {quote_text_nodes}
-            <text x="716" y="90" fill="#8839ef" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" text-anchor="end">— {au_esc}</text>
+            <text x="716" y="92" fill="#8839ef" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" text-anchor="end">— {au_esc}</text>
           </svg>'''
           with open('assets/geek-quote.svg', 'w', encoding='utf-8') as f:
               f.write(svg)
-          print('Generated Catppuccin Latte geek-quote.svg with text wrapping')
+          print('Generated Catppuccin Latte geek-quote.svg v2 with balanced typography')
           PYEOF
 
 
