@@ -81,12 +81,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: MeiSiristhebest
 
-      # Step 5: 静态资源抓取 + Catppuccin Latte 顶级柔美调色盘一言金句卡片 (优雅居中换行排版)
+      # Step 5: 静态资源抓取 + Catppuccin Latte 顶级柔美调色盘一言金句卡片 (单行自适应比例满幅排版)
       - name: Fetch SVG Assets and Generate Quote Card
         continue-on-error: true
         run: |
           python3 - <<'PYEOF'
-          import urllib.request, json, html, textwrap
+          import urllib.request, json, html
 
           # 采用专业设计的主题：Catppuccin Latte / Soft Pastel 薰衣草-马卡龙柔光调色盘
           targets = [
@@ -112,7 +112,7 @@ jobs:
               except Exception as e:
                   print(f'Warning: {fname}: {e}')
 
-          # 生成设计感极强的 Catppuccin Latte 浅系柔色一言卡片 (优雅垂直居中 + 句首句尾包裹)
+          # 生成设计感极强的 Catppuccin Latte 浅系柔色一言卡片 (单行自适应字号，横向充实不空旷)
           qt = 'Simplicity is precondition for reliability.'
           au = 'Edsger W. Dijkstra'
           try:
@@ -128,19 +128,21 @@ jobs:
           if len(words) > 3 and sum(1 for w in words if w.istitle()) > len(words) * 0.7:
               qt = qt.capitalize()
 
-          lines = textwrap.wrap(qt, width=60)
-          if len(lines) > 2:
-              lines = lines[:2]
-              lines[1] = lines[1][:56].rstrip() + '...'
-
-          qt_esc_lines = [html.escape(l) for l in lines]
-          au_esc = html.escape(au)
-
-          if len(qt_esc_lines) == 1:
-              quote_text_nodes = f'<text x="56" y="54" fill="#4c4f69" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, \'Helvetica Neue\', Arial, sans-serif" font-size="14.5" font-weight="500" font-style="italic">“{qt_esc_lines[0]}”</text>'
+          # 单行根据长度动态计算字号，保证横向饱满充实且不换行断裂
+          length = len(qt)
+          if length <= 55:
+              font_size = 14.5
+          elif length <= 75:
+              font_size = 13.0
+          elif length <= 95:
+              font_size = 11.8
           else:
-              t1, t2 = qt_esc_lines[0], qt_esc_lines[1]
-              quote_text_nodes = f'<text x="56" y="44" fill="#4c4f69" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, \'Helvetica Neue\', Arial, sans-serif" font-size="14" font-weight="500" font-style="italic">“{t1}</text>\n  <text x="56" y="66" fill="#4c4f69" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, \'Helvetica Neue\', Arial, sans-serif" font-size="14" font-weight="500" font-style="italic">{t2}”</text>'
+              font_size = 11.0
+              if length > 105:
+                  qt = qt[:102].rstrip() + '...'
+
+          qt_esc = html.escape(qt)
+          au_esc = html.escape(au)
 
           svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="750" height="115" viewBox="0 0 750 115" fill="none">
             <defs>
@@ -164,12 +166,12 @@ jobs:
             <rect x="2" y="2" width="746" height="111" rx="16" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="1.5"/>
             <rect x="2" y="18" width="6" height="79" rx="3" fill="url(#accentGrad)"/>
             <text x="22" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="900" fill="url(#quoteMarkGrad)" opacity="0.15">“</text>
-            {quote_text_nodes}
-            <text x="716" y="92" fill="#8839ef" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" text-anchor="end">— {au_esc}</text>
+            <text x="48" y="54" fill="#4c4f69" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="{font_size}" font-weight="500" font-style="italic">“{qt_esc}”</text>
+            <text x="716" y="90" fill="#8839ef" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="600" text-anchor="end">— {au_esc}</text>
           </svg>'''
           with open('assets/geek-quote.svg', 'w', encoding='utf-8') as f:
               f.write(svg)
-          print('Generated Catppuccin Latte geek-quote.svg v2 with balanced typography')
+          print('Generated Catppuccin Latte geek-quote.svg v3 with single-line adaptive scaling')
           PYEOF
 
 
