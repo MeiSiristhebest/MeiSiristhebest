@@ -77,16 +77,16 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ### 💻 Technical Spectrum
 
-<!-- Category Skillicons Wall (Harmonized Light Theme & Grouped Architecture) -->
+<!-- Category Skillicons Wall (Hierarchically Sorted & Grouped) -->
 <div align="left">
-  <!-- Languages & Runtimes -->
-  <img src="https://skillicons.dev/icons?i=java,go,ts,js,python,rust,bun,nodejs,html,css&perline=10&theme=light" />
+  <!-- Layer 1: Core Languages & High-Performance Runtimes (Backend -> Multi-Paradigm -> Runtimes -> Web Markup) -->
+  <img src="https://skillicons.dev/icons?i=go,rust,java,python,ts,js,bun,nodejs,html,css&perline=10&theme=light" />
   <br/><br/>
-  <!-- Frameworks & Frontend Systems -->
+  <!-- Layer 2: Frameworks & Rendering Systems (Enterprise Backend -> UI Frameworks -> Meta-Frameworks -> 3D Graphics -> Styling) -->
   <img src="https://skillicons.dev/icons?i=spring,react,nextjs,vue,vite,threejs,tailwind&perline=7&theme=light" />
   <br/><br/>
-  <!-- Cloud, Database & Infrastructure Tooling -->
-  <img src="https://skillicons.dev/icons?i=docker,mysql,postgres,redis,linux,git,githubactions,powershell&perline=8&theme=light" />
+  <!-- Layer 3: Cloud, Database & Infrastructure Tooling (Containers & OS -> RDBMS & Cache -> CI/CD & Shell) -->
+  <img src="https://skillicons.dev/icons?i=docker,linux,mysql,postgres,redis,git,githubactions,powershell&perline=8&theme=light" />
 </div>
 
 ---
