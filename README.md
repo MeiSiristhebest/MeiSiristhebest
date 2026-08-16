@@ -27,7 +27,10 @@ I write code to document thoughts, capture time, and build tiny virtual spaces t
 To me, software engineering is not just about solving tickets — it is a form of craftsmanship, a canvas where logic meets intuition.
 
 *   🌌 **Aesthetic & Order**: Passionate about minimalist design, architectural neatness, and finding order within high-entropy systems.
-*   ☕ **Beyond the Console**: Football (soccer), gaming, music, movies, reading, history, and anime/ACG culture.
+*   🔭 **Cosmos & Exploration**: Deeply captivated by observational astronomy, celestial ephemeris, and planetary dynamics.
+*   ☕ **Beyond the Console**: 
+    - 📖 *Mind & Humanities*: History, philosophy, reading, and cinema.
+    - 🎮 *Interactive Arts & Play*: Competitive gaming, music, anime/ACG culture, and football (soccer).
 *   🎯 **Current Focus**: `LLM Agent Workflows (MCP / Harness Eng)` · `High-Concurrency Microservices`
 
 <br/>
@@ -74,12 +77,15 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ### 💻 Technical Spectrum
 
-<!-- Category Skillicons Wall -->
+<!-- Category Skillicons Wall (Harmonized Light Theme & Grouped Architecture) -->
 <div align="left">
-  <!-- Languages & Core Frameworks -->
-  <img src="https://skillicons.dev/icons?i=java,go,python,spring,react,vue,threejs,html,css&perline=9&theme=light" />
+  <!-- Languages & Runtimes -->
+  <img src="https://skillicons.dev/icons?i=java,go,ts,js,python,rust,bun,nodejs,html,css&perline=10&theme=light" />
   <br/><br/>
-  <!-- Infra, Cloud & Developer Tooling -->
+  <!-- Frameworks & Frontend Systems -->
+  <img src="https://skillicons.dev/icons?i=spring,react,nextjs,vue,vite,threejs,tailwind&perline=7&theme=light" />
+  <br/><br/>
+  <!-- Cloud, Database & Infrastructure Tooling -->
   <img src="https://skillicons.dev/icons?i=docker,mysql,postgres,redis,linux,git,githubactions,powershell&perline=8&theme=light" />
 </div>
 
