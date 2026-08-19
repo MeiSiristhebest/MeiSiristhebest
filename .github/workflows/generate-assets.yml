@@ -91,13 +91,16 @@ jobs:
           # 采用专业设计的主题：Catppuccin Latte / Soft Pastel 薰衣草-马卡龙柔光调色盘
           targets = [
               ('assets/header-wave.svg',
-               'https://capsule-render.vercel.app/api?type=waving&color=0:8839ef,50:7287fd,100:ea76cb&height=220&section=header&text=Nefelibata&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=A%20cloud%20walker%20translating%20daydreams%20into%20code.&descSize=15&descAlignY=58',
+               'https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_color_list=8839ef,7287fd,ea76cb&height=180&section=header',
                '<svg'),
-              ('assets/streak-stats.svg',
-               'https://streak-stats.demolab.com/?user=MeiSiristhebest&theme=catppuccin_latte&hide_border=true',
+              ('assets/github-stats.svg',
+               'https://github-readme-stats-ins.vercel.app/api?username=MeiSiristhebest&show_icons=true&theme=city_lights&bg_color=0000&hide_border=true',
+               '<svg'),
+              ('assets/top-languages.svg',
+               'https://github-readme-stats-ins.vercel.app/api/top-langs/?username=MeiSiristhebest&layout=compact&theme=city_lights&bg_color=0000&hide_border=true&langs_count=8',
                '<svg'),
               ('assets/github-activity-graph.svg',
-               'https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&bg_color=eff1f5&color=8839ef&line=7287fd&point=ea76cb&area=true&hide_border=true',
+               'https://github-readme-activity-graph.vercel.app/graph?username=MeiSiristhebest&theme=xcode&hide_border=true&area=true',
                'svg'),
           ]
           for fname, url, check in targets:
