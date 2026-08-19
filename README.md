@@ -159,7 +159,7 @@ To me, software engineering is not just about solving tickets — it is a form o
       </td>
       <td width="50%" align="center" valign="middle">
         <a href="https://github.com/MeiSiristhebest">
-          <img src="./assets/streak-stats.svg" alt="GitHub Streak Stats" />
+          <img src="./assets/2-most-commit-language.svg" height="195" alt="Commit Language Distribution" />
         </a>
       </td>
     </tr>
