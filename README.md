@@ -48,37 +48,25 @@ To me, software engineering is not just about solving tickets — it is a form o
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/bytedance/deer-flow">ByteDance Deer-Flow</a> · 3 Merged PRs</h3>
-      <p>Hardened agent skills subsystem against projection drift and memory non-finite timeout hangs (<code>NaN</code>/<code>+Inf</code>), replacing fragile hardlinks with resilient platform-safe copying.</p>
+      <p>Hardened memory subsystem against non-finite timeout values (rejecting <code>NaN</code> / <code>+Inf</code>) and resolved cross-platform skill projection issues in Agent workflows.</p>
       <a href="https://github.com/bytedance/deer-flow/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/trpc-group/trpc-agent-go">tRPC-Agent-Go</a> · 4 Merged PRs</h3>
-      <p>Contributed automated code review agents, evaluation-optimization regression loops, tool execution safety guards, and session memory replay consistency test framework.</p>
-      <a href="https://github.com/trpc-group/trpc-agent-go/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
+      <h3><a href="https://github.com/alibaba/open-code-review">Alibaba OpenCodeReview</a> · Merged</h3>
+      <p>Refined Agent skill instructions to prevent TTY output stream truncation during high-volume automated code review execution.</p>
+      <a href="https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/alibaba/open-code-review">Alibaba OpenCodeReview</a> · Merged</h3>
-      <p>Refined Agent skill instructions to prevent TTY output stream truncation during high-volume automated code review execution, and contributed shell completion docs.</p>
-      <a href="https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
-    </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/ManimCommunity/manim">Manim Community</a> · 2 Merged PRs</h3>
       <p>Fixed 3Blue1Brown mathematical animation engine crashes on parallel lines in <code>Angle</code> and resolved collinear vertex failures in <code>round_corners()</code>.</p>
       <a href="https://github.com/ManimCommunity/manim/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/langchain-ai/langchain">LangChain & MS FLAML</a> · 2 Merged PRs</h3>
-      <p>Patched input validation in LangChain <code>RecursiveJsonSplitter</code> and resolved time-series forecasting model variable mismatches in Microsoft AutoML library.</p>
-      <a href="https://github.com/langchain-ai/langchain/pulls?q=is%3Apr+author%3AMeiSiristhebest">View LangChain →</a> · <a href="https://github.com/microsoft/FLAML/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">FLAML →</a>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/stenolabs/stenoai">StenoAI (Local LLM)</a> · 4 Merged PRs</h3>
-      <p>Hardened automated Ollama model downloader with retry/fail-safe flags, restored POSIX execution permissions, and contributed Windows desktop platform support.</p>
-      <a href="https://github.com/stenolabs/stenoai/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
+      <h3><a href="https://github.com/microsoft/FLAML">Microsoft FLAML</a> · Merged</h3>
+      <p>Aligned time-series forecasting model configurations and fixed execution variable mismatches in Microsoft AutoML library.</p>
+      <a href="https://github.com/microsoft/FLAML/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
   </tr>
 </table>
