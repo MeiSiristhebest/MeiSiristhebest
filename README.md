@@ -144,12 +144,12 @@ To me, software engineering is not just about solving tickets — it is a form o
     <tr>
       <td width="50%" align="center" valign="middle">
         <a href="https://github.com/MeiSiristhebest">
-          <img src="https://github-readme-stats-ins.vercel.app/api?username=MeiSiristhebest&show_icons=true&theme=city_lights&bg_color=0000&hide_border=true" alt="MeiSiristhebest's GitHub Stats" />
+          <img src="./assets/github-stats.svg" alt="MeiSiristhebest's GitHub Stats" />
         </a>
       </td>
       <td width="50%" align="center" valign="middle">
         <a href="https://github.com/MeiSiristhebest">
-          <img src="https://github-readme-stats-ins.vercel.app/api/top-langs/?username=MeiSiristhebest&layout=compact&theme=city_lights&bg_color=0000&hide_border=true&langs_count=8" alt="Top Languages" />
+          <img src="./assets/top-languages.svg" alt="Top Languages" />
         </a>
       </td>
     </tr>
@@ -159,7 +159,7 @@ To me, software engineering is not just about solving tickets — it is a form o
       </td>
       <td width="50%" align="center" valign="middle">
         <a href="https://github.com/MeiSiristhebest">
-          <img src="https://streak-stats.demolab.com?user=MeiSiristhebest&theme=city_lights&hide_border=true&background=00000000" alt="GitHub Streak Stats" />
+          <img src="./assets/streak-stats.svg" alt="GitHub Streak Stats" />
         </a>
       </td>
     </tr>
