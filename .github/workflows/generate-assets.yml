@@ -91,7 +91,7 @@ jobs:
           # 采用专业设计的主题：Catppuccin Latte / Soft Pastel 薰衣草-马卡龙柔光调色盘
           targets = [
               ('assets/header-wave.svg',
-               'https://capsule-render.vercel.app/api?type=waving&color=gradient&custom_color_list=8839ef,7287fd,ea76cb&height=180&section=header',
+               'https://capsule-render.vercel.app/api?type=waving&color=0:8839ef,100:7287fd&height=180&section=header',
                '<svg'),
               ('assets/github-stats.svg',
                'https://github-readme-stats-ins.vercel.app/api?username=MeiSiristhebest&show_icons=true&theme=city_lights&bg_color=0000&hide_border=true',
