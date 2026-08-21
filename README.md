@@ -94,14 +94,12 @@ To me, software engineering is not just about solving tickets — it is a form o
 ### 🚀 Featured Projects
 
 #### 🌟 [OpenContrib](https://github.com/MeiSiristhebest/opencontrib)
-> **The Agent-Native Open Source Contribution Engine & 6-Dimension Weapon Arsenal.**
-*   **Tech Stack**: `TypeScript` · `Bun` · `Commander.js` · `Model Context Protocol (MCP)` · `ast-grep` · `Semgrep` · `Git Worktrees` · `Monorepo`
+> **Modular open-source contribution infrastructure for autonomous AI coding agents.**
+*   **Tech Stack**: `TypeScript` · `Bun` · `Model Context Protocol (MCP)` · `ast-grep` · `Git Worktrees`
 *   **Key Highlights**: 
-    - **24-Command CLI & 20 MCP Tools + 3 Resources + 1 Workflow Prompt** across 10 capability domains.
-    - **6-Dimension Weapon Arsenal**: AI-native review (Alibaba OCR, Piolium P12/P13, SecLab), AST & Semgrep security packs, deep language probes (NilAway, GoLeak, Cargo Deny, Knip), and concurrency fuzzing.
-    - **Top-K Smart Pointer Triage (`ptr://...`)**: Automated weighted ranking with 1-click 150-token code slice dereferencing.
-    - **Concurrency Stampede & Chaos Jitter Evidence**: High-contention race collision detection and dual-stage empirical verification.
-    - Built-in **RFC 100-line diff gate**, sister-module variant hunting, and anti-AI noise governance auditor.
+    - **Deterministic Domain Engine**: 24 CLI subcommands and 20 MCP tools providing AI agents with defect probes, clean-room sandboxes, and RFC-100 governance.
+    - **Empirical Evidence Pipeline**: Dual-stage verification (pre-fix failure $\rightarrow$ post-fix pass) with concurrent contention and jitter testing.
+    - **Smart Pointer Progressive Slicing**: Automated weighted triage with 150-token code slice dereferencing to prevent context bloat.
 
 #### 🛍️ [Ningxiang Go](https://github.com/MeiSiristhebest/ningxiangshop)
 > **Enterprise-grade distributed microservice e-commerce system built for high-concurrency scenarios.**
