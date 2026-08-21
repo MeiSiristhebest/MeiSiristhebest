@@ -94,12 +94,14 @@ To me, software engineering is not just about solving tickets — it is a form o
 ### 🚀 Featured Projects
 
 #### 🌟 [OpenContrib](https://github.com/MeiSiristhebest/opencontrib)
-> **Universal Agent-Native Open Source Contribution Engine & MCP Server.**
-*   **Tech Stack**: `TypeScript` · `Bun` · `Model Context Protocol (MCP)` · `Git Worktrees` · `Monorepo`
+> **The Agent-Native Open Source Contribution Engine & 6-Dimension Weapon Arsenal.**
+*   **Tech Stack**: `TypeScript` · `Bun` · `Commander.js` · `Model Context Protocol (MCP)` · `ast-grep` · `Semgrep` · `Git Worktrees` · `Monorepo`
 *   **Key Highlights**: 
-    - **18 MCP Primitives + 3 Resources** providing autonomous Agents with discrete domain capabilities.
-    - **Isolated Git Worktree Sandboxes** with credential sanitization, 20x stress loop validation, and dual-stage empirical evidence verification.
-    - Built-in **100-line diff gate** and anti-AI noise governance linter.
+    - **24-Command CLI & 20 MCP Tools + 3 Resources + 1 Workflow Prompt** across 10 capability domains.
+    - **6-Dimension Weapon Arsenal**: AI-native review (Alibaba OCR, Piolium P12/P13, SecLab), AST & Semgrep security packs, deep language probes (NilAway, GoLeak, Cargo Deny, Knip), and concurrency fuzzing.
+    - **Top-K Smart Pointer Triage (`ptr://...`)**: Automated weighted ranking with 1-click 150-token code slice dereferencing.
+    - **Concurrency Stampede & Chaos Jitter Evidence**: High-contention race collision detection and dual-stage empirical verification.
+    - Built-in **RFC 100-line diff gate**, sister-module variant hunting, and anti-AI noise governance auditor.
 
 #### 🛍️ [Ningxiang Go](https://github.com/MeiSiristhebest/ningxiangshop)
 > **Enterprise-grade distributed microservice e-commerce system built for high-concurrency scenarios.**
