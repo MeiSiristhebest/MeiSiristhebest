@@ -94,46 +94,46 @@ To me, software engineering is not just about solving tickets — it is a form o
 ### 🚀 Featured Projects
 
 #### 🌟 [OpenContrib](https://github.com/MeiSiristhebest/opencontrib)
-> **Modular open-source contribution infrastructure for autonomous AI coding agents.**
+> *Modular open-source contribution infrastructure for autonomous AI coding agents.*
 *   **Tech Stack**: `TypeScript` · `Bun` · `Model Context Protocol (MCP)` · `ast-grep` · `Git Worktrees`
-*   **Key Highlights**: 
-    - **Deterministic Domain Engine**: 24 CLI subcommands and 20 MCP tools providing AI agents with defect probes, clean-room sandboxes, and RFC-100 governance.
-    - **Empirical Evidence Pipeline**: Dual-stage verification (pre-fix failure $\rightarrow$ post-fix pass) with concurrent contention and jitter testing.
-    - **Smart Pointer Progressive Slicing**: Automated weighted triage with 150-token code slice dereferencing to prevent context bloat.
+*   **Engineering Highlights**:
+    - **Deterministic Domain Engine**: 24 CLI subcommands and 20 MCP tools providing AI agents with defect probes, sandboxes, and RFC-100 governance.
+    - **Empirical Evidence & Triage**: Dual-stage verification with concurrent contention testing and 150-token Smart Pointer slice dereferencing.
 
 #### 🛍️ [Ningxiang Go](https://github.com/MeiSiristhebest/ningxiangshop)
-> **Enterprise-grade distributed microservice e-commerce system built for high-concurrency scenarios.**
-*   **Tech Stack**: `Java 21 (LTS)` · `Spring Boot 3.3` · `Spring Cloud Alibaba 2023` · `Nacos` · `Seata` · `RocketMQ` · `Redis` · `Vue 3`
-*   **Key Highlights**: 
-    - **Zero-RPC Gateway Authentication Offloading** with JWT session header propagation.
-    - **Annotation-driven Multilevel Cache** (L1 Caffeine + L2 Redis) with RocketMQ cache invalidation broadcasts.
-    - **Java 21 Virtual Threads** enabled globally; Redisson watchdog anti-overselling distributed locks and Sentinel traffic defense.
+> *Enterprise-grade distributed microservice e-commerce system built for high-concurrency scenarios.*
+*   **Tech Stack**: `Java 21 (LTS)` · `Spring Boot 3.3` · `Spring Cloud Alibaba` · `RocketMQ` · `Redis` · `Vue 3`
+*   **Engineering Highlights**:
+    - **High-Concurrency Architecture**: Global Java 21 virtual threads, zero-RPC gateway auth offloading, and Redisson watchdog anti-overselling locks.
+    - **Multilevel Caching**: L1 Caffeine + L2 Redis annotation-driven cache with RocketMQ broadcast invalidation.
 
 #### 🔮 [Mystic](https://github.com/MeiSiristhebest/mystic)
-> **Multi-domain interpretable AI reasoning suite powered by deterministic ephemeris and evidence graph arbitration.**
-*   **Tech Stack**: `Next.js 16 (App Router)` · `React 19` · `TypeScript` · `Google Gemini API v2` · `Moshier Ephemeris`
-*   **Key Highlights**:
-    - **4-Tier Decoupled Architecture**: Strictly rejects blackbox Prompt wrapping by placing deterministic rules before LLM generation.
-    - **Multi-Domain Differential Engines**: IANA timezone Julian Day & Moshier ephemeris, Ni Haixia TCM differential decision tree (with `insufficient_evidence` refusal mechanism), and 80+ Ziwei pattern rules.
-    - **Canonical Evidence Graph (CEG)**: Deterministic 4-dimensional evidence calibration scoring and cross-domain temporal conflict arbitration.
+> *Multi-domain interpretable AI reasoning suite powered by deterministic ephemeris and evidence graph arbitration.*
+*   **Tech Stack**: `Next.js 16` · `React 19` · `TypeScript` · `Google Gemini API v2` · `Moshier Ephemeris`
+*   **Engineering Highlights**:
+    - **4-Tier Decoupled Architecture**: Strictly isolates deterministic domain rules from LLM generation to eliminate hallucination.
+    - **Canonical Evidence Graph (CEG)**: Deterministic multi-dimensional evidence scoring and cross-domain temporal conflict arbitration.
 
 #### 💬 [YouJu](https://github.com/MeiSiristhebest/youju)
-> **AI-powered contract loophole & conversation risk analysis workbench (TRAE AI Creativity Contest Featured Project).**
-*   **Tech Stack**: `React 18` · `Express` · `TypeScript` · `TailwindCSS` · `Zod` · `Gemini API / Offline Heuristic Engine`
-*   **Key Highlights**:
-    - **5-Layer DDD Clean Architecture**: Strict domain boundary separation with runtime Zod Schema guards and self-reflection loops.
-    - **7-Step Transparent Pipeline**: Multi-source ingestion (Text/PDF/URL), cross-source entity extraction, and 3-tier (Red/Yellow/Blue) risk dashboard with actionable script generation.
-    - **Offline Resilience**: Built-in deterministic heuristic rule engine fallback when no API key is provided.
+> *AI-powered contract loophole & conversation risk analysis workbench (TRAE AI Creativity Contest Featured Project).*
+*   **Tech Stack**: `React 18` · `Express` · `TypeScript` · `TailwindCSS` · `Zod` · `Gemini API`
+*   **Engineering Highlights**:
+    - **5-Layer DDD Clean Architecture**: Strict domain boundaries with runtime Zod schema validation and self-reflection loops.
+    - **Transparent Risk Dashboard**: 3-tier risk classification with actionable remediation and offline deterministic heuristic fallback.
 
 #### ⚡ [tiktok-backend-go](https://github.com/MeiSiristhebest/tiktok-backend-go)
-> **High-concurrency video feed and social interaction backend service.**
+> *High-concurrency video feed and social interaction backend service (ByteDance Youth Camp).*
 *   **Tech Stack**: `Golang` · `Gin` · `GORM` · `MySQL` · `Redis`
-*   **Key Highlights**: Complete implementation of ByteDance Youth Camp video feed, user interaction, favorite, and relation graph APIs with robust caching and transaction boundaries.
+*   **Engineering Highlights**:
+    - **Feed & Relation Pipeline**: High-throughput video stream querying, user interaction caching, and relation graph transaction handling.
+    - **Storage Optimization**: Multi-tier Redis caching and MySQL indexing strategies for low-latency social feed delivery.
 
 #### 🎙️ [TimeLog](https://github.com/MeiSiristhebest/TimeLog) & [timelog-web](https://github.com/MeiSiristhebest/timelog-web)
-> **Local-first voice diary & cross-generational family story preservation suite.**
+> *Local-first voice diary & cross-generational family story preservation suite.*
 *   **Tech Stack**: `React Native (Expo)` · `Next.js` · `SQLite` · `Supabase` · `Silero VAD`
-*   **Key Highlights**: Streaming audio transcription, offline-first local cache synchronization, and family memory curation console.
+*   **Engineering Highlights**:
+    - **Local-First Audio Engine**: Streaming voice activity detection (Silero VAD) with offline SQLite synchronization.
+    - **Cross-Platform Console**: Next.js web curation dashboard backed by Supabase storage and row-level security.
 
 ---
 
