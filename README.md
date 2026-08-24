@@ -47,13 +47,13 @@ To me, software engineering is not just about solving tickets — it is a form o
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/bytedance/deer-flow">ByteDance Deer-Flow</a> · 3 Merged PRs</h3>
-      <p>Hardened memory subsystem against non-finite timeout values (rejecting <code>NaN</code> / <code>+Inf</code>) and resolved cross-platform skill projection issues in Agent workflows.</p>
+      <h3><a href="https://github.com/bytedance/deer-flow">ByteDance Deer-Flow</a> · 4 Merged PRs</h3>
+      <p>Hardened memory subsystem against non-finite timeout values (rejecting <code>NaN</code> / <code>+Inf</code>), resolved cross-platform skill projection issues, and prevented garbage collection of deferred subagent cleanup tasks.</p>
       <a href="https://github.com/bytedance/deer-flow/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/alibaba/open-code-review">Alibaba OpenCodeReview</a> · Merged</h3>
-      <p>Refined Agent skill instructions to prevent TTY output stream truncation during high-volume automated code review execution.</p>
+      <h3><a href="https://github.com/alibaba/open-code-review">Alibaba OpenCodeReview</a> · 2 Merged PRs</h3>
+      <p>Refined Agent skill instructions to prevent TTY output stream truncation and ensured background memory compression tasks join before session finalization.</p>
       <a href="https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
   </tr>
