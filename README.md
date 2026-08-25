@@ -101,7 +101,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 > *Modular open-source contribution infrastructure for autonomous AI coding agents.*
 *   **Tech Stack**: `TypeScript` · `Bun` · `Model Context Protocol (MCP)` · `ast-grep` · `Git Worktrees`
 *   **Engineering Highlights**:
-    - **Deterministic Domain Engine**: 24 CLI subcommands and 20 MCP tools providing AI agents with defect probes, sandboxes, and RFC-100 governance.
+    - **Deterministic Domain Engine**: 24 CLI subcommands and 34 MCP tools providing AI agents with defect probes, sandboxes, and RFC-100 governance.
     - **Empirical Evidence & Triage**: Dual-stage verification with concurrent contention testing and 150-token Smart Pointer slice dereferencing.
 
 #### 🛍️ [Ningxiang Go](https://github.com/MeiSiristhebest/ningxiangshop)
@@ -113,7 +113,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 #### 🔮 [Mystic](https://github.com/MeiSiristhebest/mystic)
 > *Multi-domain interpretable AI reasoning suite powered by deterministic ephemeris and evidence graph arbitration.*
-*   **Tech Stack**: `Next.js 16` · `React 19` · `TypeScript` · `Google Gemini API v2` · `Moshier Ephemeris`
+*   **Tech Stack**: `Next.js 16` · `React 19` · `TypeScript` · `Multi-Model AI Engine (DeepSeek · Claude · GPT-4o · Gemini)` · `Moshier Ephemeris`
 *   **Engineering Highlights**:
     - **4-Tier Decoupled Architecture**: Strictly isolates deterministic domain rules from LLM generation to eliminate hallucination.
     - **Canonical Evidence Graph (CEG)**: Deterministic multi-dimensional evidence scoring and cross-domain temporal conflict arbitration.
