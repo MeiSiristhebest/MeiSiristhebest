@@ -73,13 +73,6 @@ jobs:
             echo "Warning: trophy SVG not generated"
           fi
 
-      # Step 4: 3D 贡献城堡（生成到 profile-3d-contrib/）
-      - name: Generate 3D Contribution Calendar
-        uses: yoshi389111/github-profile-3d-contrib@latest
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: MeiSiristhebest
 
       # Step 5: 静态资源抓取 + Catppuccin Latte 顶级柔美调色盘一言金句卡片 (单行自适应比例满幅排版)
       - name: Fetch SVG Assets and Generate Quote Card
@@ -243,7 +236,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/*.svg profile-3d-contrib/*.svg
+          git add assets/*.svg
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
