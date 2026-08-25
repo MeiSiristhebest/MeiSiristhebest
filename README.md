@@ -1,3 +1,7 @@
+<!-- 
+  Designed with ❤️ by Nefelibata (https://github.com/MeiSiristhebest)
+  If you find this profile aesthetic or use this template, please drop a ⭐ Star!
+-->
 <!-- Header Wave Banner -->
 <div align="center">
   <img src="./assets/header-wave.svg" width="100%" />
@@ -178,6 +182,11 @@ To me, software engineering is not just about solving tickets — it is a form o
 </div>
 
 <br/><br/>
+
+
+<div align="center">
+  <sub>💡 <i>Liked the portfolio design or found the open-source projects helpful? Consider giving a ⭐ to support the journey!</i></sub>
+</div>
 
 <!-- 👥 Profile Views Counter -->
 <div align="center">
