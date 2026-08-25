@@ -113,10 +113,11 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 #### 🔮 [Mystic](https://github.com/MeiSiristhebest/mystic)
 > *Multi-domain interpretable AI reasoning suite powered by deterministic ephemeris and evidence graph arbitration.*
-*   **Tech Stack**: `Next.js 16` · `React 19` · `TypeScript` · `Multi-Model AI Engine (DeepSeek · Claude · GPT-4o · Gemini)` · `Moshier Ephemeris`
+*   **Tech Stack**: Next.js 16 · React 19 · TypeScript · Vercel AI SDK · Universal Multi-Model Engine (DeepSeek · Claude · GPT · Gemini) · Moshier Ephemeris
 *   **Engineering Highlights**:
     - **4-Tier Decoupled Architecture**: Strictly isolates deterministic domain rules from LLM generation to eliminate hallucination.
-    - **Canonical Evidence Graph (CEG)**: Deterministic multi-dimensional evidence scoring and cross-domain temporal conflict arbitration.
+    - **Canonical Evidence Graph (CEG)**: Deterministic multi-dimensional evidence scoring, relation edges, and cross-domain temporal conflict arbitration.
+    - **Universal Multi-Model Engine**: Zero-hardcoding dynamic provider registry powered by Vercel AI SDK with BYOK custom endpoint support.
 
 #### 💬 [YouJu](https://github.com/MeiSiristhebest/youju)
 > *AI-powered contract loophole & conversation risk analysis workbench (TRAE AI Creativity Contest Featured Project).*
