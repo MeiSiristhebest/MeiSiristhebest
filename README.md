@@ -56,9 +56,21 @@ To me, software engineering is not just about solving tickets — it is a form o
       <a href="https://github.com/bytedance/deer-flow/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/alibaba/open-code-review">Alibaba OpenCodeReview</a> · 2 Merged PRs</h3>
-      <p>Refined Agent skill instructions to prevent TTY output stream truncation and ensured background memory compression tasks join before session finalization.</p>
+      <h3><a href="https://github.com/TencentCloud/CubeSandbox">Tencent Cloud CubeSandbox</a> · 2 Merged PRs</h3>
+      <p>Ensured precise gRPC worker connection teardown across full and prefixed routing keys, and fixed zero <code>EndAt</code> timestamp boundaries for non-expiring sandboxes.</p>
+      <a href="https://github.com/TencentCloud/CubeSandbox/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/alibaba/open-code-review">Alibaba OpenCodeReview</a> · 3 Merged PRs</h3>
+      <p>Refined Agent skill instructions to prevent TTY output stream truncation, supported cross-platform subpath queries in <code>file_find</code>, and ensured background memory compression tasks join before session finalization.</p>
       <a href="https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/microsoft/markitdown">Microsoft MarkItDown & FLAML</a> · 2 Merged PRs</h3>
+      <p>Hardened Azure Document Intelligence client initialization against default API version regressions, and resolved forecasting model variable mismatches in FLAML.</p>
+      <a href="https://github.com/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged+repo%3Amicrosoft%2Fmarkitdown+repo%3Amicrosoft%2FFLAML">View contributions →</a>
     </td>
   </tr>
   <tr>
@@ -68,9 +80,9 @@ To me, software engineering is not just about solving tickets — it is a form o
       <a href="https://github.com/ManimCommunity/manim/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/microsoft/FLAML">Microsoft FLAML</a> · Merged</h3>
-      <p>Aligned time-series forecasting model configurations and fixed execution variable mismatches in Microsoft AutoML library.</p>
-      <a href="https://github.com/microsoft/FLAML/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
+      <h3><a href="https://github.com/earendil-works/pi">Pi Agent Engine</a> · Merged</h3>
+      <p>Hardened network proxy resolution to accurately match both root domains and recursive subdomains in standard <code>NO_PROXY</code> environment specifications.</p>
+      <a href="https://github.com/earendil-works/pi/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
   </tr>
 </table>
