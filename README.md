@@ -105,16 +105,54 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ### 💻 Technical Spectrum
 
-<!-- Category Skillicons Wall (Hierarchically Sorted & Grouped) -->
+<!-- Shields.io Badges with Official Logos and Names -->
 <div align="left">
-  <!-- Layer 1: Core Languages & High-Performance Runtimes (Backend -> Multi-Paradigm -> Runtimes -> Web Markup) -->
-  <img src="https://skillicons.dev/icons?i=go,rust,java,python,ts,js,bun,nodejs,html,css&perline=10&theme=light" />
+  <!-- Layer 1: Core Languages & Runtimes -->
+  <p><strong>Languages & Runtimes</strong></p>
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
+  <img src="https://img.shields.io/badge/Rust-DEA584?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/Java_21-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 21" />
+  <img src="https://img.shields.io/badge/Python_3-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Bun-FBF0DF?style=flat-square&logo=bun&logoColor=black" alt="Bun" />
+  <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
   <br/><br/>
-  <!-- Layer 2: Frameworks & Rendering Systems (Enterprise Backend -> UI Frameworks -> Meta-Frameworks -> 3D Graphics -> Styling) -->
-  <img src="https://skillicons.dev/icons?i=spring,react,nextjs,vue,vite,threejs,tailwind&perline=7&theme=light" />
+
+  <!-- Layer 2: Frameworks, Fullstack & Clients -->
+  <p><strong>Frameworks & Ecosystems</strong></p>
+  <img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot 3" />
+  <img src="https://img.shields.io/badge/Spring_Cloud-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Cloud" />
+  <img src="https://img.shields.io/badge/Gin-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Gin" />
+  <img src="https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React 19" />
+  <img src="https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js 16" />
+  <img src="https://img.shields.io/badge/Vue_3-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue 3" />
+  <img src="https://img.shields.io/badge/Tauri_2-FFC131?style=flat-square&logo=tauri&logoColor=black" alt="Tauri 2" />
+  <img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React Native" />
+  <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white" alt="Expo" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="TailwindCSS" />
   <br/><br/>
-  <!-- Layer 3: Cloud, Database & Infrastructure Tooling (Containers & OS -> RDBMS & Cache -> CI/CD & Shell) -->
-  <img src="https://skillicons.dev/icons?i=docker,linux,mysql,postgres,redis,git,githubactions,powershell&perline=8&theme=light" />
+
+  <!-- Layer 3: Storage, ORM & AI Infra -->
+  <p><strong>Databases, Architecture & AI Infra</strong></p>
+  <img src="https://img.shields.io/badge/MCP_Protocol-8839EF?style=flat-square&logo=anthropic&logoColor=white" alt="MCP" />
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase" />
+  <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma" />
+  <br/><br/>
+
+  <!-- Layer 4: Cloud, Containers & Tooling -->
+  <p><strong>Cloud, DevOps & Tooling</strong></p>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/Turborepo-EF4444?style=flat-square&logo=turborepo&logoColor=white" alt="Turborepo" />
+  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell" />
 </div>
 
 ---
