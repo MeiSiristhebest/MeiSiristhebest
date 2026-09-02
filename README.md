@@ -68,21 +68,33 @@ To me, software engineering is not just about solving tickets — it is a form o
       <a href="https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/microsoft/markitdown">Microsoft MarkItDown & FLAML</a> · 2 Merged PRs</h3>
-      <p>Hardened Azure Document Intelligence client initialization against default API version regressions, and resolved forecasting model variable mismatches in FLAML.</p>
-      <a href="https://github.com/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged+repo%3Amicrosoft%2Fmarkitdown+repo%3Amicrosoft%2FFLAML">View contributions →</a>
+      <h3><a href="https://github.com/microsoft/markitdown">Microsoft MarkItDown</a> · Merged</h3>
+      <p>Hardened Azure Document Intelligence client initialization against default API version regressions in Microsoft core document conversion library.</p>
+      <a href="https://github.com/microsoft/markitdown/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
   </tr>
   <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/microsoft/FLAML">Microsoft FLAML</a> · Merged</h3>
+      <p>Aligned time-series forecasting model configurations and fixed execution variable mismatches in Microsoft AutoML library.</p>
+      <a href="https://github.com/microsoft/FLAML/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
+    </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/ManimCommunity/manim">Manim Community</a> · 2 Merged PRs</h3>
       <p>Fixed 3Blue1Brown mathematical animation engine crashes on parallel lines in <code>Angle</code> and resolved collinear vertex failures in <code>round_corners()</code>.</p>
       <a href="https://github.com/ManimCommunity/manim/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/earendil-works/pi">Pi Agent Engine</a> · Merged</h3>
       <p>Hardened network proxy resolution to accurately match both root domains and recursive subdomains in standard <code>NO_PROXY</code> environment specifications.</p>
       <a href="https://github.com/earendil-works/pi/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/stenolabs/stenoai">Steno AI</a> · 4 Merged PRs</h3>
+      <p>Hardened Ollama automated download pipelines with resilient retry/fail semantics, restored script execution permissions, and expanded cross-platform Windows documentation.</p>
+      <a href="https://github.com/stenolabs/stenoai/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
   </tr>
 </table>
