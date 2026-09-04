@@ -173,11 +173,11 @@ To me, software engineering is not just about solving tickets — it is a form o
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/MeiSiristhebest/inkpi">🖋️ InkPi</a> & <a href="https://github.com/MeiSiristhebest/inkpi-desktop">inkpi-desktop</a></h3>
-      <p><i>Extensible AI agent harness infrastructure paired with a cross-platform desktop workstation.</i></p>
+      <p><i>Extensible AI agent harness infrastructure paired with a cross-platform creative writing workstation.</i></p>
       <p><strong>Tech Stack</strong>: <code>Rust</code> · <code>Tauri 2</code> · <code>TypeScript</code> · <code>Bun</code> · <code>React 19</code> · <code>JSON-RPC 2.0</code></p>
       <ul>
         <li><strong>Hexagonal Agent Harness (<a href="https://github.com/MeiSiristhebest/inkpi">inkpi</a>)</strong>: 10-package monorepo decoupling domain state machine, pluggable session backends (SQLite FTS5 / JSONL / Memory), 4-tier prompt caching breakpoints, and differential ANSI TUI.</li>
-        <li><strong>Native Workstation Shell (<a href="https://github.com/MeiSiristhebest/inkpi-desktop">inkpi-desktop</a>)</strong>: Tauri 2 + Rust host orchestrating a standalone Bun sidecar daemon, Tiptap / Novel rich text core, and Living Codex Aho-Corasick knowledge graph engine with local-first IndexedDB.</li>
+        <li><strong>Ports & Adapters Desktop (<a href="https://github.com/MeiSiristhebest/inkpi-desktop">inkpi-desktop</a>)</strong>: Tauri 2 + Rust shell with Bun daemon sidecar, atomic design organisms, Living Codex Aho-Corasick graph, and 9 domain-driven creative writing plugins.</li>
       </ul>
       <a href="https://github.com/MeiSiristhebest/inkpi">View Engine (Infra) →</a> · <a href="https://github.com/MeiSiristhebest/inkpi-desktop">View Desktop (App) →</a>
     </td>
