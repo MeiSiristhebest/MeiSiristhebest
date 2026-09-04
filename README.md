@@ -10,7 +10,7 @@
 
   <!-- Dynamic Typing Title -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&color=8839EF&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Lost+in+the+terminal%2C+searching+for+digital+poetry;Always+coding%2C+always+exploring" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&color=8839EF&center=true&vCenter=true&width=700&lines=Hi+there+%F0%9F%91%8B%2C+I+am+Nefelibata;Lost+in+the+terminal%2C+searching+for+digital+poetry;Building+deterministic+order+from+chaos" alt="Typing SVG" />
   </a>
 
   <br/><br/>
@@ -21,7 +21,7 @@
 
 ---
 
-### 💡 About Nefelibata
+## 💡 About Nefelibata
 
 > **Nefelibata** *(n.)*  
 > *A cloud walker; one who does not obey the conventions of society, literature, or art, but follows their own path.*
@@ -35,7 +35,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 *   ☕ **Beyond the Console**: 
     - 📖 *Mind & Humanities*: History, philosophy, reading, and cinema.
     - 🎮 *Interactive Arts & Play*: Competitive gaming, music, anime/ACG culture, and football (soccer).
-*   🎯 **Current Focus**: `LLM Agent Workflows (MCP / Harness Eng)` · `High-Concurrency Microservices`
+*   🎯 **Current Focus**: `LLM Agent Workflows (MCP / Harness Engineering)` · `High-Concurrency Microservices`
 
 <br/>
 
@@ -103,7 +103,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ---
 
-### 💻 Technical Spectrum
+## 💻 Technical Spectrum
 
 <!-- Shields.io Badges with Official Logos and Names -->
 <div align="left">
@@ -157,7 +157,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ---
 
-### 🚀 Featured Projects
+## 🚀 Featured Projects
 
 <table>
   <tr>
@@ -230,7 +230,7 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ---
 
-### 📊 GitHub Activity & Metrics
+## 📊 GitHub Activity & Metrics
 
 <div align="center">
   <table>
