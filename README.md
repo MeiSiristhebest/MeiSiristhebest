@@ -159,47 +159,74 @@ To me, software engineering is not just about solving tickets — it is a form o
 
 ### 🚀 Featured Projects
 
-#### 🌟 [OpenContrib](https://github.com/MeiSiristhebest/opencontrib)
-> *Modular open-source contribution infrastructure for autonomous AI coding agents.*
-*   **Tech Stack**: `TypeScript` · `Bun` · `Model Context Protocol (MCP)` · `ast-grep` · `Git Worktrees`
-*   **Engineering Highlights**:
-    - **Deterministic Domain Engine**: 24 CLI subcommands and 34 MCP tools providing AI agents with defect probes, sandboxes, and RFC-100 governance.
-    - **Empirical Evidence & Triage**: Dual-stage verification with concurrent contention testing and 150-token Smart Pointer slice dereferencing.
-
-#### 🛍️ [Ningxiang Go](https://github.com/MeiSiristhebest/ningxiangshop)
-> *Enterprise-grade distributed microservice e-commerce system built for high-concurrency scenarios.*
-*   **Tech Stack**: `Java 21 (LTS)` · `Spring Boot 3.3` · `Spring Cloud Alibaba` · `RocketMQ` · `Redis` · `Vue 3`
-*   **Engineering Highlights**:
-    - **High-Concurrency Architecture**: Global Java 21 virtual threads, zero-RPC gateway auth offloading, and Redisson watchdog anti-overselling locks.
-    - **Multilevel Caching**: L1 Caffeine + L2 Redis annotation-driven cache with RocketMQ broadcast invalidation.
-
-#### 🔮 [Mystic](https://github.com/MeiSiristhebest/mystic)
-> *Multi-domain interpretable AI reasoning suite powered by deterministic ephemeris and evidence graph arbitration.*
-*   **Tech Stack**: Next.js 16 · React 19 · TypeScript · Vercel AI SDK · Moshier Ephemeris
-*   **Engineering Highlights**:
-    - **4-Tier Decoupled Architecture**: Strictly isolates deterministic domain rules from LLM generation to eliminate hallucination.
-    - **Canonical Evidence Graph (CEG)**: Deterministic multi-dimensional evidence scoring and cross-domain temporal conflict arbitration.
-
-#### 💬 [YouJu](https://github.com/MeiSiristhebest/youju)
-> *AI-powered contract loophole & conversation risk analysis workbench (TRAE AI Creativity Contest Featured Project).*
-*   **Tech Stack**: `React 18` · `Express` · `TypeScript` · `TailwindCSS` · `Zod` · `Gemini API`
-*   **Engineering Highlights**:
-    - **5-Layer DDD Clean Architecture**: Strict domain boundaries with runtime Zod schema validation and self-reflection loops.
-    - **Transparent Risk Dashboard**: 3-tier risk classification with actionable remediation and offline deterministic heuristic fallback.
-
-#### ⚡ [tiktok-backend-go](https://github.com/MeiSiristhebest/tiktok-backend-go)
-> *High-concurrency video feed and social interaction backend service (ByteDance Youth Camp).*
-*   **Tech Stack**: `Golang` · `Gin` · `GORM` · `MySQL` · `Redis`
-*   **Engineering Highlights**:
-    - **Feed & Relation Pipeline**: High-throughput video stream querying, user interaction caching, and relation graph transaction handling.
-    - **Storage Optimization**: Multi-tier Redis caching and MySQL indexing strategies for low-latency social feed delivery.
-
-#### 🎙️ [TimeLog](https://github.com/MeiSiristhebest/TimeLog) & [timelog-web](https://github.com/MeiSiristhebest/timelog-web)
-> *Local-first voice diary & cross-generational family story preservation suite.*
-*   **Tech Stack**: `React Native (Expo)` · `Next.js` · `SQLite` · `Supabase` · `Silero VAD`
-*   **Engineering Highlights**:
-    - **Local-First Audio Engine**: Streaming voice activity detection (Silero VAD) with offline SQLite synchronization.
-    - **Cross-Platform Console**: Next.js web curation dashboard backed by Supabase storage and row-level security.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/MeiSiristhebest/opencontrib">🌟 OpenContrib</a></h3>
+      <p><i>Modular open-source contribution infrastructure for autonomous AI coding agents.</i></p>
+      <p><strong>Tech Stack</strong>: <code>TypeScript</code> · <code>Bun</code> · <code>Model Context Protocol (MCP)</code> · <code>ast-grep</code> · <code>Git Worktrees</code></p>
+      <ul>
+        <li><strong>Deterministic Domain Engine</strong>: 24 CLI subcommands and 34 MCP tools providing AI agents with defect probes, sandboxes, and RFC-100 governance.</li>
+        <li><strong>Empirical Evidence & Triage</strong>: Dual-stage verification with concurrent contention testing and 150-token Smart Pointer slice dereferencing.</li>
+      </ul>
+      <a href="https://github.com/MeiSiristhebest/opencontrib">View repository →</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/MeiSiristhebest/inkpi">🖋️ InkPi</a> & <a href="https://github.com/MeiSiristhebest/inkpi-desktop">inkpi-desktop</a></h3>
+      <p><i>Extensible AI agent harness infrastructure paired with a cross-platform desktop workstation.</i></p>
+      <p><strong>Tech Stack</strong>: <code>Rust</code> · <code>Tauri 2</code> · <code>TypeScript</code> · <code>Bun</code> · <code>React 19</code> · <code>JSON-RPC 2.0</code></p>
+      <ul>
+        <li><strong>Hexagonal Agent Harness (<a href="https://github.com/MeiSiristhebest/inkpi">inkpi</a>)</strong>: 10-package monorepo decoupling domain state machine, pluggable session backends (SQLite FTS5 / JSONL / Memory), 4-tier prompt caching breakpoints, and differential ANSI TUI.</li>
+        <li><strong>Native Workstation Shell (<a href="https://github.com/MeiSiristhebest/inkpi-desktop">inkpi-desktop</a>)</strong>: Tauri 2 + Rust host orchestrating a standalone Bun sidecar daemon, Tiptap / Novel rich text core, and Living Codex Aho-Corasick knowledge graph engine with local-first IndexedDB.</li>
+      </ul>
+      <a href="https://github.com/MeiSiristhebest/inkpi">View Engine (Infra) →</a> · <a href="https://github.com/MeiSiristhebest/inkpi-desktop">View Desktop (App) →</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/MeiSiristhebest/ningxiangshop">🛍️ Ningxiang Go</a></h3>
+      <p><i>Enterprise-grade distributed microservice e-commerce system built for high-concurrency scenarios.</i></p>
+      <p><strong>Tech Stack</strong>: <code>Java 21 (LTS)</code> · <code>Spring Boot 3.3</code> · <code>Spring Cloud Alibaba</code> · <code>RocketMQ</code> · <code>Redis</code> · <code>Vue 3</code></p>
+      <ul>
+        <li><strong>High-Concurrency Architecture</strong>: Global Java 21 virtual threads, zero-RPC gateway auth offloading, and Redisson watchdog anti-overselling locks.</li>
+        <li><strong>Multilevel Caching</strong>: L1 Caffeine + L2 Redis annotation-driven cache with RocketMQ broadcast invalidation.</li>
+      </ul>
+      <a href="https://github.com/MeiSiristhebest/ningxiangshop">View repository →</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/MeiSiristhebest/mystic">🔮 Mystic</a></h3>
+      <p><i>Multi-domain interpretable AI reasoning suite powered by deterministic ephemeris and evidence graph arbitration.</i></p>
+      <p><strong>Tech Stack</strong>: <code>Next.js 16</code> · <code>React 19</code> · <code>TypeScript</code> · <code>Vercel AI SDK</code> · <code>Moshier Ephemeris</code></p>
+      <ul>
+        <li><strong>4-Tier Decoupled Architecture</strong>: Strictly isolates deterministic domain rules from LLM generation to eliminate hallucination.</li>
+        <li><strong>Canonical Evidence Graph (CEG)</strong>: Deterministic multi-dimensional evidence scoring and cross-domain temporal conflict arbitration.</li>
+      </ul>
+      <a href="https://github.com/MeiSiristhebest/mystic">View repository →</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/MeiSiristhebest/youju">💬 YouJu</a></h3>
+      <p><i>AI-powered contract loophole & conversation risk analysis workbench (TRAE AI Creativity Contest Featured Project).</i></p>
+      <p><strong>Tech Stack</strong>: <code>TypeScript</code> · <code>Node.js</code> · <code>Express</code> · <code>React 18</code> · <code>TailwindCSS</code> · <code>Zod</code></p>
+      <ul>
+        <li><strong>5-Layer DDD Clean Architecture</strong>: Strict domain boundaries isolating risk evaluation from LLMs, featuring runtime Zod schema validation and self-reflection loops.</li>
+        <li><strong>Transparent Risk Inspection</strong>: 3-tier severity classification with evidence chain tracing, dispute script generation, and offline heuristic rule fallback.</li>
+      </ul>
+      <a href="https://github.com/MeiSiristhebest/youju">View repository →</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/MeiSiristhebest/TimeLog">🎙️ TimeLog</a> & <a href="https://github.com/MeiSiristhebest/timelog-web">timelog-web</a></h3>
+      <p><i>Local-first voice diary & cross-generational family story preservation suite.</i></p>
+      <p><strong>Tech Stack</strong>: <code>React Native (Expo)</code> · <code>Next.js</code> · <code>SQLite</code> · <code>Supabase</code> · <code>Silero VAD</code></p>
+      <ul>
+        <li><strong>Local-First Audio Engine (<a href="https://github.com/MeiSiristhebest/TimeLog">TimeLog</a>)</strong>: Streaming voice activity detection (Silero VAD) with offline SQLite synchronization.</li>
+        <li><strong>Cross-Platform Console (<a href="https://github.com/MeiSiristhebest/timelog-web">timelog-web</a>)</strong>: Next.js web curation dashboard backed by Supabase storage and row-level security.</li>
+      </ul>
+      <a href="https://github.com/MeiSiristhebest/TimeLog">View Mobile App →</a> · <a href="https://github.com/MeiSiristhebest/timelog-web">View Web Console →</a>
+    </td>
+  </tr>
+</table>
 
 ---
 
