@@ -51,25 +51,25 @@ To me, software engineering is not just about solving tickets — it is a form o
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/bytedance/deer-flow">ByteDance Deer-Flow</a> · 4 Merged PRs</h3>
-      <p>Hardened memory subsystem against non-finite timeout values (rejecting <code>NaN</code> / <code>+Inf</code>), resolved cross-platform skill projection issues, and prevented garbage collection of deferred subagent cleanup tasks.</p>
+      <h3><a href="https://github.com/bytedance/deer-flow">ByteDance Deer-Flow</a> · 5 Merged PRs</h3>
+      <p>Handled non-finite timeout values (rejecting <code>NaN</code> / <code>+Inf</code>), resolved cross-platform skill projection issues, prevented empty-buffer <code>IndexError</code> in memory stream gaps, and retained references to deferred subagent cleanup tasks.</p>
       <a href="https://github.com/bytedance/deer-flow/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/TencentCloud/CubeSandbox">Tencent Cloud CubeSandbox</a> · 2 Merged PRs</h3>
-      <p>Ensured precise gRPC worker connection teardown across full and prefixed routing keys, and fixed zero <code>EndAt</code> timestamp boundaries for non-expiring sandboxes.</p>
+      <h3><a href="https://github.com/TencentCloud/CubeSandbox">Tencent Cloud CubeSandbox</a> · 3 Merged PRs</h3>
+      <p>Ensured gRPC worker connection teardown across full and prefixed routing keys, fixed zero <code>EndAt</code> timestamp boundaries for non-expiring sandboxes, and resolved LLVM-14 repository setup on Ubuntu 20.04.</p>
       <a href="https://github.com/TencentCloud/CubeSandbox/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/alibaba/open-code-review">Alibaba OpenCodeReview</a> · 3 Merged PRs</h3>
-      <p>Refined Agent skill instructions to prevent TTY output stream truncation, supported cross-platform subpath queries in <code>file_find</code>, and ensured background memory compression tasks join before session finalization.</p>
+      <h3><a href="https://github.com/alibaba/open-code-review">Alibaba OpenCodeReview</a> · 4 Merged PRs</h3>
+      <p>Prevented path traversal bypasses and normalized paths in search/comment tools, refined skill instructions against TTY truncation, supported cross-platform subpath queries in <code>file_find</code>, and ensured background memory compression tasks join before session finalization.</p>
       <a href="https://github.com/alibaba/open-code-review/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/microsoft/markitdown">Microsoft MarkItDown</a> · Merged</h3>
-      <p>Hardened Azure Document Intelligence client initialization against default API version regressions in Microsoft core document conversion library.</p>
+      <h3><a href="https://github.com/microsoft/markitdown">Microsoft MarkItDown</a> · 2 Merged PRs</h3>
+      <p>Handled unknown math functions in DOCX OMML converter to avoid conversion crashes, and aligned Azure Document Intelligence client initialization with default API version expectations.</p>
       <a href="https://github.com/microsoft/markitdown/pulls?q=is%3Apr+author%3AMeiSiristhebest+is%3Amerged">View contributions →</a>
     </td>
   </tr>
